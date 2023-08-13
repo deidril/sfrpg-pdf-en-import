@@ -1,0 +1,62 @@
+{
+    
+    "id": "sfrpg-pdf-en-import",
+
+    "title": "Deidril's Starfinder 1 PDF Import",
+    "description": "Imports Junker's Delight into foundry",
+    "authors": [
+      {
+        "name": "Deidril",
+        "discord": "Deidril#2009",
+        "url": "https://github.com/deidril",
+        "email": "fmanisse@gmail.com",
+        "flags": {}
+      }
+    ],
+    "version": "2.01",
+    "compatibility": {
+      "minimum": "11",
+      "verified": "11.307"
+    },
+    "styles":     
+    [
+        "css/common/dialogs.css","css/common/summary.css",
+        "css/sfrpg/system.css", "css/sfrpg/statblock.css", "css/sfrpg/blocks.css",
+        "css/helyx/helyx-sections.css","css/helyx/helyx.css"
+    ],
+    "relationships": {
+        "systems": 
+        [
+          { "id": "sfrpg", "type": "system", "compatibility": { "minimum": "0.24.0", "verified": "0.24.2" } }
+        ]
+    },
+    "esmodules": [
+      "src/helyx.bundle.js"
+    ],
+
+    "packs": 
+    [
+      { 
+        "name": "deid-sfrpg-junker-s-delight-actors", "label": "Junker's Delight - Actors", "system": "sfrpg", 
+        "path": "packs/junker-s-delight/actors", "type": "Actor", "ownership": 
+        { 
+          "PLAYER": "NONE",
+          "TRUSTED": "NONE",
+          "ASSISTANT": "NONE",
+          "GAMEMASTER": "OWNER"  
+        }, 
+        "flags": {}
+      } 
+    ],
+
+    "languages": 
+    [
+      { "lang": "fr", "name": "Français", "path": "lang/fr.json", "flags": {} },
+      { "lang": "en", "name": "English",  "path": "lang/en.json", "flags": {}
+      }
+    ],
+
+    "url": "https://github.com/deidril/sfrpg-pdf-en-import",
+    "manifest": "https://github.com/deidril/sfrpg-pdf-en-import/releases/latest/download/module.json",
+    "download": "https://github.com/deidril/sfrpg-pdf-en-import/releases/download/2.01/sfrpg-pdf-en-import-2.01.zip"
+  }
