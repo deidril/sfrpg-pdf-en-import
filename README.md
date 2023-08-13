@@ -1,4 +1,4 @@
-# Deidril's Pathfinder 2 PDF Import
+# Deidril's Starfinder 1 PDF Import
 This foundry vtt plugin allows to import PDFs into the current world. 
 
 # Licenses
@@ -20,7 +20,7 @@ images in ~/datas/images are generated through Midjourney by Deidril. Their use 
 
 # Installation
 1. Install the plugin from the following url ; https://github.com/deidril/pf2-pdf-en-import/releases/latest/download/module.json
-2. Start your Pathfinder 2 world, then activates the module 'Deidril's Pathfinder 2 PDF Import'
+2. Start your Starfinder 1 world, then activates the module 'Deidril's Starfinder 1 PDF Import'
 3. In the settings menu, click on 'Helyx - Import PDF'
 ![Settings](/img/click_helyx.png)
 4. In the dialog box, click on 'PDF file' and select a supported PDF
@@ -28,5 +28,5 @@ images in ~/datas/images are generated through Midjourney by Deidril. Their use 
 5. Click on 'Import PDF' 
 6. After all pages have been memorized, the module will identify which adventure it is and start the import
 7. When import is completed, click on OK
-8. Enjoy Pathfinder 2 !
+8. Enjoy Starfinder 1 !
 
