@@ -1,0 +1,31 @@
+.sfmod-compact .window-content .helyx-content div.helyx-block-read-section
+{
+    background: var(--sfmod-color-surface);
+    border-top:  1px solid var(--sfmod-color-secondary);;
+    border-bottom:  1px solid var(--sfmod-color-secondary);;
+    border-left: 5px solid var(--sfmod-color-secondary);
+    border-right: none;
+    box-shadow: none;
+    padding: 1em;
+    text-indent: 20px;
+    font-family: Roboto;
+    font-style: italic;
+    color: var(--primary);
+}
+
+.sfmod-compact .window-content .helyx-content div.helyx-block-section
+{    
+    background: var(--sfmod-color-surface);  
+}
+
+.sfmod-compact .window-content .helyx-content .helyx-block-box
+{
+    background: var(--sfmod-color-surface);  
+}
+
+.sfmod-compact a.enriched-link
+{
+    border: 1px solid var(--sfmod-color-primary);
+    color: var(--sfmod-color-primary);
+    background: var(--color-border-dark-1);
+}
