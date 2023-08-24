@@ -13,6 +13,9 @@ images in ~/datas/images are generated through Midjourney by Deidril. Their use 
 ## Adventures
 - Junker's Delight
 
+## Core books
+- Alien Achive 1 (artworks & tokens only)
+
 # Known issues
 
       + Gender of creatures using the stat block of another creature, aren't set. Issue is on the todo list"
