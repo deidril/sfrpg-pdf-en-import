@@ -13,7 +13,7 @@
         "flags": {}
       }
     ],
-    "version": "2.04",
+    "version": "2.05",
     "compatibility": {
       "minimum": "11",
       "verified": "11.307"
@@ -28,7 +28,7 @@
     "relationships": {
         "systems": 
         [
-          { "id": "sfrpg", "type": "system", "compatibility": { "minimum": "0.24.0", "verified": "0.25" } }
+          { "id": "sfrpg", "type": "system", "compatibility": { "minimum": "0.25.0", "verified": "0.25" } }
         ]
     },
     "esmodules": [
@@ -59,5 +59,5 @@
 
     "url": "https://github.com/deidril/sfrpg-pdf-en-import",
     "manifest": "https://github.com/deidril/sfrpg-pdf-en-import/releases/latest/download/module.json",
-    "download": "https://github.com/deidril/sfrpg-pdf-en-import/releases/download/2.04/sfrpg-pdf-en-import-2.04.zip"
+    "download": "https://github.com/deidril/sfrpg-pdf-en-import/releases/download/2.05/sfrpg-pdf-en-import-2.05.zip"
   }
