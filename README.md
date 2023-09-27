@@ -16,6 +16,9 @@ images in ~/datas/images are generated through Midjourney by Deidril. Their use 
 ## Core books
 - Alien Achive 1 (artworks & tokens only)
 
+## Starfinder Society
+- SFS1E02 : Fugitive on the Red Planet
+
 # Known issues
 
       + Gender of creatures using the stat block of another creature, aren't set. Issue is on the todo list"

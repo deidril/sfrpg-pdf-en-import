@@ -13,10 +13,10 @@
         "flags": {}
       }
     ],
-    "version": "2.05",
+    "version": "2.06",
     "compatibility": {
       "minimum": "11",
-      "verified": "11.307"
+      "verified": "11.308"
     },
     "styles":     
     [
@@ -37,18 +37,29 @@
 
     "packs": 
     [
-      { 
-        "name": "deid-sfrpg-junker-s-delight-actors", "label": "Junker's Delight - Actors", "system": "sfrpg", 
-        "path": "packs/junker-s-delight/actors", "type": "Actor", "ownership": 
         { 
-          "PLAYER": "NONE",
-          "TRUSTED": "NONE",
-          "ASSISTANT": "NONE",
-          "GAMEMASTER": "OWNER"  
-        }, 
-        "flags": {}
-      } 
+          "name": "deid-sfrpg-junker-s-delight-actors", "label": "Junker's Delight - Actors", "system": "sfrpg", 
+          "path": "packs/junker-s-delight/actors", "type": "Actor", "ownership": 
+          { "PLAYER": "NONE", "TRUSTED": "NONE", "ASSISTANT": "NONE", "GAMEMASTER": "OWNER" }, 
+          "flags": {}
+        } ,
+        { 
+          "name": "deid-sfrpg-season-1-actors", "label": "SFS Season 1 - Actors", "system": "sfrpg", 
+          "path": "packs/sfs-season-1/actors", "type": "Actor", "ownership": 
+          { "PLAYER": "NONE", "TRUSTED": "NONE", "ASSISTANT": "NONE", "GAMEMASTER": "OWNER" }, 
+          "flags": {}
+        } 
     ],
+    "packFolders": 
+    [{
+        "name": "Deidril Imports",
+        "sorting": "m",
+        "packs":
+        [
+            "deid-sfrpg-junker-s-delight-actors",
+            "deid-sfrpg-season-1-actors"
+        ]
+    }],
 
     "languages": 
     [
@@ -59,5 +70,5 @@
 
     "url": "https://github.com/deidril/sfrpg-pdf-en-import",
     "manifest": "https://github.com/deidril/sfrpg-pdf-en-import/releases/latest/download/module.json",
-    "download": "https://github.com/deidril/sfrpg-pdf-en-import/releases/download/2.05/sfrpg-pdf-en-import-2.05.zip"
+    "download": "https://github.com/deidril/sfrpg-pdf-en-import/releases/download/2.06/sfrpg-pdf-en-import-2.06.zip"
   }
