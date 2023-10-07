@@ -15,6 +15,10 @@ images in ~/datas/images are generated through Midjourney by Deidril. Their use 
 
 ## Core books
 - Alien Achive 1 (artworks & tokens only)
+- Alien Achive 2 (artworks & tokens only)
+
+## One shots
+- System Takedown
 
 ## Starfinder Society
 - SFS1E02 : Fugitive on the Red Planet
