@@ -19,13 +19,13 @@
 
 .helyx-header-blue-rune
 {
-    border-bottom: 4px solid rgb(0, 88, 151);;
+    border-bottom: 4px solid rgb(0, 88, 151);
     background: linear-gradient(130deg,#0c2d4a 0,#235683 40%,#235683 60%,#1d7dd1 100%);
 }
 
 .window-content .helyx-content div.helyx-block-section-blue-rune
 {
-    border: 4px solid rgb(0, 88, 151);;
+    border: 4px solid rgb(0, 88, 151);
     background: #f8f8eb    
 }
 
@@ -109,63 +109,75 @@
 
 .helyx-header-anvil
 {
-    border-bottom: 4px solid rgb(0, 88, 151);;
+    border-bottom: 4px solid rgb(0, 88, 151);
     background: linear-gradient(130deg,#0c2d4a 0,#235683 40%,#235683 60%,#1d7dd1 100%);
 }
 
 .window-content .helyx-content div.helyx-block-section-anvil
 {
-    border: 4px solid rgb(0, 88, 151);;
+    border: 4px solid rgb(0, 88, 151);
     background: #f8f8eb    
 }
 
 
 .helyx-header-success
 {
-    border-bottom: 4px solid rgb(0, 88, 151);;
+    border-bottom: 4px solid rgb(0, 88, 151);
     background: linear-gradient(130deg,#0c2d4a 0,#235683 40%,#235683 60%,#1d7dd1 100%);
 }
 
 .window-content .helyx-content div.helyx-block-section-success
 {
-    border: 4px solid rgb(0, 88, 151);;
+    border: 4px solid rgb(0, 88, 151);
+    background: #f8f8eb    
+}
+
+.helyx-header-failure
+{
+    border-bottom: 4px solid #5d0000;
+    background: linear-gradient(25deg,#671818 0,#c41e1e 40%,#c01c1c 60%,#8a0303 100%);
+}
+
+.window-content .helyx-content div.helyx-block-section-failure
+{
+    border: 4px solid #5d0000;
     background: #f8f8eb    
 }
 
 .helyx-header-bylevel
 {
-    border-bottom: 4px solid rgb(0, 88, 151);;
+    border-bottom: 4px solid rgb(0, 88, 151);
     background: linear-gradient(130deg,#0c2d4a 0,#235683 40%,#235683 60%,#1d7dd1 100%);
 }
 
 .window-content .helyx-content div.helyx-block-section-bylevel
 {
-    border: 4px solid rgb(0, 88, 151);;
+    border: 4px solid rgb(0, 88, 151);
     background: #f8f8eb    
 }
 
 .helyx-header-dices
 {
-    border-bottom: 4px solid rgb(0, 88, 151);;
+    border-bottom: 4px solid rgb(0, 88, 151);
     background: linear-gradient(130deg,#0c2d4a 0,#235683 40%,#235683 60%,#1d7dd1 100%);
 }
 
 .window-content .helyx-content div.helyx-block-section-dices
 {
-    border: 4px solid rgb(0, 88, 151);;
+    border: 4px solid rgb(0, 88, 151);
     background: #f8f8eb    
 }
 
 .helyx-header-peace
 {
-    border-bottom: 4px solid rgb(0, 151, 43);;
+    border-bottom: 4px solid rgb(0, 151, 43);
     background: linear-gradient( #76ff31,rgb(239, 255, 61));
     text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;
 }
 
 .window-content .helyx-content div.helyx-block-section-peace
 {
-    border: 4px solid rgb(0, 151, 43);;
+    border: 4px solid rgb(0, 151, 43);
     background: #f8f8eb    
 }
 
@@ -362,4 +374,23 @@ form .editor-content .helyx-content div.helyx-block-section-darkness
 {
     border-bottom: 4px solid #14428c;
     background: linear-gradient(130deg,#0c2d4a 0,#235683 40%,#235683 60%,#1d7dd1 100%);
+}
+
+.window-content .helyx-content div.helyx-block-section-streamed
+{
+    border: 4px solid #14428c;
+    background: #36A4DD;
+    font-family: "Orbitron";
+}
+
+.helyx-header-streamed
+{
+    border-bottom: 4px solid #14428c;
+    background: linear-gradient(130deg,#0c2d4a 0,#235683 40%,#235683 60%,#1d7dd1 100%);
+
+}
+
+.window-content .helyx-content .helyx-header-streamed .helyx-block-section-body .helyx-block-p 
+{
+    font-family: "Orbitron";
 }
