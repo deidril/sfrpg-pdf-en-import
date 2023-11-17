@@ -20,6 +20,9 @@ images in ~/datas/images are generated through Midjourney by Deidril. Their use 
 ## One shots
 - System Takedown
 
+## Free RPG Day Adventures
+- Skitter Shot
+
 ## Starfinder Society
 - SFS1E02 : Fugitive on the Red Planet
 
