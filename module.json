@@ -37,24 +37,12 @@
 
     "packs": 
     [
-        { 
-          "name": "deid-sfrpg-junker-s-delight-actors", "label": "Junker's Delight - Actors", "system": "sfrpg", 
-          "path": "packs/junker-s-delight/actors", "type": "Actor", "ownership": 
-          { "PLAYER": "NONE", "TRUSTED": "NONE", "ASSISTANT": "NONE", "GAMEMASTER": "OWNER" }, 
-          "flags": {}
-        } ,
-        { 
-          "name": "deid-sfrpg-season-1-actors", "label": "SFS Season 1 - Actors", "system": "sfrpg", 
-          "path": "packs/sfs-season-1/actors", "type": "Actor", "ownership": 
-          { "PLAYER": "NONE", "TRUSTED": "NONE", "ASSISTANT": "NONE", "GAMEMASTER": "OWNER" }, 
-          "flags": {}
-        }  ,
-        { 
-          "name": "deid-sfrpg-one-shot-actors", "label": "One Shot - Actors", "system": "sfrpg", 
-          "path": "packs/sfrpg-one-shots/actors", "type": "Actor", "ownership": 
-          { "PLAYER": "NONE", "TRUSTED": "NONE", "ASSISTANT": "NONE", "GAMEMASTER": "OWNER" }, 
-          "flags": {}
-        } 
+      { 
+        "name": "deid-sfrpg-actors", "label": "Actors", "system": "sfrpg", 
+        "path": "packs/actors", "type": "Actor", "ownership": 
+        { "PLAYER": "NONE", "TRUSTED": "NONE", "ASSISTANT": "NONE", "GAMEMASTER": "OWNER" }, 
+        "flags": {}
+      } 
     ],
     "packFolders": 
     [{
@@ -62,9 +50,7 @@
         "sorting": "m",
         "packs":
         [
-            "deid-sfrpg-junker-s-delight-actors",
-            "deid-sfrpg-season-1-actors",
-            "deid-sfrpg-one-shot-actors"
+          "deid-sfrpg-actors"
         ]
     }],
 
