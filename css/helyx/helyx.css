@@ -104,9 +104,20 @@
 
 .window-content .helyx-content table caption
 {
-    background: var(--primary);
+    background-color: #390000;
     color: white;
     border: 1px solid black;
+    font-variant: small-caps;
+    font-weight: bold;
+    padding: 0.5em;
+    font-size: 16px;
+}
+
+.window-content .helyx-content table th
+{
+    background: linear-gradient(25deg,#671818 0,#c41e1e 40%,#c01c1c 60%,#8a0303 100%);
+    color: white;
+    padding-left: 10px;
 }
 
 .window-content .helyx-content .helyx-block-conversions .helyx-conversions table.helyx-conversion-table
