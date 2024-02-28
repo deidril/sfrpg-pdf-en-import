@@ -1,3 +1,8 @@
-2024/02/13-09:57:07.248 4ad0 Recovering log #116
-2024/02/13-09:57:07.255 4ad0 Delete type=0 #116
-2024/02/13-09:57:07.256 4ad0 Delete type=3 #113
+2024/02/28-12:41:56.304 44b4 Recovering log #167
+2024/02/28-12:41:56.305 44b4 Delete type=0 #167
+2024/02/28-12:41:56.305 44b4 Delete type=3 #165
+2024/02/28-12:47:27.207 aec Level-0 table #172: started
+2024/02/28-12:47:27.208 aec Level-0 table #172: 0 bytes OK
+2024/02/28-12:47:27.211 aec Delete type=0 #170
+2024/02/28-12:47:27.212 aec Manual compaction at level-0 from '!actors!1qixxj3lmMZmnN49' @ 72057594037927935 : 1 .. '!folders!yoHhwx8hUEHF3EG1' @ 0 : 0; will stop at (end)
+2024/02/28-12:47:27.212 aec Manual compaction at level-1 from '!actors!1qixxj3lmMZmnN49' @ 72057594037927935 : 1 .. '!folders!yoHhwx8hUEHF3EG1' @ 0 : 0; will stop at (end)
