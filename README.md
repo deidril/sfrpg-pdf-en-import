@@ -18,6 +18,9 @@ images in ~/datas/images are generated through Midjourney by Deidril. Their use 
 - Alien Achive 2 (artworks & tokens only)
 - Alien Achive 3 (artworks & tokens only)
 
+## Bounties
+- B06 : Songbird Rescue
+
 ## One shots
 - System Takedown
 
