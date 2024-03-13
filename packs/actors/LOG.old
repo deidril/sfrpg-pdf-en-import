@@ -1,8 +1,5 @@
-2024/03/13-13:33:26.402 30d4 Recovering log #211
-2024/03/13-13:33:26.409 30d4 Delete type=0 #211
-2024/03/13-13:33:26.410 30d4 Delete type=3 #209
-2024/03/13-13:34:26.131 ab8 Level-0 table #216: started
-2024/03/13-13:34:26.132 ab8 Level-0 table #216: 0 bytes OK
-2024/03/13-13:34:26.141 ab8 Delete type=0 #214
-2024/03/13-13:34:26.142 ab8 Manual compaction at level-0 from '!actors!1qixxj3lmMZmnN49' @ 72057594037927935 : 1 .. '!folders!yoHhwx8hUEHF3EG1' @ 0 : 0; will stop at (end)
-2024/03/13-13:34:26.142 ab8 Manual compaction at level-1 from '!actors!1qixxj3lmMZmnN49' @ 72057594037927935 : 1 .. '!folders!yoHhwx8hUEHF3EG1' @ 0 : 0; will stop at (end)
+2024/03/13-13:39:24.569 2a10 Log #219: 0 ops saved to Table #220 OK
+2024/03/13-13:39:24.570 2a10 Archiving C:\perso\foundrydatas\V11\Data\modules\sfrpg-pdf-en-import\packs\actors/000219.log: OK
+2024/03/13-13:39:24.578 2a10 Table #208: 886 entries OK
+2024/03/13-13:39:24.583 2a10 Archiving C:\perso\foundrydatas\V11\Data\modules\sfrpg-pdf-en-import\packs\actors/MANIFEST-000217: OK
+2024/03/13-13:39:24.588 2a10 **** Repaired leveldb C:\perso\foundrydatas\V11\Data\modules\sfrpg-pdf-en-import\packs\actors; recovered 1 files; 1347332 bytes. Some data may have been lost. ****
