@@ -39,11 +39,11 @@
 .helyx-h1
 {
     padding: 6px;
+    padding-left: 10px;
     margin-bottom: 20px;
-    background-color: rgb(94,0,0);
+    background: linear-gradient(25deg,#671818 0,#c41e1e 40%,#c01c1c 60%,#8a0303 100%);
 
     color: white;    
-    font-family: "Vollkorn";
     font-weight: 400;
     font-size: 17px;
 
@@ -238,6 +238,9 @@
 .helyx-content .helyx-block-p a
 {
     text-indent: 0px;
+    background: linear-gradient(25deg,#671818 0,#c41e1e 40%,#c01c1c 60%,#8a0303 100%);
+    color: white;
+    padding: 0px;
 }
 
 .helyx-block-box
