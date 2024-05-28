@@ -30,6 +30,7 @@ images in ~/datas/images are generated through Midjourney by Deidril. Their use 
 ## Starfinder Society
 - SFS1E02 : Fugitive on the Red Planet
 - SFS1E03 : Yesteryear's Truth   
+- SFS1E09 : Live Exploration Extreme !
 
 # Known issues
 
