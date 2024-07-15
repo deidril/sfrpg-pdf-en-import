@@ -13,7 +13,7 @@
         "flags": {}
       }
     ],
-    "version": "4.20",
+    "version": "4.21",
     "compatibility": {
       "minimum": "12",
       "verified": "12"
@@ -63,5 +63,5 @@
 
     "url": "https://github.com/deidril/sfrpg-pdf-en-import",
     "manifest": "https://github.com/deidril/sfrpg-pdf-en-import/releases/latest/download/module.json",
-    "download": "https://github.com/deidril/sfrpg-pdf-en-import/releases/download/3.19/sfrpg-pdf-en-import-3.19.zip"
+    "download": "https://github.com/deidril/sfrpg-pdf-en-import/releases/download/4.21/sfrpg-pdf-en-import-4.21.zip"
   }
