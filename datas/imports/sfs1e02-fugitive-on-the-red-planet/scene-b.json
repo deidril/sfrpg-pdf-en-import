@@ -1,0 +1,228 @@
+{
+  "name": "B. Wasteland Ambush",
+  "navigation": true,
+  "navOrder": 0,
+  "navName": "",
+  "background": {
+    "src": "helyx/sfs1e02-fugitive-on-the-red-planet/scenes/scene-b.webp",
+    "scaleX": 1,
+    "scaleY": 1,
+    "offsetX": -9,
+    "offsetY": 14,
+    "rotation": 0,
+    "anchorX": 0,
+    "anchorY": 0,
+    "fit": "fill",
+    "tint": "#ffffff",
+    "alphaThreshold": 0
+  },
+  "foregroundElevation": 20,
+  "width": 2158,
+  "height": 2698,
+  "padding": 0.25,
+  "initial": {
+    "x": 2422,
+    "y": 1588,
+    "scale": 0.33289555760309675
+  },
+  "backgroundColor": "#d08e5d",
+  "grid": {
+    "type": 1,
+    "size": 100,
+    "color": "#000000",
+    "alpha": 1,
+    "distance": 5,
+    "units": "ft",
+    "style": "solidLines",
+    "thickness": 1
+  },
+  "tokenVision": true,
+  "drawings": [],
+  "tokens": [],
+  "lights": [],
+  "notes": [],
+  "sounds": [],
+  "templates": [],
+  "tiles": [],
+  "walls": [
+    {
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "c": [
+        600,
+        700,
+        2700,
+        700
+      ],
+      "_id": "H1q2KKeBtd3z7nxe",
+      "dir": 0,
+      "door": 0,
+      "ds": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {},
+      "animation": null
+    },
+    {
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "c": [
+        2700,
+        700,
+        2700,
+        3400
+      ],
+      "_id": "ls0VQlLuGFZz5oat",
+      "dir": 0,
+      "door": 0,
+      "ds": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {},
+      "animation": null
+    },
+    {
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "c": [
+        600,
+        3400,
+        2700,
+        3400
+      ],
+      "_id": "Kgno2lu23AJlROOL",
+      "dir": 0,
+      "door": 0,
+      "ds": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {},
+      "animation": null
+    },
+    {
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "c": [
+        600,
+        700,
+        600,
+        3400
+      ],
+      "_id": "8Ce7VaIuSZg1aUj2",
+      "dir": 0,
+      "door": 0,
+      "ds": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {},
+      "animation": null
+    }
+  ],
+  "playlist": null,
+  "playlistSound": null,
+  "journal": null,
+  "journalEntryPage": null,
+  "folder": "haJ3CQ1XJjXy22qM",
+  "flags": {
+    "helyx-maker": {
+      "config": {
+        "idname": "sfs1e02_scene-b",
+        "version": "0.1.5",
+        "source": "sfs1e02-fugitive-on-the-red-planet"
+      }
+    },
+    "helyx-maker-3": {
+      "config": {
+        "idname": "sfs1e02_scene-b",
+        "version": "3.53",
+        "source": "sfs1e02-fugitive-on-the-red-planet"
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "13.346",
+    "systemId": "sfrpg",
+    "systemVersion": "0.28.2",
+    "createdTime": 1752423593520,
+    "modifiedTime": 1752423593721,
+    "lastModifiedBy": "TaT6XGoGlorNE58O",
+    "exportSource": {
+      "worldId": "devsfrpg",
+      "uuid": "Scene.qAQseqPHxubKp2CO",
+      "coreVersion": "13.346",
+      "systemId": "sfrpg",
+      "systemVersion": "0.28.2"
+    }
+  },
+  "foreground": null,
+  "thumb": "worlds/devsfrpg/assets/scenes/qAQseqPHxubKp2CO-thumb.webp",
+  "weather": "",
+  "fog": {
+    "exploration": true,
+    "reset": 1695734549064,
+    "overlay": null,
+    "colors": {
+      "explored": null,
+      "unexplored": null
+    }
+  },
+  "environment": {
+    "globalLight": {
+      "enabled": true,
+      "darkness": {
+        "max": 0.75,
+        "min": 0
+      },
+      "alpha": 0.5,
+      "bright": false,
+      "color": null,
+      "coloration": 1,
+      "luminosity": 0,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0
+    },
+    "darknessLevel": 0,
+    "darknessLock": false,
+    "cycle": true,
+    "base": {
+      "hue": 0,
+      "intensity": 0,
+      "luminosity": 0,
+      "saturation": 0,
+      "shadows": 0
+    },
+    "dark": {
+      "hue": 0.7138888888888889,
+      "intensity": 0,
+      "luminosity": -0.25,
+      "saturation": 0,
+      "shadows": 0
+    }
+  },
+  "regions": []
+}
