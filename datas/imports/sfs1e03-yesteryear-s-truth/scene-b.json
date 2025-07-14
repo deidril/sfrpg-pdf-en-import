@@ -1,0 +1,191 @@
+{
+  "name": "scene b",
+  "navigation": true,
+  "navOrder": 0,
+  "navName": "",
+  "background": {
+    "src": "helyx/sfs1e03-yesteryear-s-truth/scenes/scene-b.webp",
+    "scaleX": 1,
+    "scaleY": 1,
+    "offsetX": -27,
+    "offsetY": -10,
+    "rotation": 0
+  },
+  "foregroundElevation": 20,
+  "width": 2170,
+  "height": 3300,
+  "padding": 0.25,
+  "initial": {
+    "x": 1833,
+    "y": 2393,
+    "scale": 0.2573622530450012
+  },
+  "backgroundColor": "#8B6041",
+  "grid": {
+    "type": 1,
+    "size": 100,
+    "color": "#000000",
+    "alpha": 1,
+    "distance": 5,
+    "units": "ft"
+  },
+  "tokenVision": true,
+  "fogExploration": true,
+  "fogReset": 1710330633874,
+  "globalLight": true,
+  "globalLightThreshold": 0.75,
+  "darkness": 0,
+  "drawings": [],
+  "tokens": [],
+  "lights": [],
+  "notes": [
+    {
+      "entryId": "B255GfcqhVWKHTfb",
+      "pageId": "GVbmqGTOW2whynRV",
+      "text": "",
+      "x": 750,
+      "y": 1050,
+      "global": false,
+      "iconSize": 60,
+      "texture": {
+        "tint": null,
+        "src": "icons/svg/book.svg",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0
+      },
+      "fontFamily": "Arial",
+      "fontSize": 32,
+      "textColor": "#FFFFFF",
+      "textAnchor": 1,
+      "_id": "DMg9Wk0LgYe3DH28",
+      "flags": {      "helyx" : { "idname": "sfs1e03_encounter_b" }}
+    }
+  ],
+  "sounds": [],
+  "templates": [],
+  "tiles": [],
+  "walls": [
+    {
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "c": [
+        637,
+        912,
+        2800,
+        912
+      ],
+      "_id": "5ujVSju3c10o0Fjx",
+      "dir": 0,
+      "door": 0,
+      "ds": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "c": [
+        637,
+        4200,
+        637,
+        912
+      ],
+      "_id": "L4bLUz318EaKI7KO",
+      "dir": 0,
+      "door": 0,
+      "ds": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "c": [
+        2800,
+        4200,
+        637,
+        4200
+      ],
+      "_id": "GHfD46204UUAVTMJ",
+      "dir": 0,
+      "door": 0,
+      "ds": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "c": [
+        2800,
+        912,
+        2800,
+        4200
+      ],
+      "_id": "TV2TyU835e8UJ5Bb",
+      "dir": 0,
+      "door": 0,
+      "ds": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    }
+  ],
+  "playlist": null,
+  "playlistSound": null,
+  "journal": null,
+  "journalEntryPage": null,
+  "folder": null,
+  "flags": {
+    "exportSource": {
+      "world": "sfs1e3",
+      "system": "sfrpg",
+      "coreVersion": "11.315",
+      "systemVersion": "0.25.2"
+    }
+  },
+  "_stats": {
+    "systemId": "sfrpg",
+    "systemVersion": "0.25.2",
+    "coreVersion": "11.315",
+    "createdTime": 1710330633878,
+    "modifiedTime": 1710331176688,
+    "lastModifiedBy": "cxeQuijjgPzYWXWb"
+  },
+  "foreground": null,
+  "thumb": "worlds/sfs1e3/assets/scenes/fQklPziTOmi2e0S9-thumb.webp",
+  "fogOverlay": null,
+  "fogExploredColor": null,
+  "fogUnexploredColor": null,
+  "weather": ""
+}
