@@ -1,0 +1,181 @@
+{
+  "name": "Chapter 1 - Scene A",
+  "tokensAreHidden" : false,
+  "navigation": false,
+  "navOrder": 0,
+  "background": {
+    "src": "helyx/scoured-stars/scenes/scene-01a.webp",
+    "scaleX": 1,
+    "scaleY": 1,
+    "offsetX": 2,
+    "offsetY": -55,
+    "rotation": 0
+  },
+  "foregroundElevation": 20,
+  "width": 2062,
+  "height": 2865,
+  "padding": 0.25,
+  "initial": {
+    "x": 1573,
+    "y": 2250,
+    "scale": 0.31946330910290555
+  },
+  "backgroundColor": "#000000",
+  "grid": {
+    "type": 5,
+    "size": 100,
+    "color": "#9e9e9e",
+    "alpha": 1,
+    "distance": 1,
+    "units": "Hex"
+  },
+  "tokenVision": true,
+  "fogExploration": false,
+  "fogReset": 1706548825259,
+  "globalLight": true,
+  "globalLightThreshold": 0.75,
+  "darkness": 0,
+  "drawings": [],
+  "tokens": [],
+  "lights": [],
+  "notes": [],
+  "sounds": [],
+  "templates": [],
+  "tiles": [],
+  "walls": [
+    {
+      "c": [
+        524,
+        828,
+        2591,
+        828
+      ],
+      "light": 20,
+      "move": 20,
+      "sight": 20,
+      "sound": 20,
+      "dir": 0,
+      "door": 0,
+      "ds": 0,
+      "flags": {},
+      "_id": "qDpWofaYFegXWWyJ",
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      }
+    },
+    {
+      "c": [
+        2591,
+        828,
+        2591,
+        3697
+      ],
+      "light": 20,
+      "move": 20,
+      "sight": 20,
+      "sound": 20,
+      "dir": 0,
+      "door": 0,
+      "ds": 0,
+      "flags": {},
+      "_id": "RbnUukI69VlkrAa8",
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      }
+    },
+    {
+      "c": [
+        2591,
+        3697,
+        524,
+        3697
+      ],
+      "light": 20,
+      "move": 20,
+      "sight": 20,
+      "sound": 20,
+      "dir": 0,
+      "door": 0,
+      "ds": 0,
+      "flags": {},
+      "_id": "AOw1okLM9toBPFOL",
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      }
+    },
+    {
+      "c": [
+        524,
+        3697,
+        524,
+        828
+      ],
+      "light": 20,
+      "move": 20,
+      "sight": 20,
+      "sound": 20,
+      "dir": 0,
+      "door": 0,
+      "ds": 0,
+      "flags": {},
+      "_id": "TfzSi2EBegBb1ohd",
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      }
+    }
+  ],
+  "playlist": null,
+  "playlistSound": null,
+  "journal": null,
+  "journalEntryPage": null,
+  "folder": "SWgvVSdrX68ZIw06",
+  "flags": {
+    "exportSource": {
+      "world": "sfs01e03",
+      "system": "sfrpg",
+      "coreVersion": "11.315",
+      "systemVersion": "0.25.2"
+    },
+    "helyx-maker": {
+      "config": {
+        "idname": "scst_scene-1a",
+        "version": "0.1.5",
+        "source": "scoured-stars"
+      }
+    },
+    "helyx-maker-3": {
+      "config": {
+        "idname": "scst_scene-01a",
+        "version": "3.53",
+        "source": "scoured-stars"
+      }
+    }
+  },
+  "_stats": {
+    "systemId": "sfrpg",
+    "systemVersion": "0.25.2",
+    "coreVersion": "11.315",
+    "createdTime": 1706548825270,
+    "modifiedTime": 1711297335849,
+    "lastModifiedBy": "H1Rgi8D3hDsCsVyA"
+  },
+  "foreground": null,
+  "thumb": "worlds/sfs01e03/assets/scenes/OoLMl7ZIsAwa0TjQ-thumb.webp",
+  "fogOverlay": null,
+  "fogExploredColor": null,
+  "fogUnexploredColor": null,
+  "weather": "",
+  "navName": ""
+}

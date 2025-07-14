@@ -1,0 +1,167 @@
+{
+  "helyx" : { "idname" : "scst_scene-07-idari" , "target" : "scsts_a7", "type": "Scene" } ,
+  "name": "{{{xlf 130012 0 'anzcey' }}}",
+  "navigation": false,
+  "navOrder": 0,
+  "navName": "",
+  "background": {
+    "src": "helyx/scoured-stars/scenes/scene-07-idari.webp",
+    "scaleX": 1,
+    "scaleY": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "rotation": 0
+  },
+  "foregroundElevation": 20,
+  "width": 1962,
+  "height": 2615,
+  "padding": 0.15,
+  "initial": {
+    "x": 1383,
+    "y": 1712,
+    "scale": 0.34893697252754785
+  },
+  "backgroundColor": "#000000",
+  "grid": {
+    "type": 0,
+    "size": 50,
+    "color": "#000000",
+    "alpha": 0.2,
+    "distance": 5,
+    "units": "ft"
+  },
+  "tokenVision": true,
+  "fogExploration": true,
+  "fogReset": 1718018898922,
+  "globalLight": true,
+  "globalLightThreshold": 0.75,
+  "darkness": 0,
+  "drawings": [],
+  "tokens": [],
+  "lights": [],
+  "notes": [],
+  "sounds": [],
+  "templates": [],
+  "tiles": [],
+  "walls": [
+    {
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "c": [
+        300,
+        400,
+        2262,
+        400
+      ],
+      "_id": "uigxfCXXjFTZ0Ssq",
+      "dir": 0,
+      "door": 0,
+      "ds": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "c": [
+        2262,
+        3012,
+        2262,
+        400
+      ],
+      "_id": "C1T4Sq8fbdTiq7xZ",
+      "dir": 0,
+      "door": 0,
+      "ds": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "c": [
+        300,
+        3012,
+        2262,
+        3012
+      ],
+      "_id": "hS1TCDCfbOiHbOhW",
+      "dir": 0,
+      "door": 0,
+      "ds": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "c": [
+        300,
+        400,
+        300,
+        3012
+      ],
+      "_id": "n7BDhA7T2ccEm5C1",
+      "dir": 0,
+      "door": 0,
+      "ds": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    }
+  ],
+  "playlist": null,
+  "playlistSound": null,
+  "journal": null,
+  "journalEntryPage": null,
+  "folder": null,
+  "flags": {
+    "exportSource": {
+      "world": "scoured-stars-2",
+      "system": "sfrpg",
+      "coreVersion": "11.315",
+      "systemVersion": "0.25.3"
+    }
+  },
+  "_stats": {
+    "systemId": "sfrpg",
+    "systemVersion": "0.25.3",
+    "coreVersion": "11.315",
+    "createdTime": 1718018898924,
+    "modifiedTime": 1718019020708,
+    "lastModifiedBy": "asU9bpxPUhRe7Byf"
+  },
+  "foreground": null,
+  "thumb": "worlds/scoured-stars-2/assets/scenes/0ppXQ2WjHtpGBFQB-thumb.webp",
+  "fogOverlay": null,
+  "fogExploredColor": null,
+  "fogUnexploredColor": null,
+  "weather": ""
+}

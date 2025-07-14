@@ -1,0 +1,99 @@
+{
+  "name": "Chapter 4 - Scene A",
+  "navigation": false,
+  "navOrder": 0,
+  "navName": "",
+  "background": {
+    "src": "helyx/scoured-stars/scenes/scene-04a.webp",
+    "scaleX": 1,
+    "scaleY": 1,
+    "offsetX": 50,
+    "offsetY": 12,
+    "rotation": 0
+  },
+  "foregroundElevation": 20,
+  "width": 1750,
+  "height": 2710,
+  "padding": 0.25,
+  "initial": {
+    "x": 1400,
+    "y": 2050,
+    "scale": 0.2713225609756097
+  },
+  "backgroundColor": "#0c0808",
+  "grid": {
+    "type": 4,
+    "size": 100,
+    "color": "#ffffff",
+    "alpha": 1,
+    "distance": 5,
+    "units": "ft"
+  },
+  "tokenVision": true,
+  "fogExploration": true,
+  "fogReset": 1700624454586,
+  "globalLight": true,
+  "globalLightThreshold": 0.75,
+  "darkness": 0,
+  "drawings": [],
+  "tokens": [],
+  "lights": [],
+  "notes": [
+    {
+      "entryId": "aX9R2W6lWRlB0f41",
+      "pageId": "TxJhW7iR2SrSnLcQ",
+
+      "text": "",
+      "x": 145,
+      "y": 450,
+      "global": false,
+      "iconSize": 40,
+      "texture": {
+        "tint": null,
+        "src": "icons/svg/book.svg",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0
+      },
+      "fontFamily": "Arial",
+      "fontSize": 32,
+      "textColor": "#FFFFFF",
+      "textAnchor": 1,
+      "_id": "oeBJ9iaFvZa9fHVR",
+      "flags": {      "helyx" : { "idname": "scst_adv04_a00" } }
+    }
+  ],
+  "sounds": [],
+  "templates": [],
+  "tiles": [],
+  "walls": [],
+  "playlist": null,
+  "playlistSound": null,
+  "journal": null,
+  "journalEntryPage": null,
+  "folder": null,
+  "flags": {
+    "exportSource": {
+      "world": "sf3b",
+      "system": "sfrpg",
+      "coreVersion": "11.315",
+      "systemVersion": "0.25.2"
+    }
+  },
+  "_stats": {
+    "systemId": "sfrpg",
+    "systemVersion": "0.25.2",
+    "coreVersion": "11.315",
+    "createdTime": 1700624455663,
+    "modifiedTime": 1708687736869,
+    "lastModifiedBy": "oHokwwAxAPa2j04T"
+  },
+  "foreground": null,
+  "thumb": "worlds/sf3b/assets/scenes/vyNuWbIPDhsoVsEu-thumb.webp",
+  "fogOverlay": null,
+  "fogExploredColor": null,
+  "fogUnexploredColor": null,
+  "weather": ""
+}
