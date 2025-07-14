@@ -1,0 +1,330 @@
+{
+  "name": "Scene G",
+  "navigation": true,
+  "navOrder": 0,
+  "navName": "",
+  "background": {
+    "src": "helyx/junker-s-delight/scenes/event-g.webp",
+    "scaleX": 1,
+    "scaleY": 1,
+    "offsetX": -30,
+    "offsetY": -22,
+    "rotation": 0
+  },
+  "foregroundElevation": 20,
+  "width": 1530,
+  "height": 922,
+  "padding": 0.25,
+  "initial": {
+    "x": 1285,
+    "y": 857,
+    "scale": 0.702471594990144
+  },
+  "backgroundColor": "#B37C64",
+  "grid": {
+    "type": 1,
+    "size": 100,
+    "color": "#000000",
+    "alpha": 1,
+    "distance": 5,
+    "units": "ft"
+  },
+  "tokenVision": true,
+  "fogExploration": true,
+  "fogReset": 1691337759747,
+  "globalLight": true,
+  "globalLightThreshold": 0.75,
+  "darkness": 0,
+  "drawings": [],
+  "tokens": [] ,
+  "lights": [],
+  "notes": [
+    {
+      "entryId": "20xfxOpUHn3uobC3",
+      "pageId": "O5sl8nTbQ2r7WV1z",
+
+      "text": "",
+      "x": 940,
+      "y": 370,
+      "global": false,
+      "iconSize": 40,
+      "texture": {
+        "tint": null,
+        "src": "icons/svg/book.svg",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0
+      },
+      "fontFamily": "Arial",
+      "fontSize": 32,
+      "textColor": "#FFFFFF",
+      "textAnchor": 1,
+      "_id": "z5ar3iXDCg9dKdro",
+      "flags": {      "helyx" : { "idname": "juke_g00" }}
+    }
+  ],
+  "sounds": [],
+  "templates": [],
+  "tiles": [],
+  "walls": [
+    {
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "c": [
+        462,
+        350,
+        1937,
+        350
+      ],
+      "_id": "w1jiFtzjw6MK3QNZ",
+      "dir": 0,
+      "door": 0,
+      "ds": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "c": [
+        1937,
+        1225,
+        1937,
+        350
+      ],
+      "_id": "sVl2rti2skrlJXy8",
+      "dir": 0,
+      "door": 0,
+      "ds": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "c": [
+        475,
+        1225,
+        1937,
+        1225
+      ],
+      "_id": "Ye1ixS2R5LT7nOlN",
+      "dir": 0,
+      "door": 0,
+      "ds": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "light": 20,
+      "sight": 20,
+      "sound": 20,
+      "move": 20,
+      "c": [
+        462,
+        350,
+        475,
+        1225
+      ],
+      "_id": "9fEMY7pH77v0qdYm",
+      "dir": 0,
+      "door": 0,
+      "ds": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "light": 10,
+      "sight": 10,
+      "sound": 10,
+      "move": 20,
+      "c": [
+        525,
+        675,
+        562,
+        662
+      ],
+      "_id": "Vw03QdecazbeC5JC",
+      "dir": 0,
+      "door": 0,
+      "ds": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "light": 10,
+      "sight": 10,
+      "sound": 10,
+      "move": 20,
+      "c": [
+        662,
+        712,
+        562,
+        662
+      ],
+      "_id": "JMQo23bLMeCWh2fJ",
+      "dir": 0,
+      "door": 0,
+      "ds": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "light": 10,
+      "sight": 10,
+      "sound": 10,
+      "move": 20,
+      "c": [
+        662,
+        812,
+        662,
+        712
+      ],
+      "_id": "e7RBDNYQDXz4Kv9D",
+      "dir": 0,
+      "door": 0,
+      "ds": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "light": 10,
+      "sight": 10,
+      "sound": 10,
+      "move": 20,
+      "c": [
+        600,
+        875,
+        662,
+        812
+      ],
+      "_id": "trjLQwabvxHxRt1U",
+      "dir": 0,
+      "door": 0,
+      "ds": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "light": 10,
+      "sight": 10,
+      "sound": 10,
+      "move": 20,
+      "c": [
+        525,
+        737,
+        600,
+        875
+      ],
+      "_id": "KAnuPNIDg8Jke7d0",
+      "dir": 0,
+      "door": 0,
+      "ds": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    },
+    {
+      "light": 10,
+      "sight": 10,
+      "sound": 10,
+      "move": 20,
+      "c": [
+        525,
+        675,
+        525,
+        737
+      ],
+      "_id": "ZVabfFa8Or7bf5hO",
+      "dir": 0,
+      "door": 0,
+      "ds": 0,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "flags": {}
+    }
+  ],
+  "playlist": null,
+  "playlistSound": null,
+  "journal": null,
+  "journalEntryPage": null,
+  "folder": null,
+  "flags": {
+    "exportSource": {
+      "world": "sf244",
+      "system": "sfrpg",
+      "coreVersion": "11.307",
+      "systemVersion": "0.24.2"
+    }
+  },
+  "_stats": {
+    "systemId": "sfrpg",
+    "systemVersion": "0.24.2",
+    "coreVersion": "11.307",
+    "createdTime": 1691337759749,
+    "modifiedTime": 1691337981182,
+    "lastModifiedBy": "G087rHiWssGNHJOT"
+  },
+  "foreground": null,
+  "thumb": "worlds/sf244/assets/scenes/3HaR2g2XaKA6C79e-thumb.webp",
+  "fogOverlay": null,
+  "fogExploredColor": null,
+  "fogUnexploredColor": null,
+  "weather": ""
+}
