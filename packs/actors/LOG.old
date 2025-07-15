@@ -1,15 +1,5 @@
-2024/07/15-11:47:35.729 710 Recovering log #491
-2024/07/15-11:47:35.741 710 Delete type=0 #491
-2024/07/15-11:47:35.741 710 Delete type=3 #489
-2024/07/15-11:58:18.978 3360 Level-0 table #497: started
-2024/07/15-11:58:19.033 3360 Level-0 table #497: 1799706 bytes OK
-2024/07/15-11:58:19.038 3360 Delete type=0 #495
-2024/07/15-11:58:19.048 3360 Manual compaction at level-0 from '!actors!0HiKEz1GE2ewcIdT' @ 72057594037927935 : 1 .. '!folders!yoHhwx8hUEHF3EG1' @ 0 : 0; will stop at (end)
-2024/07/15-11:58:19.091 3360 Manual compaction at level-1 from '!actors!0HiKEz1GE2ewcIdT' @ 72057594037927935 : 1 .. '!folders!yoHhwx8hUEHF3EG1' @ 0 : 0; will stop at '!actors.items!zZLCHuwfDSCS7gg6.xzpT7ifaX7GWGaLQ' @ 3023 : 1
-2024/07/15-11:58:19.091 3360 Compacting 1@1 + 1@2 files
-2024/07/15-11:58:19.154 3360 Generated table #498@1: 1209 keys, 1803636 bytes
-2024/07/15-11:58:19.154 3360 Compacted 1@1 + 1@2 files => 1803636 bytes
-2024/07/15-11:58:19.159 3360 compacted to: files[ 0 0 1 0 0 0 0 ]
-2024/07/15-11:58:19.159 3360 Delete type=2 #493
-2024/07/15-11:58:19.159 3360 Delete type=2 #497
-2024/07/15-11:58:19.220 3360 Manual compaction at level-1 from '!actors.items!zZLCHuwfDSCS7gg6.xzpT7ifaX7GWGaLQ' @ 3023 : 1 .. '!folders!yoHhwx8hUEHF3EG1' @ 0 : 0; will stop at (end)
+2025/07/15-10:44:44.140 27fc Log #501: 0 ops saved to Table #502 OK
+2025/07/15-10:44:44.140 27fc Archiving C:\perso\foundrydatas\V11\Data\modules\sfrpg-pdf-en-import\packs\actors/000501.log: OK
+2025/07/15-10:44:44.147 27fc Table #498: 1209 entries OK
+2025/07/15-10:44:44.157 27fc Archiving C:\perso\foundrydatas\V11\Data\modules\sfrpg-pdf-en-import\packs\actors/MANIFEST-000499: OK
+2025/07/15-10:44:44.161 27fc **** Repaired leveldb C:\perso\foundrydatas\V11\Data\modules\sfrpg-pdf-en-import\packs\actors; recovered 1 files; 1803636 bytes. Some data may have been lost. ****
