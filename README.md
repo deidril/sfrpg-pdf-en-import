@@ -1,12 +1,9 @@
 # Deidril's Starfinder 1 PDF Import
 This foundry vtt plugin allows to import PDFs into the current world. 
 
-# Licenses
-helyx.bundle.js code is under the MIT license
-pdf.worker.min.js code is under the apache license
-
-images in ~/datas/images are generated through Midjourney by Deidril. Their use is restricted to this module scope.
-
+# License
+The code of this module, except the pdf lib, is not licensed. You can use it for personnal use only. 
+Read the LICENSE file for more details.
 
 # Supported PDFs 
 
