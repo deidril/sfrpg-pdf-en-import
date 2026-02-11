@@ -14,7 +14,7 @@
         "flags": {}
       }
     ],
-    "version": "5.24",
+    "version": "6.25",
   "compatibility": {
     "minimum": "13.345",
     "verified": "13.345",
@@ -30,7 +30,7 @@
     "relationships": {
         "systems": 
         [
-          { "id": "sfrpg", "type": "system", "compatibility": { "minimum": "0.28.2", "verified": "0.28.2" } }
+          { "id": "sfrpg", "type": "system", "compatibility": { "minimum": "0.30", "verified": "0.30" } }
         ]
     },
     "esmodules": [
@@ -64,6 +64,6 @@
     ],
 
     "url": "https://github.com/deidril/sfrpg-pdf-en-import",
-    "manifest": "https://github.com/deidril/sfrpg-pdf-en-import/releases/download/5.24/module.json",
-    "download": "https://github.com/deidril/sfrpg-pdf-en-import/releases/download/5.24/sfrpg-pdf-en-import-5.24.zip"
+    "manifest": "https://github.com/deidril/sfrpg-pdf-en-import/releases/download/6.25/module.json",
+    "download": "https://github.com/deidril/sfrpg-pdf-en-import/releases/download/6.25/sfrpg-pdf-en-import-6.25.zip"
   }
