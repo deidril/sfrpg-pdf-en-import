@@ -66557,7 +66557,7 @@ Hooks.on("renderSettings", function(app_, html_)
         { "helyx-import-pdf":()=>game.helyx.when_import_pdf() }
     );
                 
-    // html_.querySelector("section.info").after(s.content);    
+    html_.querySelector("section.info").after(s.content);
 
 })
 
