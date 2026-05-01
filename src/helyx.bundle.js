@@ -25417,6 +25417,11 @@ export class HelyxConfiguration
             If true, consider items are always loaded
         */
         this.bundled = false;
+
+        /*
+            If true, the module is executed on 'forge'
+        */
+        this.forge = false;    
     };    
 }    
 export class HelyxBlankAdventure
@@ -28671,6 +28676,26 @@ export class StateImportImages extends HelyxState
         return cn;
     }
 
+    #token_color(entry_)
+    {
+        if(entry_.color)
+        { return entry_.color; }
+
+        if(entry_.model)
+        {
+            switch(entry_.model)
+            {
+                case 'green_marble': return "green";
+                case 'red_evil': return "red";
+                case 'green_bamboo': return "green";
+
+                default: return "green";
+            }
+        }
+
+        return "green";
+    }
+
     #save_colored_ring(context_, token_entry_)
     {
         const ring_width = token_entry_.w / 15;
@@ -28695,7 +28720,7 @@ export class StateImportImages extends HelyxState
         ctx.drawImage(mask, 0, 0);
 
         ctx.lineWidth = ring_width;
-        ctx.strokeStyle = token_entry_.color ?? "green";
+        ctx.strokeStyle = this.#token_color(token_entry_);
         ctx.stroke();
 
         return cn;
@@ -28704,7 +28729,7 @@ export class StateImportImages extends HelyxState
     #resolve_token_type(token_entry_)
     {
         if(token_entry_.shape && token_entry_.shape == "rect")      return 'rectangle';
-        if(token_entry_.model) return 'custom_ring';
+        if(token_entry_.model  && (game.helyx.config.forge == false)) return 'custom_ring';
 
         return 'colored_ring';
 
@@ -66574,6 +66599,7 @@ Hooks.on("ready", async function ()
     h.config.extractPDFDetails = false;
     h.acceptUnknowPdf = false;
     h.config.moduleName="sfrpg-pdf-en-import";
+    h.config.forge = game.modules.has("forge-vtt");
 
     Deid.Log.FILTER.report = false;
     Deid.Log.FILTER.error  = false;
