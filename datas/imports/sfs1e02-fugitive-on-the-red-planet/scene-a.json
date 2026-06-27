@@ -3,20 +3,6 @@
   "navigation": true,
   "navOrder": 0,
   "navName": "",
-  "background": {
-    "src": "helyx/sfs1e02-fugitive-on-the-red-planet/scenes/scene-a.webp",
-    "scaleX": 1,
-    "scaleY": 1,
-    "offsetX": -24,
-    "offsetY": 22,
-    "rotation": 0,
-    "anchorX": 0,
-    "anchorY": 0,
-    "fit": "fill",
-    "tint": "#ffffff",
-    "alphaThreshold": 0
-  },
-  "foregroundElevation": 20,
   "width": 2856,
   "height": 1940,
   "padding": 0.25,
@@ -25,7 +11,6 @@
     "y": null,
     "scale": null
   },
-  "backgroundColor": "#a64630",
   "grid": {
     "type": 1,
     "size": 100,
@@ -40,112 +25,8 @@
   "drawings": [],
   "tokens": [],
   "lights": [],
-  "notes": [
-    {
-      "entryId": "Oly2zinbNoaCHdCl",
-      "pageId": "4vuaRj6xKO60zzHD",
-      "text": "A1",
-      "x": 1574,
-      "y": 1330,
-      "global": false,
-      "iconSize": 40,
-      "texture": {
-        "tint": "#ffffff",
-        "src": "icons/svg/book.svg",
-        "scaleX": 1,
-        "scaleY": 1,
-        "offsetX": 0,
-        "offsetY": 0,
-        "rotation": 0,
-        "anchorX": 0.5,
-        "anchorY": 0.5,
-        "fit": "contain",
-        "alphaThreshold": 0
-      },
-      "fontFamily": "Arial",
-      "fontSize": 32,
-      "textColor": "#ffffff",
-      "textAnchor": 1,
-      "_id": "MWLEXpdZppC2sG3e",
-      "flags": {
-        "helyx": {
-          "idname": "sfs1e02_a01"
-        }
-      },
-      "elevation": 0,
-      "sort": 0
-    },
-    {
-      "entryId": "Oly2zinbNoaCHdCl",
-      "pageId": "ACkccov0yJUJsoOG",
-      "text": "A2",
-      "x": 1379,
-      "y": 1995,
-      "global": false,
-      "iconSize": 40,
-      "texture": {
-        "tint": "#ffffff",
-        "src": "icons/svg/book.svg",
-        "scaleX": 1,
-        "scaleY": 1,
-        "offsetX": 0,
-        "offsetY": 0,
-        "rotation": 0,
-        "anchorX": 0.5,
-        "anchorY": 0.5,
-        "fit": "contain",
-        "alphaThreshold": 0
-      },
-      "fontFamily": "Arial",
-      "fontSize": 32,
-      "textColor": "#ffffff",
-      "textAnchor": 1,
-      "_id": "hZlCSBmbBf6ulIUb",
-      "flags": {
-        "helyx": {
-          "idname": "sfs1e02_a02"
-        }
-      },
-      "elevation": 0,
-      "sort": 0
-    },
-    {
-      "entryId": "Oly2zinbNoaCHdCl",
-      "pageId": "YwtgZIOeJI8lhgqK",
-      "text": "A3",
-      "x": 2074,
-      "y": 1932,
-      "global": false,
-      "iconSize": 40,
-      "texture": {
-        "tint": "#ffffff",
-        "src": "icons/svg/book.svg",
-        "scaleX": 1,
-        "scaleY": 1,
-        "offsetX": 0,
-        "offsetY": 0,
-        "rotation": 0,
-        "anchorX": 0.5,
-        "anchorY": 0.5,
-        "fit": "contain",
-        "alphaThreshold": 0
-      },
-      "fontFamily": "Arial",
-      "fontSize": 32,
-      "textColor": "#ffffff",
-      "textAnchor": 1,
-      "_id": "lXNIsc3FhjMRtiZy",
-      "flags": {
-        "helyx": {
-          "idname": "sfs1e02_a03"
-        }
-      },
-      "elevation": 0,
-      "sort": 0
-    }
-  ],
+  "notes": [ ],
   "sounds": [],
-  "templates": [],
   "tiles": [],
   "walls": [
     {
@@ -170,7 +51,8 @@
         "attenuation": false
       },
       "flags": {},
-      "animation": null
+      "animation": null,
+      "levels": []
     },
     {
       "light": 20,
@@ -194,7 +76,8 @@
         "attenuation": false
       },
       "flags": {},
-      "animation": null
+      "animation": null,
+      "levels": []
     },
     {
       "light": 20,
@@ -218,7 +101,8 @@
         "attenuation": false
       },
       "flags": {},
-      "animation": null
+      "animation": null,
+      "levels": []
     },
     {
       "light": 20,
@@ -242,7 +126,8 @@
         "attenuation": false
       },
       "flags": {},
-      "animation": null
+      "animation": null,
+      "levels": []
     },
     {
       "light": 20,
@@ -266,7 +151,8 @@
         "attenuation": false
       },
       "flags": {},
-      "animation": null
+      "animation": null,
+      "levels": []
     },
     {
       "light": 20,
@@ -290,7 +176,8 @@
         "attenuation": false
       },
       "flags": {},
-      "animation": null
+      "animation": null,
+      "levels": []
     },
     {
       "light": 20,
@@ -314,7 +201,8 @@
         "attenuation": false
       },
       "flags": {},
-      "animation": null
+      "animation": null,
+      "levels": []
     },
     {
       "light": 20,
@@ -338,7 +226,8 @@
         "attenuation": false
       },
       "flags": {},
-      "animation": null
+      "animation": null,
+      "levels": []
     },
     {
       "light": 20,
@@ -362,7 +251,8 @@
         "attenuation": false
       },
       "flags": {},
-      "animation": null
+      "animation": null,
+      "levels": []
     },
     {
       "light": 20,
@@ -386,7 +276,8 @@
         "attenuation": false
       },
       "flags": {},
-      "animation": null
+      "animation": null,
+      "levels": []
     },
     {
       "light": 20,
@@ -410,7 +301,8 @@
         "attenuation": false
       },
       "flags": {},
-      "animation": null
+      "animation": null,
+      "levels": []
     },
     {
       "light": 20,
@@ -434,7 +326,8 @@
         "attenuation": false
       },
       "flags": {},
-      "animation": null
+      "animation": null,
+      "levels": []
     },
     {
       "light": 20,
@@ -458,7 +351,8 @@
         "attenuation": false
       },
       "flags": {},
-      "animation": null
+      "animation": null,
+      "levels": []
     },
     {
       "light": 20,
@@ -482,7 +376,8 @@
         "attenuation": false
       },
       "flags": {},
-      "animation": null
+      "animation": null,
+      "levels": []
     },
     {
       "light": 20,
@@ -506,7 +401,8 @@
         "attenuation": false
       },
       "flags": {},
-      "animation": null
+      "animation": null,
+      "levels": []
     },
     {
       "light": 20,
@@ -530,7 +426,8 @@
         "attenuation": false
       },
       "flags": {},
-      "animation": null
+      "animation": null,
+      "levels": []
     },
     {
       "light": 20,
@@ -554,7 +451,8 @@
         "attenuation": false
       },
       "flags": {},
-      "animation": null
+      "animation": null,
+      "levels": []
     },
     {
       "light": 20,
@@ -578,7 +476,8 @@
         "attenuation": false
       },
       "flags": {},
-      "animation": null
+      "animation": null,
+      "levels": []
     },
     {
       "light": 20,
@@ -602,7 +501,8 @@
         "attenuation": false
       },
       "flags": {},
-      "animation": null
+      "animation": null,
+      "levels": []
     },
     {
       "light": 20,
@@ -626,7 +526,8 @@
         "attenuation": false
       },
       "flags": {},
-      "animation": null
+      "animation": null,
+      "levels": []
     },
     {
       "light": 20,
@@ -650,7 +551,8 @@
         "attenuation": false
       },
       "flags": {},
-      "animation": null
+      "animation": null,
+      "levels": []
     },
     {
       "light": 20,
@@ -674,7 +576,8 @@
         "attenuation": false
       },
       "flags": {},
-      "animation": null
+      "animation": null,
+      "levels": []
     },
     {
       "light": 20,
@@ -698,7 +601,8 @@
         "attenuation": false
       },
       "flags": {},
-      "animation": null
+      "animation": null,
+      "levels": []
     },
     {
       "light": 20,
@@ -722,7 +626,8 @@
         "attenuation": false
       },
       "flags": {},
-      "animation": null
+      "animation": null,
+      "levels": []
     },
     {
       "light": 20,
@@ -746,7 +651,8 @@
         "attenuation": false
       },
       "flags": {},
-      "animation": null
+      "animation": null,
+      "levels": []
     },
     {
       "light": 0,
@@ -770,7 +676,8 @@
         "attenuation": false
       },
       "flags": {},
-      "animation": null
+      "animation": null,
+      "levels": []
     },
     {
       "light": 0,
@@ -794,49 +701,50 @@
         "attenuation": false
       },
       "flags": {},
-      "animation": null
+      "animation": null,
+      "levels": []
     }
   ],
   "playlist": null,
   "playlistSound": null,
   "journal": null,
   "journalEntryPage": null,
-  "folder": "haJ3CQ1XJjXy22qM",
+  "folder": "XIis7uYVhWPBkW7r",
   "flags": {
     "helyx-maker-3": {
       "config": {
         "idname": "sfs1e02_scene-a",
-        "version": "3.53",
+        "version": "7.87",
         "source": "sfs1e02-fugitive-on-the-red-planet"
       }
     }
   },
   "_stats": {
-    "coreVersion": "13.346",
+    "coreVersion": "14.360",
     "systemId": "sfrpg",
-    "systemVersion": "0.28.2",
-    "createdTime": 1752423593455,
-    "modifiedTime": 1752423593717,
-    "lastModifiedBy": "TaT6XGoGlorNE58O",
+    "systemVersion": "14.0.1",
+    "createdTime": 1782565171971,
+    "modifiedTime": 1782565386823,
+    "lastModifiedBy": "mdOMEP819emXBqHU",
     "exportSource": {
-      "worldId": "devsfrpg",
-      "uuid": "Scene.g5sJM8cJMcmW89FI",
-      "coreVersion": "13.346",
+      "worldId": "sf1-dev",
+      "uuid": "Scene.6IUULifuO0PnDdPe",
+      "coreVersion": "14.360",
       "systemId": "sfrpg",
-      "systemVersion": "0.28.2"
-    }
+      "systemVersion": "14.0.1"
+    },
+    "compendiumSource": null,
+    "duplicateSource": null
   },
-  "foreground": null,
-  "thumb": "worlds/devsfrpg/assets/scenes/g5sJM8cJMcmW89FI-thumb.webp",
+  "thumb": "worlds/sf1-dev/assets/scenes/thumb-aSzatsi6C59jHM-VrS4tOw.webp",
   "weather": "",
   "fog": {
-    "exploration": true,
     "reset": 1695454350682,
-    "overlay": null,
     "colors": {
       "explored": null,
       "unexplored": null
-    }
+    },
+    "mode": 1
   },
   "environment": {
     "globalLight": {
@@ -872,5 +780,56 @@
       "shadows": 0
     }
   },
-  "regions": []
+  "regions": [],
+  "shiftX": -24,
+  "shiftY": 22,
+  "initialLevel": "defaultLevel0000",
+  "transition": {
+    "type": null,
+    "duration": 1500,
+    "activeOnly": false
+  },
+  "levels": [
+    {
+      "_id": "defaultLevel0000",
+      "name": "Level",
+      "elevation": {
+        "bottom": 0,
+        "top": 20
+      },
+      "background": {
+        "color": "#999999",
+        "src": "helyx/sfs1e02-fugitive-on-the-red-planet/scenes/scene-a.webp",
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "foreground": {
+        "src": null,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "fog": {
+        "src": null,
+        "tint": "#ffffff"
+      },
+      "textures": {
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "offsetX": 0,
+        "offsetY": 0,
+        "fit": "fill",
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "visibility": {
+        "levels": []
+      },
+      "sort": 0,
+      "flags": {}
+    }
+  ],
+  "ownership": {
+    "default": 0
+  }
 }
