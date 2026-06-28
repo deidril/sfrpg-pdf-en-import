@@ -1,16 +1,8 @@
 {
-  "name": "Area A",
+  "name": "Scene A",
+  "tokens": [],
   "navigation": true,
   "navOrder": 200000,
-  "background": {
-    "src": "helyx/system-takedown/scenes/area-a.webp",
-    "scaleX": 1,
-    "scaleY": 1,
-    "offsetX": -75,
-    "offsetY": -78,
-    "rotation": 0
-  },
-  "foregroundElevation": 20,
   "width": 2875,
   "height": 1934,
   "padding": 0.25,
@@ -19,25 +11,20 @@
     "y": null,
     "scale": null
   },
-  "backgroundColor": "#3a3e20",
   "grid": {
     "type": 1,
     "size": 72,
     "color": "#000000",
     "alpha": 0.2,
     "distance": 5,
-    "units": "ft"
+    "units": "ft",
+    "style": "solidLines",
+    "thickness": 1
   },
   "tokenVision": true,
-  "fogExploration": true,
-  "fogReset": 1695462799076,
-  "globalLight": true,
-  "globalLightThreshold": 0.75,
-  "darkness": 0,
   "drawings": [
     {
       "_id": "p3Ms59tDiWcHEiIm",
-      "author": "AqpgDAP69GwGaxPs",
       "shape": {
         "type": "r",
         "width": 420,
@@ -47,28 +34,30 @@
       },
       "x": 1083,
       "y": 2376,
-      "z": 0,
       "rotation": 0,
       "bezierFactor": 0,
       "fillType": 0,
       "fillColor": "#6128cc",
       "fillAlpha": 0.5,
       "strokeWidth": 8,
-      "strokeColor": "#FFFFFF",
+      "strokeColor": "#ffffff",
       "strokeAlpha": 1,
       "fontFamily": "Arial",
       "fontSize": 48,
-      "textColor": "#FFFFFF",
+      "textColor": "#ffffff",
       "textAlpha": 1,
       "hidden": true,
       "locked": false,
       "flags": {},
       "texture": null,
-      "text": "PCS BEGIN HERE"
+      "text": "PCS BEGIN HERE",
+      "elevation": 0,
+      "levels": [],
+      "sort": 0,
+      "interface": false
     },
     {
       "_id": "pmgafu2kKiJAajp2",
-      "author": "AqpgDAP69GwGaxPs",
       "shape": {
         "type": "e",
         "width": 800,
@@ -78,28 +67,30 @@
       },
       "x": 1584,
       "y": 774,
-      "z": 0,
       "rotation": 0,
       "bezierFactor": 0,
       "fillType": 0,
       "fillColor": "#6128cc",
       "fillAlpha": 0.5,
       "strokeWidth": 8,
-      "strokeColor": "#FFFFFF",
+      "strokeColor": "#ffffff",
       "strokeAlpha": 1,
       "fontFamily": "Arial",
       "fontSize": 48,
-      "textColor": "#FFFFFF",
+      "textColor": "#ffffff",
       "textAlpha": 1,
       "hidden": true,
       "locked": false,
       "flags": {},
       "texture": null,
-      "text": ""
+      "text": "",
+      "elevation": 0,
+      "levels": [],
+      "sort": 0,
+      "interface": false
     },
     {
       "_id": "7EgHE0yVY9Hw5WVZ",
-      "author": "AqpgDAP69GwGaxPs",
       "shape": {
         "type": "e",
         "width": 1150,
@@ -109,218 +100,55 @@
       },
       "x": 2061,
       "y": 1377,
-      "z": 0,
       "rotation": 0,
       "bezierFactor": 0,
       "fillType": 0,
       "fillColor": "#6128cc",
       "fillAlpha": 0.5,
       "strokeWidth": 8,
-      "strokeColor": "#FFFFFF",
+      "strokeColor": "#ffffff",
       "strokeAlpha": 1,
       "fontFamily": "Arial",
       "fontSize": 48,
-      "textColor": "#FFFFFF",
+      "textColor": "#ffffff",
       "textAlpha": 1,
       "hidden": true,
       "locked": false,
       "flags": {},
       "texture": null,
-      "text": ""
+      "text": "",
+      "elevation": 0,
+      "levels": [],
+      "sort": 0,
+      "interface": false
     }
   ],
-  "tokens": [ ],
   "lights": [],
-  "notes": [
-
-  ],
+  "notes": [],
   "sounds": [],
-  "templates": [
-    {
-      "_id": "tAZQ8AVG5uahQMMW",
-      "user": "AqpgDAP69GwGaxPs",
-      "t": "circle",
-      "x": 1548,
-      "y": 1188,
-      "distance": 20,
-      "direction": 45,
-      "angle": 0,
-      "width": null,
-      "borderColor": "#000000",
-      "fillColor": "#6128cc",
-      "hidden": false,
-      "flags": {
-        "token-attacher": {
-          "parent": "tcxF3KdoRqetRUrk",
-          "offset": {
-            "x": 0,
-            "y": 0,
-            "rot": 45,
-            "centerX": 0,
-            "centerY": 0,
-            "offRot": 45,
-            "size": {
-              "distance": 20,
-              "widthBase": 1,
-              "heightBase": 1
-            },
-            "elevation": {
-              "flags": {}
-            }
-          }
-        }
-      },
-      "texture": null
-    },
-    {
-      "user": "AqpgDAP69GwGaxPs",
-      "t": "circle",
-      "x": 2700,
-      "y": 1188,
-      "distance": 20,
-      "direction": 45,
-      "angle": 0,
-      "width": null,
-      "borderColor": "#000000",
-      "fillColor": "#6128cc",
-      "hidden": false,
-      "flags": {
-        "token-attacher": {
-          "parent": "ctDZTeqhKwNu4a9W",
-          "offset": {
-            "x": 0,
-            "y": 0,
-            "rot": 45,
-            "centerX": 0,
-            "centerY": 0,
-            "offRot": 45,
-            "size": {
-              "distance": 20,
-              "widthBase": 1,
-              "heightBase": 1
-            },
-            "elevation": {
-              "flags": {}
-            }
-          }
-        }
-      },
-      "texture": null,
-      "_id": "uJ3SNuOJ5sjjfktI"
-    },
-    {
-      "user": "AqpgDAP69GwGaxPs",
-      "t": "circle",
-      "x": 3060,
-      "y": 1908,
-      "distance": 20,
-      "direction": 45,
-      "angle": 0,
-      "width": null,
-      "borderColor": "#000000",
-      "fillColor": "#6128cc",
-      "hidden": false,
-      "flags": {
-        "token-attacher": {
-          "parent": "3M2hcx3l8pjxOYEq",
-          "offset": {
-            "x": 0,
-            "y": 0,
-            "rot": 45,
-            "centerX": 0,
-            "centerY": 0,
-            "offRot": 45,
-            "size": {
-              "distance": 20,
-              "widthBase": 1,
-              "heightBase": 1
-            },
-            "elevation": {
-              "flags": {}
-            }
-          }
-        }
-      },
-      "texture": null,
-      "_id": "B2roXOIpMkTtDZcf"
-    },
-    {
-      "user": "AqpgDAP69GwGaxPs",
-      "t": "circle",
-      "x": 1908,
-      "y": 2052,
-      "distance": 20,
-      "direction": 45,
-      "angle": 0,
-      "width": null,
-      "borderColor": "#000000",
-      "fillColor": "#6128cc",
-      "hidden": false,
-      "flags": {
-        "token-attacher": {
-          "parent": "KSiRMjv2wg27poj4",
-          "offset": {
-            "x": 0,
-            "y": 0,
-            "rot": 45,
-            "centerX": 0,
-            "centerY": 0,
-            "offRot": 45,
-            "size": {
-              "distance": 20,
-              "widthBase": 1,
-              "heightBase": 1
-            },
-            "elevation": {
-              "flags": {}
-            }
-          }
-        }
-      },
-      "texture": null,
-      "_id": "5VW1YOs6OCIlc27o"
-    },
-    {
-      "_id": "vM6uyjXoiVv6soDo",
-      "user": "qSCxawwfN82d5Ohq",
-      "t": "circle",
-      "x": 2196,
-      "y": 1260,
-      "distance": 20,
-      "direction": 0,
-      "angle": 0,
-      "width": null,
-      "borderColor": "#000000",
-      "fillColor": "#cc9028",
-      "texture": null,
-      "hidden": false,
-      "flags": {}
-    }
-  ],
   "tiles": [
     {
       "texture": {
         "src": null,
         "scaleX": 1,
         "scaleY": 1,
-        "tint": null,
-        "offsetX": 0,
-        "offsetY": 0,
-        "rotation": 0
+        "tint": "#ffffff",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "fill",
+        "alphaThreshold": 0.75
       },
       "x": 1944,
       "y": 1080,
-      "z": 100,
       "width": 72,
       "height": 72,
       "rotation": 0,
       "alpha": 1,
-      "overhead": false,
-      "roof": false,
       "occlusion": {
-        "mode": 1,
         "alpha": 0,
-        "radius": null
+        "modes": [
+          1
+        ]
       },
       "video": {
         "loop": true,
@@ -330,31 +158,37 @@
       "_id": "V9KfPlj0mJXlDTF1",
       "hidden": true,
       "locked": false,
-      "flags": {}
+      "flags": {},
+      "elevation": 0,
+      "levels": [],
+      "sort": 0,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      }
     },
     {
       "texture": {
         "src": null,
         "scaleX": 1,
         "scaleY": 1,
-        "tint": null,
-        "offsetX": 0,
-        "offsetY": 0,
-        "rotation": 0
+        "tint": "#ffffff",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "fill",
+        "alphaThreshold": 0.75
       },
       "x": 1440,
       "y": 1296,
-      "z": 100,
       "width": 72,
       "height": 72,
       "rotation": 0,
       "alpha": 1,
-      "overhead": false,
-      "roof": false,
       "occlusion": {
-        "mode": 1,
         "alpha": 0,
-        "radius": null
+        "modes": [
+          1
+        ]
       },
       "video": {
         "loop": true,
@@ -364,31 +198,37 @@
       "hidden": true,
       "locked": false,
       "flags": {},
-      "_id": "R2OJUHBabNw328c1"
+      "_id": "R2OJUHBabNw328c1",
+      "elevation": 0,
+      "levels": [],
+      "sort": 0,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      }
     },
     {
       "texture": {
         "src": null,
         "scaleX": 1,
         "scaleY": 1,
-        "tint": null,
-        "offsetX": 0,
-        "offsetY": 0,
-        "rotation": 0
+        "tint": "#ffffff",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "fill",
+        "alphaThreshold": 0.75
       },
       "x": 2592,
       "y": 936,
-      "z": 100,
       "width": 72,
       "height": 72,
       "rotation": 0,
       "alpha": 1,
-      "overhead": false,
-      "roof": false,
       "occlusion": {
-        "mode": 1,
         "alpha": 0,
-        "radius": null
+        "modes": [
+          1
+        ]
       },
       "video": {
         "loop": true,
@@ -398,31 +238,37 @@
       "hidden": true,
       "locked": false,
       "flags": {},
-      "_id": "B98Y4EywgKLFngm6"
+      "_id": "B98Y4EywgKLFngm6",
+      "elevation": 0,
+      "levels": [],
+      "sort": 0,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      }
     },
     {
       "texture": {
         "src": null,
         "scaleX": 1,
         "scaleY": 1,
-        "tint": null,
-        "offsetX": 0,
-        "offsetY": 0,
-        "rotation": 0
+        "tint": "#ffffff",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "fill",
+        "alphaThreshold": 0.75
       },
       "x": 2808,
       "y": 1152,
-      "z": 100,
       "width": 72,
       "height": 72,
       "rotation": 0,
       "alpha": 1,
-      "overhead": false,
-      "roof": false,
       "occlusion": {
-        "mode": 1,
         "alpha": 0,
-        "radius": null
+        "modes": [
+          1
+        ]
       },
       "video": {
         "loop": true,
@@ -432,31 +278,37 @@
       "hidden": true,
       "locked": false,
       "flags": {},
-      "_id": "5Fq5WXMaKoYxtKWB"
+      "_id": "5Fq5WXMaKoYxtKWB",
+      "elevation": 0,
+      "levels": [],
+      "sort": 0,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      }
     },
     {
       "texture": {
         "src": null,
         "scaleX": 1,
         "scaleY": 1,
-        "tint": null,
-        "offsetX": 0,
-        "offsetY": 0,
-        "rotation": 0
+        "tint": "#ffffff",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "fill",
+        "alphaThreshold": 0.75
       },
       "x": 3096,
       "y": 1656,
-      "z": 100,
       "width": 72,
       "height": 72,
       "rotation": 0,
       "alpha": 1,
-      "overhead": false,
-      "roof": false,
       "occlusion": {
-        "mode": 1,
         "alpha": 0,
-        "radius": null
+        "modes": [
+          1
+        ]
       },
       "video": {
         "loop": true,
@@ -466,31 +318,37 @@
       "hidden": true,
       "locked": false,
       "flags": {},
-      "_id": "uGvbwMNpXaCnbs9r"
+      "_id": "uGvbwMNpXaCnbs9r",
+      "elevation": 0,
+      "levels": [],
+      "sort": 0,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      }
     },
     {
       "texture": {
         "src": null,
         "scaleX": 1,
         "scaleY": 1,
-        "tint": null,
-        "offsetX": 0,
-        "offsetY": 0,
-        "rotation": 0
+        "tint": "#ffffff",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "fill",
+        "alphaThreshold": 0.75
       },
       "x": 2952,
       "y": 2088,
-      "z": 100,
       "width": 72,
       "height": 72,
       "rotation": 0,
       "alpha": 1,
-      "overhead": false,
-      "roof": false,
       "occlusion": {
-        "mode": 1,
         "alpha": 0,
-        "radius": null
+        "modes": [
+          1
+        ]
       },
       "video": {
         "loop": true,
@@ -500,31 +358,37 @@
       "hidden": true,
       "locked": false,
       "flags": {},
-      "_id": "J1HhXJbxqVRtOH3E"
+      "_id": "J1HhXJbxqVRtOH3E",
+      "elevation": 0,
+      "levels": [],
+      "sort": 0,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      }
     },
     {
       "texture": {
         "src": null,
         "scaleX": 1,
         "scaleY": 1,
-        "tint": null,
-        "offsetX": 0,
-        "offsetY": 0,
-        "rotation": 0
+        "tint": "#ffffff",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "fill",
+        "alphaThreshold": 0.75
       },
       "x": 1584,
       "y": 936,
-      "z": 100,
       "width": 72,
       "height": 72,
       "rotation": 0,
       "alpha": 1,
-      "overhead": false,
-      "roof": false,
       "occlusion": {
-        "mode": 1,
         "alpha": 0,
-        "radius": null
+        "modes": [
+          1
+        ]
       },
       "video": {
         "loop": true,
@@ -534,31 +398,37 @@
       "hidden": true,
       "locked": false,
       "flags": {},
-      "_id": "J12f51adNjnJysEy"
+      "_id": "J12f51adNjnJysEy",
+      "elevation": 0,
+      "levels": [],
+      "sort": 0,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      }
     },
     {
       "texture": {
         "src": null,
         "scaleX": 1,
         "scaleY": 1,
-        "tint": null,
-        "offsetX": 0,
-        "offsetY": 0,
-        "rotation": 0
+        "tint": "#ffffff",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "fill",
+        "alphaThreshold": 0.75
       },
       "x": 3312,
       "y": 1944,
-      "z": 100,
       "width": 72,
       "height": 72,
       "rotation": 0,
       "alpha": 1,
-      "overhead": false,
-      "roof": false,
       "occlusion": {
-        "mode": 1,
         "alpha": 0,
-        "radius": null
+        "modes": [
+          1
+        ]
       },
       "video": {
         "loop": true,
@@ -568,31 +438,37 @@
       "hidden": true,
       "locked": false,
       "flags": {},
-      "_id": "YaY91adpe92QHPn7"
+      "_id": "YaY91adpe92QHPn7",
+      "elevation": 0,
+      "levels": [],
+      "sort": 0,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      }
     },
     {
       "texture": {
         "src": null,
         "scaleX": 1,
         "scaleY": 1,
-        "tint": null,
-        "offsetX": 0,
-        "offsetY": 0,
-        "rotation": 0
+        "tint": "#ffffff",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "fill",
+        "alphaThreshold": 0.75
       },
       "x": 2304,
       "y": 2088,
-      "z": 100,
       "width": 72,
       "height": 72,
       "rotation": 0,
       "alpha": 1,
-      "overhead": false,
-      "roof": false,
       "occlusion": {
-        "mode": 1,
         "alpha": 0,
-        "radius": null
+        "modes": [
+          1
+        ]
       },
       "video": {
         "loop": true,
@@ -602,31 +478,37 @@
       "hidden": true,
       "locked": false,
       "flags": {},
-      "_id": "vHVrD7QLWBFOLExu"
+      "_id": "vHVrD7QLWBFOLExu",
+      "elevation": 0,
+      "levels": [],
+      "sort": 0,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      }
     },
     {
       "texture": {
         "src": null,
         "scaleX": 1,
         "scaleY": 1,
-        "tint": null,
-        "offsetX": 0,
-        "offsetY": 0,
-        "rotation": 0
+        "tint": "#ffffff",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "fill",
+        "alphaThreshold": 0.75
       },
       "x": 2016,
       "y": 2304,
-      "z": 100,
       "width": 72,
       "height": 72,
       "rotation": 0,
       "alpha": 1,
-      "overhead": false,
-      "roof": false,
       "occlusion": {
-        "mode": 1,
         "alpha": 0,
-        "radius": null
+        "modes": [
+          1
+        ]
       },
       "video": {
         "loop": true,
@@ -636,31 +518,37 @@
       "hidden": true,
       "locked": false,
       "flags": {},
-      "_id": "alq0zVB2AAcaqSJM"
+      "_id": "alq0zVB2AAcaqSJM",
+      "elevation": 0,
+      "levels": [],
+      "sort": 0,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      }
     },
     {
       "texture": {
         "src": null,
         "scaleX": 1,
         "scaleY": 1,
-        "tint": null,
-        "offsetX": 0,
-        "offsetY": 0,
-        "rotation": 0
+        "tint": "#ffffff",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "fill",
+        "alphaThreshold": 0.75
       },
       "x": 1728,
       "y": 2160,
-      "z": 100,
       "width": 72,
       "height": 72,
       "rotation": 0,
       "alpha": 1,
-      "overhead": false,
-      "roof": false,
       "occlusion": {
-        "mode": 1,
         "alpha": 0,
-        "radius": null
+        "modes": [
+          1
+        ]
       },
       "video": {
         "loop": true,
@@ -670,31 +558,37 @@
       "hidden": true,
       "locked": false,
       "flags": {},
-      "_id": "s4QipKGBL6ycwwgG"
+      "_id": "s4QipKGBL6ycwwgG",
+      "elevation": 0,
+      "levels": [],
+      "sort": 0,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      }
     },
     {
       "texture": {
         "src": null,
         "scaleX": 1,
         "scaleY": 1,
-        "tint": null,
-        "offsetX": 0,
-        "offsetY": 0,
-        "rotation": 0
+        "tint": "#ffffff",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "fill",
+        "alphaThreshold": 0.75
       },
       "x": 1872,
       "y": 1728,
-      "z": 100,
       "width": 72,
       "height": 72,
       "rotation": 0,
       "alpha": 1,
-      "overhead": false,
-      "roof": false,
       "occlusion": {
-        "mode": 1,
         "alpha": 0,
-        "radius": null
+        "modes": [
+          1
+        ]
       },
       "video": {
         "loop": true,
@@ -704,31 +598,37 @@
       "hidden": true,
       "locked": false,
       "flags": {},
-      "_id": "JASJMydJZg5pupMj"
+      "_id": "JASJMydJZg5pupMj",
+      "elevation": 0,
+      "levels": [],
+      "sort": 0,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      }
     },
     {
       "texture": {
         "src": null,
         "scaleX": 1,
         "scaleY": 1,
-        "tint": null,
-        "offsetX": 0,
-        "offsetY": 0,
-        "rotation": 0
+        "tint": "#ffffff",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "fill",
+        "alphaThreshold": 0.75
       },
       "x": 2304,
       "y": 1512,
-      "z": 100,
       "width": 72,
       "height": 72,
       "rotation": 0,
       "alpha": 1,
-      "overhead": false,
-      "roof": false,
       "occlusion": {
-        "mode": 1,
         "alpha": 0,
-        "radius": null
+        "modes": [
+          1
+        ]
       },
       "video": {
         "loop": true,
@@ -738,7 +638,14 @@
       "hidden": true,
       "locked": false,
       "flags": {},
-      "_id": "cV73WDIgsCMILzwE"
+      "_id": "cV73WDIgsCMILzwE",
+      "elevation": 0,
+      "levels": [],
+      "sort": 0,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      }
     }
   ],
   "walls": [
@@ -763,7 +670,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -786,7 +695,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -809,7 +720,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -832,35 +745,137 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     }
   ],
   "playlist": null,
   "playlistSound": null,
   "journal": null,
   "journalEntryPage": null,
-  "folder": null,
+  "folder": "vxYZ3NgNjeaBvwSm",
   "flags": {
     "token-attacher": {},
-    "exportSource": {
-      "world": "devsf207",
-      "system": "sfrpg",
-      "coreVersion": "11.311",
-      "systemVersion": "0.25.2"
+    "helyx-maker-3": {
+      "config": {
+        "idname": "sytd-area-a",
+        "version": "7.87",
+        "source": "system-takedown"
+      }
     }
   },
   "_stats": {
     "systemId": "sfrpg",
-    "systemVersion": "0.25.2",
-    "coreVersion": "11.311",
-    "createdTime": 1695462799080,
-    "modifiedTime": 1696694561423,
-    "lastModifiedBy": "hkqsLxSQl1UwUJ81"
+    "systemVersion": "14.0.1",
+    "coreVersion": "14.360",
+    "createdTime": 1782648845651,
+    "modifiedTime": 1782648969481,
+    "lastModifiedBy": "mdOMEP819emXBqHU",
+    "exportSource": {
+      "worldId": "sf1-dev",
+      "uuid": "Scene.YrxTpINMcLiu7UYy",
+      "coreVersion": "14.360",
+      "systemId": "sfrpg",
+      "systemVersion": "14.0.1"
+    },
+    "compendiumSource": null,
+    "duplicateSource": null
   },
-  "foreground": null,
-  "thumb": "worlds/devsf207/assets/scenes/yVuRQ8fgPK46UOKQ-thumb.webp",
-  "fogOverlay": null,
-  "fogExploredColor": null,
-  "fogUnexploredColor": null,
-  "weather": ""
+  "thumb": "worlds/sf1-dev/assets/scenes/thumb-XK5XwCvnEatGnalmCrOyCw.webp",
+  "weather": "",
+  "shiftX": -75,
+  "shiftY": -78,
+  "initialLevel": "defaultLevel0000",
+  "fog": {
+    "mode": 1,
+    "colors": {
+      "explored": null,
+      "unexplored": null
+    }
+  },
+  "environment": {
+    "darknessLevel": 0,
+    "darknessLock": false,
+    "globalLight": {
+      "enabled": true,
+      "alpha": 0.5,
+      "bright": false,
+      "color": null,
+      "coloration": 1,
+      "luminosity": 0,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "darkness": {
+        "min": 0,
+        "max": 0.75
+      }
+    },
+    "cycle": true,
+    "base": {
+      "hue": 0,
+      "intensity": 0,
+      "luminosity": 0,
+      "saturation": 0,
+      "shadows": 0
+    },
+    "dark": {
+      "hue": 0.7138888888888889,
+      "intensity": 0,
+      "luminosity": -0.25,
+      "saturation": 0,
+      "shadows": 0
+    }
+  },
+  "transition": {
+    "type": null,
+    "duration": 1500,
+    "activeOnly": false
+  },
+  "levels": [
+    {
+      "_id": "defaultLevel0000",
+      "name": "Level",
+      "elevation": {
+        "bottom": 0,
+        "top": 20
+      },
+      "background": {
+        "color": "#999999",
+        "src": "helyx/system-takedown/scenes/area-a.webp",
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "foreground": {
+        "src": null,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "fog": {
+        "src": null,
+        "tint": "#ffffff"
+      },
+      "textures": {
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "offsetX": 0,
+        "offsetY": 0,
+        "fit": "fill",
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "visibility": {
+        "levels": []
+      },
+      "sort": 0,
+      "flags": {}
+    }
+  ],
+  "regions": [],
+  "navName": "",
+  "ownership": {
+    "default": 0
+  }
 }
