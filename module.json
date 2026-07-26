@@ -14,11 +14,11 @@
         "flags": {}
       }
     ],
-    "version": "6.28",
+    "version": "7.29",
   "compatibility": {
-    "minimum": "13.345",
-    "verified": "13.351",
-    "maximum": "13.999"
+    "minimum": "14.365",
+    "verified": "14.365",
+    "maximum": "14.999"
   },
     "styles":     
     [
@@ -30,13 +30,15 @@
     "relationships": {
         "systems": 
         [
-          { "id": "sfrpg", "type": "system", "compatibility": { "minimum": "0.30", "verified": "0.30.1" } }
+          { "id": "sfrpg", "type": "system", "compatibility": { "minimum": "14.0.2", "verified": "14.0.2" } }
         ]
     },
-    "esmodules": [
-      "src/helyx.bundle.js"
-    ],
-
+    "esmodules": [ "src/helyx.bundle.js" ],
+    "flags": {
+        "compendiumArtMappings": {
+            "sfrpg": {"mapping": "helyx/art_maps/sfrpg/alien_archives.json"}
+        }
+    },
     "packs": 
     [
       { 
@@ -64,6 +66,6 @@
     ],
 
     "url": "https://github.com/deidril/sfrpg-pdf-en-import",
-    "manifest": "https://github.com/deidril/sfrpg-pdf-en-import/releases/download/6.28/module.json",
-    "download": "https://github.com/deidril/sfrpg-pdf-en-import/releases/download/6.28/sfrpg-pdf-en-import-6.28.zip"
+    "manifest": "https://github.com/deidril/sfrpg-pdf-en-import/releases/download/7.29/module.json",
+    "download": "https://github.com/deidril/sfrpg-pdf-en-import/releases/download/7.29/sfrpg-pdf-en-import-7.29.zip"
   }
