@@ -1,17 +1,8 @@
 {
-  "name": "scene a",
+  "name": "Scene",
   "navigation": true,
   "navOrder": 0,
   "navName": "",
-  "background": {
-    "src": "helyx/sfs1e03-yesteryear-s-truth/scenes/scene-a.webp",
-    "scaleX": 1,
-    "scaleY": 1,
-    "offsetX": 18,
-    "offsetY": 18,
-    "rotation": 0
-  },
-  "foregroundElevation": 20,
   "width": 2228,
   "height": 3338,
   "padding": 0.25,
@@ -20,54 +11,148 @@
     "y": null,
     "scale": null
   },
-  "backgroundColor": "#000000",
   "grid": {
     "type": 4,
     "size": 100,
     "color": "#ffffff",
     "alpha": 1,
     "distance": 5,
-    "units": "ft"
+    "units": "ft",
+    "style": "solidLines",
+    "thickness": 1
   },
   "tokenVision": true,
-  "fogExploration": true,
-  "fogReset": 1710245888621,
-  "globalLight": true,
-  "globalLightThreshold": 0.75,
-  "darkness": 0,
   "drawings": [],
   "tokens": [],
   "lights": [],
   "notes": [],
   "sounds": [],
-  "templates": [],
   "tiles": [],
   "walls": [],
   "playlist": null,
   "playlistSound": null,
   "journal": null,
   "journalEntryPage": null,
-  "folder": null,
+  "folder": "JOiBfcBQLedA7GvG",
   "flags": {
-    "exportSource": {
-      "world": "sfs1e3",
-      "system": "sfrpg",
-      "coreVersion": "11.315",
-      "systemVersion": "0.25.2"
+    "helyx-maker-3": {
+      "config": {
+        "idname": "sfs1e03_scene-a",
+        "version": "7.87",
+        "source": "sfs1e03-yesteryear-s-truth"
+      }
     }
   },
   "_stats": {
     "systemId": "sfrpg",
-    "systemVersion": "0.25.2",
-    "coreVersion": "11.315",
-    "createdTime": 1710245888625,
-    "modifiedTime": 1710246337310,
-    "lastModifiedBy": "cxeQuijjgPzYWXWb"
+    "systemVersion": "14.0.1",
+    "coreVersion": "14.360",
+    "createdTime": 1782632843098,
+    "modifiedTime": 1782632937960,
+    "lastModifiedBy": "mdOMEP819emXBqHU",
+    "exportSource": {
+      "worldId": "sf1-dev",
+      "uuid": "Scene.MzKKyR4zrdZ9j3EO",
+      "coreVersion": "14.360",
+      "systemId": "sfrpg",
+      "systemVersion": "14.0.1"
+    },
+    "compendiumSource": null,
+    "duplicateSource": null
   },
-  "foreground": null,
-  "thumb": "worlds/sfs1e3/assets/scenes/xLTgCBHhQabTt4BB-thumb.webp",
-  "fogOverlay": null,
-  "fogExploredColor": null,
-  "fogUnexploredColor": null,
-  "weather": ""
+  "thumb": "worlds/sf1-dev/assets/scenes/thumb-zN72hr-4eBNNGsJaXg4W1g.webp",
+  "weather": "",
+  "shiftX": 18,
+  "shiftY": 18,
+  "initialLevel": "defaultLevel0000",
+  "fog": {
+    "mode": 1,
+    "colors": {
+      "explored": null,
+      "unexplored": null
+    }
+  },
+  "environment": {
+    "darknessLevel": 0,
+    "darknessLock": false,
+    "globalLight": {
+      "enabled": true,
+      "alpha": 0.5,
+      "bright": false,
+      "color": null,
+      "coloration": 1,
+      "luminosity": 0,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "darkness": {
+        "min": 0,
+        "max": 0.75
+      }
+    },
+    "cycle": true,
+    "base": {
+      "hue": 0,
+      "intensity": 0,
+      "luminosity": 0,
+      "saturation": 0,
+      "shadows": 0
+    },
+    "dark": {
+      "hue": 0.7138888888888889,
+      "intensity": 0,
+      "luminosity": -0.25,
+      "saturation": 0,
+      "shadows": 0
+    }
+  },
+  "transition": {
+    "type": null,
+    "duration": 1500,
+    "activeOnly": false
+  },
+  "levels": [
+    {
+      "_id": "defaultLevel0000",
+      "name": "Level",
+      "elevation": {
+        "bottom": 0,
+        "top": 20
+      },
+      "background": {
+        "color": "#999999",
+        "src": "helyx/sfs1e03-yesteryear-s-truth/scenes/scene-a.webp",
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "foreground": {
+        "src": null,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "fog": {
+        "src": null,
+        "tint": "#ffffff"
+      },
+      "textures": {
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "offsetX": 0,
+        "offsetY": 0,
+        "fit": "fill",
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "visibility": {
+        "levels": []
+      },
+      "sort": 0,
+      "flags": {}
+    }
+  ],
+  "regions": [],
+  "ownership": {
+    "default": 0
+  }
 }

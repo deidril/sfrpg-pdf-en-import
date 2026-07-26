@@ -1,17 +1,10 @@
 {
-  "name": "Scene A",
+  "name": "Scene",
+  "tokens": [ ],
+  "notes": [ ],
   "navigation": true,
   "navOrder": 0,
   "navName": "",
-  "background": {
-    "src": "helyx/skitter-shot/scenes/scene.webp",
-    "scaleX": 1,
-    "scaleY": 1,
-    "offsetX": -32,
-    "offsetY": -10,
-    "rotation": 0
-  },
-  "foregroundElevation": 20,
   "width": 3330,
   "height": 4315,
   "padding": 0.25,
@@ -20,328 +13,20 @@
     "y": null,
     "scale": null
   },
-  "backgroundColor": "#072636",
   "grid": {
     "type": 1,
     "size": 100,
     "color": "#000000",
     "alpha": 1,
     "distance": 5,
-    "units": "ft"
+    "units": "ft",
+    "style": "solidLines",
+    "thickness": 1
   },
   "tokenVision": true,
-  "fogExploration": true,
-  "fogReset": 1700152205969,
-  "globalLight": true,
-  "globalLightThreshold": 0.75,
-  "darkness": 0,
   "drawings": [],
-  "tokens": [ ],
   "lights": [],
-  "notes": [
-    {
-
-      "entryId": "o98rSBCenQ4oYjEP",
-      "pageId": "2aHZ8xfnS5TtVzn8",
-      "text": "1",
-      "x": 1350,
-      "y": 1850,
-      "global": false,
-      "iconSize": 40,
-      "texture": {
-        "tint": null,
-        "src": "icons/svg/book.svg",
-        "scaleX": 1,
-        "scaleY": 1,
-        "offsetX": 0,
-        "offsetY": 0,
-        "rotation": 0
-      },
-      "fontFamily": "Arial",
-      "fontSize": 32,
-      "textColor": "#FFFFFF",
-      "textAnchor": 1,
-      "_id": "2a1Kh49lxlTonFjm",
-      "flags": {      "helyx" : { "idname": "sksh_a01" }}
-    },
-    {
-
-      "entryId": "o98rSBCenQ4oYjEP",
-      "pageId": "5FDTLEFPCTneJVz4",
-      "text": "2",
-      "x": 1850,
-      "y": 2550,
-      "global": false,
-      "iconSize": 40,
-      "texture": {
-        "tint": null,
-        "src": "icons/svg/book.svg",
-        "scaleX": 1,
-        "scaleY": 1,
-        "offsetX": 0,
-        "offsetY": 0,
-        "rotation": 0
-      },
-      "fontFamily": "Arial",
-      "fontSize": 32,
-      "textColor": "#FFFFFF",
-      "textAnchor": 1,
-      "_id": "uuBFZYsRk1obWAoQ",
-      "flags": {      "helyx" : { "idname": "sksh_a02" }}
-    },
-    {
-
-      "entryId": "o98rSBCenQ4oYjEP",
-      "pageId": "5PTyZZGZ5R4zjHd3",
-      "text": "3",
-      "x": 1850,
-      "y": 1750,
-      "global": false,
-      "iconSize": 40,
-      "texture": {
-        "tint": null,
-        "src": "icons/svg/book.svg",
-        "scaleX": 1,
-        "scaleY": 1,
-        "offsetX": 0,
-        "offsetY": 0,
-        "rotation": 0
-      },
-      "fontFamily": "Arial",
-      "fontSize": 32,
-      "textColor": "#FFFFFF",
-      "textAnchor": 1,
-      "_id": "lBVFFx1jjz6HZPoj",
-      "flags": {      "helyx" : { "idname": "sksh_a03" }}
-    },
-    {
-
-      "entryId": "o98rSBCenQ4oYjEP",
-      "pageId": "17GL3iOg1ptWzySs",
-      "text": "4",
-      "x": 2600,
-      "y": 2050,
-      "global": false,
-      "iconSize": 40,
-      "texture": {
-        "tint": null,
-        "src": "icons/svg/book.svg",
-        "scaleX": 1,
-        "scaleY": 1,
-        "offsetX": 0,
-        "offsetY": 0,
-        "rotation": 0
-      },
-      "fontFamily": "Arial",
-      "fontSize": 32,
-      "textColor": "#FFFFFF",
-      "textAnchor": 1,
-      "_id": "UO9TLz4DAav8sjiJ",
-      "flags": {      "helyx" : { "idname": "sksh_a04" }}
-    },
-    {
-
-      "entryId": "o98rSBCenQ4oYjEP",
-      "pageId": "0FmsE7QBjY679i5n",
-      "text": "5",
-      "x": 3300,
-      "y": 2450,
-      "global": false,
-      "iconSize": 40,
-      "texture": {
-        "tint": null,
-        "src": "icons/svg/book.svg",
-        "scaleX": 1,
-        "scaleY": 1,
-        "offsetX": 0,
-        "offsetY": 0,
-        "rotation": 0
-      },
-      "fontFamily": "Arial",
-      "fontSize": 32,
-      "textColor": "#FFFFFF",
-      "textAnchor": 1,
-      "_id": "wta5Ojj8UULe2gM5",
-      "flags": {      "helyx" : { "idname": "sksh_a05" }}
-    },
-    {
-
-      "entryId": "o98rSBCenQ4oYjEP",
-      "pageId": "CBIYGOtX6gAGHOqU",
-      "text": "6",
-      "x": 3450,
-      "y": 1950,
-      "global": false,
-      "iconSize": 40,
-      "texture": {
-        "tint": null,
-        "src": "icons/svg/book.svg",
-        "scaleX": 1,
-        "scaleY": 1,
-        "offsetX": 0,
-        "offsetY": 0,
-        "rotation": 0
-      },
-      "fontFamily": "Arial",
-      "fontSize": 32,
-      "textColor": "#FFFFFF",
-      "textAnchor": 1,
-      "_id": "MvdpjlpmoXJmWyAy",
-      "flags": {      "helyx" : { "idname": "sksh_a06" }}
-    },
-    {
-
-      "entryId": "o98rSBCenQ4oYjEP",
-      "pageId": "bznTVO53Q0MmroCh",
-      "text": "7",
-      "x": 3850,
-      "y": 2250,
-      "global": false,
-      "iconSize": 40,
-      "texture": {
-        "tint": null,
-        "src": "icons/svg/book.svg",
-        "scaleX": 1,
-        "scaleY": 1,
-        "offsetX": 0,
-        "offsetY": 0,
-        "rotation": 0
-      },
-      "fontFamily": "Arial",
-      "fontSize": 32,
-      "textColor": "#FFFFFF",
-      "textAnchor": 1,
-      "_id": "5kv4qEB0ZGKmN5xv",
-      "flags": {      "helyx" : { "idname": "sksh_a07" }}
-    },
-    {
-
-      "entryId": "o98rSBCenQ4oYjEP",
-      "pageId": "CBIYGOtX6gAGHOqU",
-      "text": "6",
-      "x": 3150,
-      "y": 4150,
-      "global": false,
-      "iconSize": 40,
-      "texture": {
-        "tint": null,
-        "src": "icons/svg/book.svg",
-        "scaleX": 1,
-        "scaleY": 1,
-        "offsetX": 0,
-        "offsetY": 0,
-        "rotation": 0
-      },
-      "fontFamily": "Arial",
-      "fontSize": 32,
-      "textColor": "#FFFFFF",
-      "textAnchor": 1,
-      "_id": "d6kYGTIz6ZDkMt4a",
-      "flags": {      "helyx" : { "idname": "sksh_a06" }}
-    },
-    {
-
-      "entryId": "o98rSBCenQ4oYjEP",
-      "pageId": "pCe0F1ptsx2rMTTx",
-      "text": "8",
-      "x": 3750,
-      "y": 4350,
-      "global": false,
-      "iconSize": 40,
-      "texture": {
-        "tint": null,
-        "src": "icons/svg/book.svg",
-        "scaleX": 1,
-        "scaleY": 1,
-        "offsetX": 0,
-        "offsetY": 0,
-        "rotation": 0
-      },
-      "fontFamily": "Arial",
-      "fontSize": 32,
-      "textColor": "#FFFFFF",
-      "textAnchor": 1,
-      "_id": "0vHFjcTYoukNpdjq",
-      "flags": {      "helyx" : { "idname": "sksh_a08" }}
-    },
-    {
-
-      "entryId": "o98rSBCenQ4oYjEP",
-      "pageId": "gBcwLjM2a03dOmcx",
-      "text": "9",
-      "x": 3250,
-      "y": 4650,
-      "global": false,
-      "iconSize": 40,
-      "texture": {
-        "tint": null,
-        "src": "icons/svg/book.svg",
-        "scaleX": 1,
-        "scaleY": 1,
-        "offsetX": 0,
-        "offsetY": 0,
-        "rotation": 0
-      },
-      "fontFamily": "Arial",
-      "fontSize": 32,
-      "textColor": "#FFFFFF",
-      "textAnchor": 1,
-      "_id": "Ik0Hjctfe4Inmnvd",
-      "flags": {      "helyx" : { "idname": "sksh_a09" }}
-    },
-    {
-
-      "entryId": "o98rSBCenQ4oYjEP",
-      "pageId": "MQ1hAb79ur84bwCV",
-      "text": "10",
-      "x": 2450,
-      "y": 4400,
-      "global": false,
-      "iconSize": 40,
-      "texture": {
-        "tint": null,
-        "src": "icons/svg/book.svg",
-        "scaleX": 1,
-        "scaleY": 1,
-        "offsetX": 0,
-        "offsetY": 0,
-        "rotation": 0
-      },
-      "fontFamily": "Arial",
-      "fontSize": 32,
-      "textColor": "#FFFFFF",
-      "textAnchor": 1,
-      "_id": "iVo8dCcsgcap8qsJ",
-      "flags": {      "helyx" : { "idname": "sksh_a10" }}
-    },
-    {
-
-      "entryId": "o98rSBCenQ4oYjEP",
-      "pageId": "eLs05hW7wvwkXQjE",
-      "text": "11",
-      "x": 1450,
-      "y": 4450,
-      "global": false,
-      "iconSize": 40,
-      "texture": {
-        "tint": null,
-        "src": "icons/svg/book.svg",
-        "scaleX": 1,
-        "scaleY": 1,
-        "offsetX": 0,
-        "offsetY": 0,
-        "rotation": 0
-      },
-      "fontFamily": "Arial",
-      "fontSize": 32,
-      "textColor": "#FFFFFF",
-      "textAnchor": 1,
-      "_id": "0DvHlPU3uKUDvYjz",
-      "flags": {      "helyx" : { "idname": "sksh_a11" }}
-    }
-  ],
   "sounds": [],
-  "templates": [],
   "tiles": [],
   "walls": [
     {
@@ -365,7 +50,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -388,7 +75,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -411,7 +100,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -434,7 +125,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -457,7 +150,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -480,7 +175,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -503,7 +200,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -526,7 +225,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -549,7 +250,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -572,7 +275,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -595,7 +300,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -618,7 +325,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -641,7 +350,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -664,7 +375,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -687,7 +400,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -710,7 +425,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -733,7 +450,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -756,7 +475,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -779,7 +500,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -802,7 +525,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -825,7 +550,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -848,7 +575,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -871,7 +600,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -894,7 +625,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -917,7 +650,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -940,7 +675,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -963,7 +700,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -986,7 +725,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -1009,7 +750,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -1032,7 +775,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -1055,7 +800,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -1078,7 +825,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -1101,7 +850,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -1124,7 +875,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -1147,7 +900,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -1170,7 +925,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -1193,7 +950,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -1216,7 +975,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -1239,7 +1000,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -1262,7 +1025,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -1285,7 +1050,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -1308,7 +1075,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -1331,7 +1100,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -1354,7 +1125,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -1377,7 +1150,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -1400,7 +1175,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -1423,7 +1200,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -1446,7 +1225,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -1469,7 +1250,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -1492,7 +1275,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -1515,7 +1300,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -1538,7 +1325,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -1561,7 +1350,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -1584,7 +1375,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -1607,7 +1400,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -1630,7 +1425,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -1653,7 +1450,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -1676,7 +1475,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -1699,7 +1500,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -1722,7 +1525,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -1745,7 +1550,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -1768,7 +1575,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -1791,7 +1600,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -1814,7 +1625,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -1837,7 +1650,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -1860,7 +1675,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -1883,7 +1700,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -1906,7 +1725,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -1929,7 +1750,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -1952,7 +1775,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -1975,7 +1800,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -1998,7 +1825,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 0,
@@ -2021,7 +1850,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 0,
@@ -2044,7 +1875,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 0,
@@ -2067,7 +1900,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 0,
@@ -2090,7 +1925,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 0,
@@ -2113,7 +1950,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 0,
@@ -2136,7 +1975,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 0,
@@ -2159,7 +2000,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 0,
@@ -2182,7 +2025,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -2205,7 +2050,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -2228,7 +2075,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -2251,7 +2100,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -2274,7 +2125,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -2297,7 +2150,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -2320,7 +2175,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -2343,7 +2200,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -2366,7 +2225,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -2389,7 +2250,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -2412,7 +2275,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -2435,7 +2300,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -2458,7 +2325,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -2481,7 +2350,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -2504,7 +2375,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -2527,7 +2400,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -2550,7 +2425,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -2573,7 +2450,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -2596,7 +2475,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -2619,7 +2500,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -2642,7 +2525,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -2665,7 +2550,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -2688,7 +2575,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -2711,7 +2600,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -2734,7 +2625,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -2757,7 +2650,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -2780,7 +2675,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -2803,7 +2700,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -2826,7 +2725,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -2849,7 +2750,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -2872,7 +2775,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -2895,7 +2800,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -2918,7 +2825,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -2941,7 +2850,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -2964,7 +2875,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -2987,7 +2900,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -3010,7 +2925,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -3033,7 +2950,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -3056,7 +2975,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -3079,7 +3000,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -3102,7 +3025,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -3125,7 +3050,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -3148,7 +3075,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -3171,7 +3100,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -3194,7 +3125,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -3217,7 +3150,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -3240,7 +3175,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -3263,7 +3200,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -3286,7 +3225,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -3309,7 +3250,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -3332,7 +3275,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -3355,7 +3300,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -3378,7 +3325,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -3401,7 +3350,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -3424,7 +3375,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -3447,7 +3400,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -3470,7 +3425,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -3493,7 +3450,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -3516,7 +3475,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -3539,7 +3500,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -3562,7 +3525,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -3585,7 +3550,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -3608,7 +3575,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -3631,7 +3600,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -3654,7 +3625,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -3677,7 +3650,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -3700,7 +3675,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -3723,7 +3700,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -3746,7 +3725,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -3769,7 +3750,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -3792,7 +3775,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -3815,7 +3800,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -3838,7 +3825,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -3861,7 +3850,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -3884,7 +3875,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -3907,7 +3900,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -3930,7 +3925,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -3953,7 +3950,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -3976,7 +3975,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -3999,7 +4000,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -4022,7 +4025,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -4045,7 +4050,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -4068,7 +4075,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -4091,7 +4100,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -4114,7 +4125,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -4137,7 +4150,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -4160,7 +4175,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -4183,7 +4200,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -4206,7 +4225,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -4229,7 +4250,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -4252,7 +4275,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -4275,7 +4300,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -4298,7 +4325,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -4321,7 +4350,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -4344,7 +4375,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -4367,7 +4400,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -4390,7 +4425,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -4413,34 +4450,135 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     }
   ],
   "playlist": null,
   "playlistSound": null,
   "journal": null,
   "journalEntryPage": null,
-  "folder": null,
+  "folder": "iYi8R478ro2lIjSh",
   "flags": {
-    "exportSource": {
-      "world": "devsf249",
-      "system": "sfrpg",
-      "coreVersion": "11.313",
-      "systemVersion": "0.25.2"
+    "helyx-maker-3": {
+      "config": {
+        "idname": "sksh_scene-a",
+        "version": "7.87",
+        "source": "skitter-shot"
+      }
     }
   },
   "_stats": {
     "systemId": "sfrpg",
-    "systemVersion": "0.25.2",
-    "coreVersion": "11.313",
-    "createdTime": 1700152205974,
-    "modifiedTime": 1700153395654,
-    "lastModifiedBy": "02cKitm3RWE6DNik"
+    "systemVersion": "14.0.1",
+    "coreVersion": "14.360",
+    "createdTime": 1782650009869,
+    "modifiedTime": 1782650074565,
+    "lastModifiedBy": "mdOMEP819emXBqHU",
+    "exportSource": {
+      "worldId": "sf1-dev",
+      "uuid": "Scene.YygnUwrzw8oT3Xsr",
+      "coreVersion": "14.360",
+      "systemId": "sfrpg",
+      "systemVersion": "14.0.1"
+    },
+    "compendiumSource": null,
+    "duplicateSource": null
   },
-  "foreground": null,
-  "thumb": "worlds/devsf249/assets/scenes/UHnSgK1nTsVDVCoy-thumb.webp",
-  "fogOverlay": null,
-  "fogExploredColor": null,
-  "fogUnexploredColor": null,
-  "weather": ""
+  "thumb": "worlds/sf1-dev/assets/scenes/thumb-jUJHaeFZGSRbwL9Gad4h6g.webp",
+  "weather": "",
+  "shiftX": -32,
+  "shiftY": -10,
+  "initialLevel": "defaultLevel0000",
+  "fog": {
+    "mode": 1,
+    "colors": {
+      "explored": null,
+      "unexplored": null
+    }
+  },
+  "environment": {
+    "darknessLevel": 0,
+    "darknessLock": false,
+    "globalLight": {
+      "enabled": true,
+      "alpha": 0.5,
+      "bright": false,
+      "color": null,
+      "coloration": 1,
+      "luminosity": 0,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "darkness": {
+        "min": 0,
+        "max": 0.75
+      }
+    },
+    "cycle": true,
+    "base": {
+      "hue": 0,
+      "intensity": 0,
+      "luminosity": 0,
+      "saturation": 0,
+      "shadows": 0
+    },
+    "dark": {
+      "hue": 0.7138888888888889,
+      "intensity": 0,
+      "luminosity": -0.25,
+      "saturation": 0,
+      "shadows": 0
+    }
+  },
+  "transition": {
+    "type": null,
+    "duration": 1500,
+    "activeOnly": false
+  },
+  "levels": [
+    {
+      "_id": "defaultLevel0000",
+      "name": "Level",
+      "elevation": {
+        "bottom": 0,
+        "top": 20
+      },
+      "background": {
+        "color": "#999999",
+        "src": "helyx/skitter-shot/scenes/scene.webp",
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "foreground": {
+        "src": null,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "fog": {
+        "src": null,
+        "tint": "#ffffff"
+      },
+      "textures": {
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "offsetX": 0,
+        "offsetY": 0,
+        "fit": "fill",
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "visibility": {
+        "levels": []
+      },
+      "sort": 0,
+      "flags": {}
+    }
+  ],
+  "regions": [],
+  "ownership": {
+    "default": 0
+  }
 }

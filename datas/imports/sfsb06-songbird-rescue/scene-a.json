@@ -1,23 +1,9 @@
 {
-  "name": "A. Crash Site",
-  "tokens": [ ],
+  "name": "Scene",
+  "tokens": [],
   "navigation": true,
   "navOrder": 0,
   "navName": "",
-  "background": {
-    "src": "helyx/sfb06-songbird-rescue/scenes/scene-a.webp",
-    "scaleX": 1,
-    "scaleY": 1,
-    "offsetX": 2,
-    "offsetY": -2,
-    "rotation": 0,
-    "anchorX": 0,
-    "anchorY": 0,
-    "fit": "fill",
-    "tint": "#ffffff",
-    "alphaThreshold": 0
-  },
-  "foregroundElevation": 20,
   "width": 2400,
   "height": 3000,
   "padding": 0.25,
@@ -26,7 +12,6 @@
     "y": null,
     "scale": null
   },
-  "backgroundColor": "#999999",
   "grid": {
     "type": 1,
     "size": 100,
@@ -38,78 +23,10 @@
     "thickness": 1
   },
   "tokenVision": true,
-  "drawings": [
-    {
-      "_id": "trcpxUfW3qLLZ0Tx",
-      "author": "cxeQuijjgPzYWXWb",
-      "shape": {
-        "type": "r",
-        "width": 506,
-        "height": 223,
-        "radius": null,
-        "points": []
-      },
-      "x": 2200,
-      "y": 988,
-      "rotation": 0,
-      "bezierFactor": 0,
-      "fillType": 0,
-      "fillColor": "#ffffff",
-      "fillAlpha": 0.1,
-      "strokeWidth": 8,
-      "strokeColor": "#ffffff",
-      "strokeAlpha": 1,
-      "text": "ENEMIES BEGIN HERE",
-      "fontFamily": "Arial",
-      "fontSize": 48,
-      "textColor": "#ffffff",
-      "textAlpha": 1,
-      "hidden": true,
-      "locked": true,
-      "flags": {},
-      "texture": null,
-      "elevation": 0,
-      "sort": 0,
-      "interface": false
-    },
-    {
-      "_id": "Tr8LGYqSRfeBfajO",
-      "author": "cxeQuijjgPzYWXWb",
-      "shape": {
-        "type": "r",
-        "width": 400,
-        "height": 1013,
-        "radius": null,
-        "points": []
-      },
-      "x": 600,
-      "y": 1888,
-      "rotation": 0,
-      "bezierFactor": 0,
-      "fillType": 0,
-      "fillColor": "#ffffff",
-      "fillAlpha": 0.1,
-      "strokeWidth": 8,
-      "strokeColor": "#ffffff",
-      "strokeAlpha": 1,
-      "text": "PCS BEGIN HERE",
-      "fontFamily": "Arial",
-      "fontSize": 48,
-      "textColor": "#ffffff",
-      "textAlpha": 1,
-      "hidden": true,
-      "locked": true,
-      "flags": {},
-      "texture": null,
-      "elevation": 0,
-      "sort": 0,
-      "interface": false
-    }
-  ],
+  "drawings": [ ],
   "lights": [],
   "notes": [],
   "sounds": [],
-  "templates": [],
   "tiles": [],
   "walls": [
     {
@@ -134,7 +51,8 @@
         "attenuation": false
       },
       "flags": {},
-      "animation": null
+      "animation": null,
+      "levels": []
     },
     {
       "light": 20,
@@ -158,7 +76,8 @@
         "attenuation": false
       },
       "flags": {},
-      "animation": null
+      "animation": null,
+      "levels": []
     },
     {
       "light": 20,
@@ -182,7 +101,8 @@
         "attenuation": false
       },
       "flags": {},
-      "animation": null
+      "animation": null,
+      "levels": []
     },
     {
       "light": 20,
@@ -206,7 +126,8 @@
         "attenuation": false
       },
       "flags": {},
-      "animation": null
+      "animation": null,
+      "levels": []
     },
     {
       "light": 20,
@@ -230,7 +151,8 @@
         "attenuation": false
       },
       "flags": {},
-      "animation": null
+      "animation": null,
+      "levels": []
     },
     {
       "light": 20,
@@ -254,7 +176,8 @@
         "attenuation": false
       },
       "flags": {},
-      "animation": null
+      "animation": null,
+      "levels": []
     },
     {
       "light": 20,
@@ -278,7 +201,8 @@
         "attenuation": false
       },
       "flags": {},
-      "animation": null
+      "animation": null,
+      "levels": []
     },
     {
       "light": 20,
@@ -302,7 +226,8 @@
         "attenuation": false
       },
       "flags": {},
-      "animation": null
+      "animation": null,
+      "levels": []
     },
     {
       "light": 20,
@@ -326,7 +251,8 @@
         "attenuation": false
       },
       "flags": {},
-      "animation": null
+      "animation": null,
+      "levels": []
     },
     {
       "light": 20,
@@ -350,7 +276,8 @@
         "attenuation": false
       },
       "flags": {},
-      "animation": null
+      "animation": null,
+      "levels": []
     },
     {
       "light": 20,
@@ -374,7 +301,8 @@
         "attenuation": false
       },
       "flags": {},
-      "animation": null
+      "animation": null,
+      "levels": []
     },
     {
       "light": 20,
@@ -398,7 +326,8 @@
         "attenuation": false
       },
       "flags": {},
-      "animation": null
+      "animation": null,
+      "levels": []
     },
     {
       "light": 20,
@@ -422,7 +351,8 @@
         "attenuation": false
       },
       "flags": {},
-      "animation": null
+      "animation": null,
+      "levels": []
     },
     {
       "light": 20,
@@ -446,7 +376,8 @@
         "attenuation": false
       },
       "flags": {},
-      "animation": null
+      "animation": null,
+      "levels": []
     },
     {
       "light": 10,
@@ -470,7 +401,8 @@
         "attenuation": false
       },
       "flags": {},
-      "animation": null
+      "animation": null,
+      "levels": []
     },
     {
       "light": 10,
@@ -494,7 +426,8 @@
         "attenuation": false
       },
       "flags": {},
-      "animation": null
+      "animation": null,
+      "levels": []
     },
     {
       "light": 10,
@@ -518,7 +451,8 @@
         "attenuation": false
       },
       "flags": {},
-      "animation": null
+      "animation": null,
+      "levels": []
     },
     {
       "light": 10,
@@ -542,7 +476,8 @@
         "attenuation": false
       },
       "flags": {},
-      "animation": null
+      "animation": null,
+      "levels": []
     },
     {
       "light": 10,
@@ -566,7 +501,8 @@
         "attenuation": false
       },
       "flags": {},
-      "animation": null
+      "animation": null,
+      "levels": []
     },
     {
       "light": 10,
@@ -590,7 +526,8 @@
         "attenuation": false
       },
       "flags": {},
-      "animation": null
+      "animation": null,
+      "levels": []
     },
     {
       "light": 10,
@@ -614,7 +551,8 @@
         "attenuation": false
       },
       "flags": {},
-      "animation": null
+      "animation": null,
+      "levels": []
     },
     {
       "light": 10,
@@ -638,7 +576,8 @@
         "attenuation": false
       },
       "flags": {},
-      "animation": null
+      "animation": null,
+      "levels": []
     },
     {
       "light": 10,
@@ -662,7 +601,8 @@
         "attenuation": false
       },
       "flags": {},
-      "animation": null
+      "animation": null,
+      "levels": []
     },
     {
       "light": 10,
@@ -686,7 +626,8 @@
         "attenuation": false
       },
       "flags": {},
-      "animation": null
+      "animation": null,
+      "levels": []
     },
     {
       "light": 10,
@@ -710,7 +651,8 @@
         "attenuation": false
       },
       "flags": {},
-      "animation": null
+      "animation": null,
+      "levels": []
     },
     {
       "light": 10,
@@ -734,7 +676,8 @@
         "attenuation": false
       },
       "flags": {},
-      "animation": null
+      "animation": null,
+      "levels": []
     },
     {
       "light": 10,
@@ -758,7 +701,8 @@
         "attenuation": false
       },
       "flags": {},
-      "animation": null
+      "animation": null,
+      "levels": []
     },
     {
       "light": 10,
@@ -782,7 +726,8 @@
         "attenuation": false
       },
       "flags": {},
-      "animation": null
+      "animation": null,
+      "levels": []
     },
     {
       "light": 10,
@@ -806,7 +751,8 @@
         "attenuation": false
       },
       "flags": {},
-      "animation": null
+      "animation": null,
+      "levels": []
     },
     {
       "light": 10,
@@ -830,7 +776,8 @@
         "attenuation": false
       },
       "flags": {},
-      "animation": null
+      "animation": null,
+      "levels": []
     },
     {
       "light": 10,
@@ -854,7 +801,8 @@
         "attenuation": false
       },
       "flags": {},
-      "animation": null
+      "animation": null,
+      "levels": []
     },
     {
       "light": 10,
@@ -878,7 +826,8 @@
         "attenuation": false
       },
       "flags": {},
-      "animation": null
+      "animation": null,
+      "levels": []
     },
     {
       "light": 10,
@@ -902,7 +851,8 @@
         "attenuation": false
       },
       "flags": {},
-      "animation": null
+      "animation": null,
+      "levels": []
     },
     {
       "light": 10,
@@ -926,7 +876,8 @@
         "attenuation": false
       },
       "flags": {},
-      "animation": null
+      "animation": null,
+      "levels": []
     },
     {
       "light": 10,
@@ -950,7 +901,8 @@
         "attenuation": false
       },
       "flags": {},
-      "animation": null
+      "animation": null,
+      "levels": []
     },
     {
       "light": 10,
@@ -974,7 +926,8 @@
         "attenuation": false
       },
       "flags": {},
-      "animation": null
+      "animation": null,
+      "levels": []
     },
     {
       "light": 10,
@@ -998,7 +951,8 @@
         "attenuation": false
       },
       "flags": {},
-      "animation": null
+      "animation": null,
+      "levels": []
     },
     {
       "light": 10,
@@ -1022,7 +976,8 @@
         "attenuation": false
       },
       "flags": {},
-      "animation": null
+      "animation": null,
+      "levels": []
     },
     {
       "light": 10,
@@ -1046,7 +1001,8 @@
         "attenuation": false
       },
       "flags": {},
-      "animation": null
+      "animation": null,
+      "levels": []
     },
     {
       "light": 10,
@@ -1070,7 +1026,8 @@
         "attenuation": false
       },
       "flags": {},
-      "animation": null
+      "animation": null,
+      "levels": []
     },
     {
       "light": 10,
@@ -1094,7 +1051,8 @@
         "attenuation": false
       },
       "flags": {},
-      "animation": null
+      "animation": null,
+      "levels": []
     },
     {
       "light": 10,
@@ -1118,7 +1076,8 @@
         "attenuation": false
       },
       "flags": {},
-      "animation": null
+      "animation": null,
+      "levels": []
     },
     {
       "light": 10,
@@ -1142,7 +1101,8 @@
         "attenuation": false
       },
       "flags": {},
-      "animation": null
+      "animation": null,
+      "levels": []
     },
     {
       "light": 10,
@@ -1166,7 +1126,8 @@
         "attenuation": false
       },
       "flags": {},
-      "animation": null
+      "animation": null,
+      "levels": []
     },
     {
       "light": 10,
@@ -1190,7 +1151,8 @@
         "attenuation": false
       },
       "flags": {},
-      "animation": null
+      "animation": null,
+      "levels": []
     },
     {
       "light": 10,
@@ -1214,7 +1176,8 @@
         "attenuation": false
       },
       "flags": {},
-      "animation": null
+      "animation": null,
+      "levels": []
     },
     {
       "light": 10,
@@ -1238,7 +1201,8 @@
         "attenuation": false
       },
       "flags": {},
-      "animation": null
+      "animation": null,
+      "levels": []
     },
     {
       "light": 10,
@@ -1262,7 +1226,8 @@
         "attenuation": false
       },
       "flags": {},
-      "animation": null
+      "animation": null,
+      "levels": []
     },
     {
       "light": 10,
@@ -1286,7 +1251,8 @@
         "attenuation": false
       },
       "flags": {},
-      "animation": null
+      "animation": null,
+      "levels": []
     },
     {
       "light": 10,
@@ -1310,7 +1276,8 @@
         "attenuation": false
       },
       "flags": {},
-      "animation": null
+      "animation": null,
+      "levels": []
     },
     {
       "light": 10,
@@ -1334,7 +1301,8 @@
         "attenuation": false
       },
       "flags": {},
-      "animation": null
+      "animation": null,
+      "levels": []
     },
     {
       "light": 10,
@@ -1358,49 +1326,50 @@
         "attenuation": false
       },
       "flags": {},
-      "animation": null
+      "animation": null,
+      "levels": []
     }
   ],
   "playlist": null,
   "playlistSound": null,
   "journal": null,
   "journalEntryPage": null,
-  "folder": "tJdTVQeQLyJdoSIk",
+  "folder": "8xnZrDvOnuxYVRyu",
   "flags": {
     "helyx-maker-3": {
       "config": {
         "idname": "sfb06_scene-a",
-        "version": "3.53",
+        "version": "7.87",
         "source": "sfb06-songbird-rescue"
       }
     }
   },
   "_stats": {
-    "coreVersion": "13.346",
+    "coreVersion": "14.360",
     "systemId": "sfrpg",
-    "systemVersion": "0.28.2",
-    "createdTime": 1752421845217,
-    "modifiedTime": 1752421973584,
-    "lastModifiedBy": "TaT6XGoGlorNE58O",
+    "systemVersion": "14.0.1",
+    "createdTime": 1782648386464,
+    "modifiedTime": 1782648542385,
+    "lastModifiedBy": "mdOMEP819emXBqHU",
     "exportSource": {
-      "worldId": "devsfrpg",
-      "uuid": "Scene.CXxlE4G8nm0QWbKE",
-      "coreVersion": "13.346",
+      "worldId": "sf1-dev",
+      "uuid": "Scene.r8x1wFqQjXvVnksX",
+      "coreVersion": "14.360",
       "systemId": "sfrpg",
-      "systemVersion": "0.28.2"
-    }
+      "systemVersion": "14.0.1"
+    },
+    "compendiumSource": null,
+    "duplicateSource": null
   },
-  "foreground": null,
-  "thumb": "worlds/devsfrpg/assets/scenes/CXxlE4G8nm0QWbKE-thumb.webp",
+  "thumb": "worlds/sf1-dev/assets/scenes/thumb-t7FQ5yade0LDrDqqSL0ptw.webp",
   "weather": "",
   "fog": {
-    "exploration": true,
     "reset": 1709729471890,
-    "overlay": null,
     "colors": {
       "explored": null,
       "unexplored": null
-    }
+    },
+    "mode": 1
   },
   "environment": {
     "globalLight": {
@@ -1436,5 +1405,56 @@
       "shadows": 0
     }
   },
-  "regions": []
+  "regions": [],
+  "shiftX": 2,
+  "shiftY": -2,
+  "initialLevel": "defaultLevel0000",
+  "transition": {
+    "type": null,
+    "duration": 1500,
+    "activeOnly": false
+  },
+  "levels": [
+    {
+      "_id": "defaultLevel0000",
+      "name": "Level",
+      "elevation": {
+        "bottom": 0,
+        "top": 20
+      },
+      "background": {
+        "color": "#999999",
+        "src": "helyx/sfb06-songbird-rescue/scenes/scene-a.webp",
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "foreground": {
+        "src": null,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "fog": {
+        "src": null,
+        "tint": "#ffffff"
+      },
+      "textures": {
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "offsetX": 0,
+        "offsetY": 0,
+        "fit": "fill",
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "visibility": {
+        "levels": []
+      },
+      "sort": 0,
+      "flags": {}
+    }
+  ],
+  "ownership": {
+    "default": 0
+  }
 }

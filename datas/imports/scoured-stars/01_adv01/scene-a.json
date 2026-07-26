@@ -1,46 +1,30 @@
 {
   "name": "Chapter 1 - Scene A",
-  "tokensAreHidden" : false,
+  "tokens": [],
   "navigation": false,
-  "navOrder": 0,
-  "background": {
-    "src": "helyx/scoured-stars/scenes/scene-01a.webp",
-    "scaleX": 1,
-    "scaleY": 1,
-    "offsetX": 2,
-    "offsetY": -55,
-    "rotation": 0
-  },
-  "foregroundElevation": 20,
   "width": 2062,
   "height": 2865,
   "padding": 0.25,
   "initial": {
     "x": 1573,
     "y": 2250,
-    "scale": 0.31946330910290555
+    "scale": 0.319
   },
-  "backgroundColor": "#000000",
   "grid": {
     "type": 5,
     "size": 100,
     "color": "#9e9e9e",
     "alpha": 1,
     "distance": 1,
-    "units": "Hex"
+    "units": "Hex",
+    "style": "solidLines",
+    "thickness": 1
   },
   "tokenVision": true,
-  "fogExploration": false,
-  "fogReset": 1706548825259,
-  "globalLight": true,
-  "globalLightThreshold": 0.75,
-  "darkness": 0,
   "drawings": [],
-  "tokens": [],
   "lights": [],
   "notes": [],
   "sounds": [],
-  "templates": [],
   "tiles": [],
   "walls": [
     {
@@ -64,7 +48,9 @@
         "sight": null,
         "sound": null,
         "attenuation": false
-      }
+      },
+      "levels": [],
+      "animation": null
     },
     {
       "c": [
@@ -87,7 +73,9 @@
         "sight": null,
         "sound": null,
         "attenuation": false
-      }
+      },
+      "levels": [],
+      "animation": null
     },
     {
       "c": [
@@ -110,7 +98,9 @@
         "sight": null,
         "sound": null,
         "attenuation": false
-      }
+      },
+      "levels": [],
+      "animation": null
     },
     {
       "c": [
@@ -133,21 +123,17 @@
         "sight": null,
         "sound": null,
         "attenuation": false
-      }
+      },
+      "levels": [],
+      "animation": null
     }
   ],
   "playlist": null,
   "playlistSound": null,
   "journal": null,
   "journalEntryPage": null,
-  "folder": "SWgvVSdrX68ZIw06",
+  "folder": "IU5OORfnkpd0QFyA",
   "flags": {
-    "exportSource": {
-      "world": "sfs01e03",
-      "system": "sfrpg",
-      "coreVersion": "11.315",
-      "systemVersion": "0.25.2"
-    },
     "helyx-maker": {
       "config": {
         "idname": "scst_scene-1a",
@@ -158,24 +144,121 @@
     "helyx-maker-3": {
       "config": {
         "idname": "scst_scene-01a",
-        "version": "3.53",
+        "version": "7.87",
         "source": "scoured-stars"
       }
     }
   },
   "_stats": {
     "systemId": "sfrpg",
-    "systemVersion": "0.25.2",
-    "coreVersion": "11.315",
-    "createdTime": 1706548825270,
-    "modifiedTime": 1711297335849,
-    "lastModifiedBy": "H1Rgi8D3hDsCsVyA"
+    "systemVersion": "14.0.2",
+    "coreVersion": "14.365",
+    "createdTime": 1784384585561,
+    "modifiedTime": 1784384704755,
+    "lastModifiedBy": "meZusYDnfb1dd8Nd",
+    "exportSource": {
+      "worldId": "sf1-dev",
+      "uuid": "Scene.Hkr6yvhkVvbZM7uK",
+      "coreVersion": "14.365",
+      "systemId": "sfrpg",
+      "systemVersion": "14.0.2"
+    },
+    "compendiumSource": null,
+    "duplicateSource": null
   },
-  "foreground": null,
-  "thumb": "worlds/sfs01e03/assets/scenes/OoLMl7ZIsAwa0TjQ-thumb.webp",
-  "fogOverlay": null,
-  "fogExploredColor": null,
-  "fogUnexploredColor": null,
+  "thumb": "worlds/sf1-dev/assets/scenes/thumb-2ELpZHSf8VR7NQcuUdLLwg.webp",
   "weather": "",
-  "navName": ""
+  "navName": "",
+  "shiftX": 2,
+  "shiftY": -55,
+  "initialLevel": "defaultLevel0000",
+  "fog": {
+    "mode": 1,
+    "colors": {
+      "explored": null,
+      "unexplored": null
+    }
+  },
+  "environment": {
+    "darknessLevel": 0,
+    "darknessLock": false,
+    "globalLight": {
+      "enabled": true,
+      "alpha": 0.5,
+      "bright": false,
+      "color": null,
+      "coloration": 1,
+      "luminosity": 0,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "darkness": {
+        "min": 0,
+        "max": 0.75
+      }
+    },
+    "cycle": true,
+    "base": {
+      "hue": 0,
+      "intensity": 0,
+      "luminosity": 0,
+      "saturation": 0,
+      "shadows": 0
+    },
+    "dark": {
+      "hue": 0.7138888888888889,
+      "intensity": 0,
+      "luminosity": -0.25,
+      "saturation": 0,
+      "shadows": 0
+    }
+  },
+  "transition": {
+    "type": null,
+    "duration": 1500,
+    "activeOnly": false
+  },
+  "levels": [
+    {
+      "_id": "defaultLevel0000",
+      "name": "Level",
+      "elevation": {
+        "bottom": 0,
+        "top": 20
+      },
+      "background": {
+        "color": "#999999",
+        "src": "helyx/scoured-stars/scenes/scene-01a.webp",
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "foreground": {
+        "src": null,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "fog": {
+        "src": null
+      },
+      "textures": {
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "offsetX": 0,
+        "offsetY": 0,
+        "fit": "fill",
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "visibility": {
+        "levels": []
+      },
+      "sort": 0,
+      "flags": {}
+    }
+  ],
+  "regions": [],
+  "ownership": {
+    "default": 0
+  }
 }

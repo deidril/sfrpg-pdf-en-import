@@ -1,18 +1,8 @@
 {
-  "helyx" : { "idname" : "sfs1e09_scene-a" , "target" : "sfs1e09_scenes", "type": "Scene" } ,
-  "name": "{{{xlf 7014 0 'any' }}}",
+  "name": "Scene",
   "navigation": false,
   "navOrder": 0,
   "navName": "",
-  "background": {
-    "src": "helyx/sfs1e09-live-exploration-extreme/scenes/scene-a.webp",
-    "scaleX": 1,
-    "scaleY": 1,
-    "offsetX": 25,
-    "offsetY": 26,
-    "rotation": 0
-  },
-  "foregroundElevation": 20,
   "width": 2450,
   "height": 3050,
   "padding": 0.25,
@@ -21,107 +11,22 @@
     "y": null,
     "scale": null
   },
-  "backgroundColor": "#999999",
   "grid": {
     "type": 1,
     "size": 100,
     "color": "#000000",
     "alpha": 1,
     "distance": 5,
-    "units": "ft"
+    "units": "ft",
+    "style": "solidLines",
+    "thickness": 1
   },
   "tokenVision": true,
-  "fogExploration": true,
-  "fogReset": 1715683316400,
-  "globalLight": true,
-  "globalLightThreshold": 0.75,
-  "darkness": 0,
-  "drawings": [
-    {
-      "_id": "xgOogh6vsuv2O7Ng",
-      "author": "asU9bpxPUhRe7Byf",
-      "shape": {
-        "type": "r",
-        "width": 474,
-        "height": 372,
-        "radius": null,
-        "points": []
-      },
-      "x": 3143,
-      "y": 871,
-      "z": 0,
-      "rotation": 0,
-      "bezierFactor": 0,
-      "fillType": 0,
-      "fillColor": "#3928cc",
-      "fillAlpha": 0.5,
-      "strokeWidth": 8,
-      "strokeColor": "#FFFFFF",
-      "strokeAlpha": 1,
-      "fontFamily": "Arial",
-      "fontSize": 48,
-      "textColor": "#FFFFFF",
-      "textAlpha": 1,
-      "hidden": false,
-      "locked": false,
-      "flags": {},
-      "texture": null,
-      "text": "Prod Team"
-    },
-    {
-      "_id": "llcUSwuOpqKKf6yc",
-      "author": "asU9bpxPUhRe7Byf",
-      "shape": {
-        "type": "r",
-        "width": 478,
-        "height": 375,
-        "radius": null,
-        "points": []
-      },
-      "x": 3133,
-      "y": 2241,
-      "z": 0,
-      "rotation": 0,
-      "bezierFactor": 0,
-      "fillType": 0,
-      "fillColor": "#3928cc",
-      "fillAlpha": 0.5,
-      "strokeWidth": 8,
-      "strokeColor": "#FFFFFF",
-      "strokeAlpha": 1,
-      "fontFamily": "Arial",
-      "fontSize": 48,
-      "textColor": "#FFFFFF",
-      "textAlpha": 1,
-      "hidden": false,
-      "locked": false,
-      "flags": {},
-      "texture": null,
-      "text": "Cam Team"
-    }
-  ],
-  "tokens": [
-    {"helyx":{"idname":"sfs1e09_kevir","x":3200,"y":1300}},
-    {"helyx":{"idname":"sfs1e09_assistant-1","x":3200,"y":1400}},
-    {"helyx":{"idname":"sfs1e09_assistant-2","x":3300,"y":1400}},
-    {"helyx":{"idname":"sfs1e09_android-assistant-1","x":3200,"y":1500}},
-    {"helyx":{"idname":"sfs1e09_android-assistant-2","x":3300,"y":1500}},
-    {"helyx":{"idname":"sfs1e09_hexapodal-robot","x":3200,"y":1600}},
-    {"helyx":{"idname":"sfs1e09_cam-1","x":3200,"y":2700}},
-    {"helyx":{"idname":"sfs1e09_cam-2","x":3300,"y":2700}},
-    {"helyx":{"idname":"sfs1e09_cam-3","x":3400,"y":2700}},
-    {"helyx":{"idname":"sfs1e09_cam-4","x":3200,"y":2800}},
-    {"helyx":{"idname":"sfs1e09_cam-5","x":3300,"y":2800}},
-    {"helyx":{"idname":"sfs1e09_cam-6","x":3400,"y":2800}},
-    {"helyx":{"idname":"sfs1e09_cam-7","x":3200,"y":2900}},
-    {"helyx":{"idname":"sfs1e09_cam-8","x":3300,"y":2900}},
-    {"helyx":{"idname":"sfs1e09_cam-9","x":3400,"y":2900}},
-    {"helyx":{"idname":"sfs1e09_cam-10","x":3300,"y":3000}}
-  ],
+  "drawings": [],
+  "tokens": [],
   "lights": [],
   "notes": [],
   "sounds": [],
-  "templates": [],
   "tiles": [],
   "walls": [
     {
@@ -145,7 +50,9 @@
         "sight": null,
         "sound": null,
         "attenuation": false
-      }
+      },
+      "levels": [],
+      "animation": null
     },
     {
       "c": [
@@ -168,7 +75,9 @@
         "sight": null,
         "sound": null,
         "attenuation": false
-      }
+      },
+      "levels": [],
+      "animation": null
     },
     {
       "c": [
@@ -191,7 +100,9 @@
         "sight": null,
         "sound": null,
         "attenuation": false
-      }
+      },
+      "levels": [],
+      "animation": null
     },
     {
       "c": [
@@ -214,7 +125,9 @@
         "sight": null,
         "sound": null,
         "attenuation": false
-      }
+      },
+      "levels": [],
+      "animation": null
     },
     {
       "c": [
@@ -237,7 +150,9 @@
         "sight": null,
         "sound": null,
         "attenuation": false
-      }
+      },
+      "levels": [],
+      "animation": null
     },
     {
       "c": [
@@ -260,7 +175,9 @@
         "sight": null,
         "sound": null,
         "attenuation": false
-      }
+      },
+      "levels": [],
+      "animation": null
     },
     {
       "c": [
@@ -283,7 +200,9 @@
         "sight": null,
         "sound": null,
         "attenuation": false
-      }
+      },
+      "levels": [],
+      "animation": null
     },
     {
       "c": [
@@ -306,7 +225,9 @@
         "sight": null,
         "sound": null,
         "attenuation": false
-      }
+      },
+      "levels": [],
+      "animation": null
     },
     {
       "c": [
@@ -329,7 +250,9 @@
         "sight": null,
         "sound": null,
         "attenuation": false
-      }
+      },
+      "levels": [],
+      "animation": null
     },
     {
       "c": [
@@ -352,7 +275,9 @@
         "sight": null,
         "sound": null,
         "attenuation": false
-      }
+      },
+      "levels": [],
+      "animation": null
     },
     {
       "c": [
@@ -375,7 +300,9 @@
         "sight": null,
         "sound": null,
         "attenuation": false
-      }
+      },
+      "levels": [],
+      "animation": null
     },
     {
       "c": [
@@ -398,7 +325,9 @@
         "sight": null,
         "sound": null,
         "attenuation": false
-      }
+      },
+      "levels": [],
+      "animation": null
     },
     {
       "c": [
@@ -421,7 +350,9 @@
         "sight": null,
         "sound": null,
         "attenuation": false
-      }
+      },
+      "levels": [],
+      "animation": null
     },
     {
       "c": [
@@ -444,7 +375,9 @@
         "sight": null,
         "sound": null,
         "attenuation": false
-      }
+      },
+      "levels": [],
+      "animation": null
     },
     {
       "c": [
@@ -467,7 +400,9 @@
         "sight": null,
         "sound": null,
         "attenuation": false
-      }
+      },
+      "levels": [],
+      "animation": null
     },
     {
       "c": [
@@ -490,7 +425,9 @@
         "sight": null,
         "sound": null,
         "attenuation": false
-      }
+      },
+      "levels": [],
+      "animation": null
     },
     {
       "c": [
@@ -513,7 +450,9 @@
         "sight": null,
         "sound": null,
         "attenuation": false
-      }
+      },
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -536,7 +475,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -559,7 +500,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -582,7 +525,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -605,7 +550,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -628,7 +575,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -651,7 +600,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -674,7 +625,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -697,7 +650,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -720,7 +675,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -743,7 +700,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -766,7 +725,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -789,7 +750,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -812,7 +775,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -835,7 +800,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -858,7 +825,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -881,7 +850,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -904,7 +875,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -927,7 +900,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -950,7 +925,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -973,7 +950,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -996,7 +975,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -1019,7 +1000,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -1042,7 +1025,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -1065,7 +1050,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -1088,7 +1075,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -1111,7 +1100,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -1134,7 +1125,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -1157,7 +1150,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -1180,7 +1175,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -1203,7 +1200,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -1226,7 +1225,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -1249,7 +1250,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -1272,7 +1275,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -1295,7 +1300,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -1318,7 +1325,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -1341,7 +1350,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -1364,7 +1375,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -1387,7 +1400,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -1410,7 +1425,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -1433,7 +1450,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -1456,7 +1475,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -1479,7 +1500,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -1502,7 +1525,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -1525,7 +1550,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -1548,7 +1575,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -1571,7 +1600,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -1594,7 +1625,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -1617,7 +1650,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -1640,7 +1675,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -1663,7 +1700,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -1686,7 +1725,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -1709,7 +1750,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -1732,7 +1775,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -1755,7 +1800,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -1778,7 +1825,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -1801,7 +1850,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -1824,7 +1875,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -1847,7 +1900,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -1870,7 +1925,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -1893,7 +1950,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -1916,7 +1975,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -1939,7 +2000,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -1962,7 +2025,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -1985,7 +2050,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -2008,7 +2075,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -2031,7 +2100,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -2054,7 +2125,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -2077,7 +2150,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -2100,7 +2175,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -2123,7 +2200,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -2146,7 +2225,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -2169,7 +2250,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -2192,7 +2275,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -2215,7 +2300,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -2238,7 +2325,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -2261,7 +2350,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -2284,7 +2375,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -2307,7 +2400,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -2330,7 +2425,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -2353,7 +2450,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -2376,7 +2475,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -2399,7 +2500,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -2422,7 +2525,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -2445,7 +2550,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -2468,7 +2575,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -2491,7 +2600,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -2514,7 +2625,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -2537,7 +2650,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -2560,7 +2675,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -2583,7 +2700,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -2606,7 +2725,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -2629,7 +2750,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -2652,7 +2775,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -2675,7 +2800,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -2698,7 +2825,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -2721,7 +2850,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -2744,7 +2875,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -2767,7 +2900,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -2790,7 +2925,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -2813,7 +2950,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -2836,7 +2975,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -2859,7 +3000,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -2882,7 +3025,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -2905,7 +3050,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -2928,7 +3075,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -2951,7 +3100,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -2974,7 +3125,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -2997,7 +3150,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -3020,7 +3175,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -3043,7 +3200,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -3066,7 +3225,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -3089,7 +3250,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -3112,7 +3275,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -3135,7 +3300,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -3158,7 +3325,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -3181,7 +3350,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -3204,7 +3375,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -3227,7 +3400,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -3250,7 +3425,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -3273,7 +3450,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -3296,7 +3475,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -3319,7 +3500,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -3342,7 +3525,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -3365,7 +3550,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -3388,7 +3575,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -3411,7 +3600,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -3434,7 +3625,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -3457,7 +3650,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -3480,7 +3675,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -3503,7 +3700,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -3526,7 +3725,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -3549,7 +3750,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -3572,7 +3775,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -3595,7 +3800,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -3618,7 +3825,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -3641,7 +3850,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -3664,7 +3875,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -3687,7 +3900,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -3710,7 +3925,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -3733,7 +3950,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -3756,7 +3975,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -3779,7 +4000,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -3802,7 +4025,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -3825,7 +4050,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -3848,7 +4075,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -3871,7 +4100,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -3894,7 +4125,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "c": [
@@ -3917,7 +4150,9 @@
         "sight": null,
         "sound": null,
         "attenuation": false
-      }
+      },
+      "levels": [],
+      "animation": null
     },
     {
       "c": [
@@ -3940,7 +4175,9 @@
         "sight": null,
         "sound": null,
         "attenuation": false
-      }
+      },
+      "levels": [],
+      "animation": null
     },
     {
       "c": [
@@ -3963,7 +4200,9 @@
         "sight": null,
         "sound": null,
         "attenuation": false
-      }
+      },
+      "levels": [],
+      "animation": null
     },
     {
       "c": [
@@ -3986,7 +4225,9 @@
         "sight": null,
         "sound": null,
         "attenuation": false
-      }
+      },
+      "levels": [],
+      "animation": null
     },
     {
       "c": [
@@ -4009,7 +4250,9 @@
         "sight": null,
         "sound": null,
         "attenuation": false
-      }
+      },
+      "levels": [],
+      "animation": null
     },
     {
       "c": [
@@ -4032,7 +4275,9 @@
         "sight": null,
         "sound": null,
         "attenuation": false
-      }
+      },
+      "levels": [],
+      "animation": null
     },
     {
       "c": [
@@ -4055,7 +4300,9 @@
         "sight": null,
         "sound": null,
         "attenuation": false
-      }
+      },
+      "levels": [],
+      "animation": null
     },
     {
       "c": [
@@ -4078,7 +4325,9 @@
         "sight": null,
         "sound": null,
         "attenuation": false
-      }
+      },
+      "levels": [],
+      "animation": null
     },
     {
       "c": [
@@ -4101,7 +4350,9 @@
         "sight": null,
         "sound": null,
         "attenuation": false
-      }
+      },
+      "levels": [],
+      "animation": null
     },
     {
       "c": [
@@ -4124,7 +4375,9 @@
         "sight": null,
         "sound": null,
         "attenuation": false
-      }
+      },
+      "levels": [],
+      "animation": null
     },
     {
       "c": [
@@ -4147,7 +4400,9 @@
         "sight": null,
         "sound": null,
         "attenuation": false
-      }
+      },
+      "levels": [],
+      "animation": null
     },
     {
       "c": [
@@ -4170,7 +4425,9 @@
         "sight": null,
         "sound": null,
         "attenuation": false
-      }
+      },
+      "levels": [],
+      "animation": null
     },
     {
       "c": [
@@ -4193,7 +4450,9 @@
         "sight": null,
         "sound": null,
         "attenuation": false
-      }
+      },
+      "levels": [],
+      "animation": null
     },
     {
       "c": [
@@ -4216,7 +4475,9 @@
         "sight": null,
         "sound": null,
         "attenuation": false
-      }
+      },
+      "levels": [],
+      "animation": null
     },
     {
       "c": [
@@ -4239,7 +4500,9 @@
         "sight": null,
         "sound": null,
         "attenuation": false
-      }
+      },
+      "levels": [],
+      "animation": null
     },
     {
       "c": [
@@ -4262,7 +4525,9 @@
         "sight": null,
         "sound": null,
         "attenuation": false
-      }
+      },
+      "levels": [],
+      "animation": null
     },
     {
       "c": [
@@ -4285,7 +4550,9 @@
         "sight": null,
         "sound": null,
         "attenuation": false
-      }
+      },
+      "levels": [],
+      "animation": null
     },
     {
       "c": [
@@ -4308,7 +4575,9 @@
         "sight": null,
         "sound": null,
         "attenuation": false
-      }
+      },
+      "levels": [],
+      "animation": null
     },
     {
       "c": [
@@ -4331,7 +4600,9 @@
         "sight": null,
         "sound": null,
         "attenuation": false
-      }
+      },
+      "levels": [],
+      "animation": null
     },
     {
       "c": [
@@ -4354,7 +4625,9 @@
         "sight": null,
         "sound": null,
         "attenuation": false
-      }
+      },
+      "levels": [],
+      "animation": null
     },
     {
       "c": [
@@ -4377,7 +4650,9 @@
         "sight": null,
         "sound": null,
         "attenuation": false
-      }
+      },
+      "levels": [],
+      "animation": null
     },
     {
       "c": [
@@ -4400,7 +4675,9 @@
         "sight": null,
         "sound": null,
         "attenuation": false
-      }
+      },
+      "levels": [],
+      "animation": null
     },
     {
       "c": [
@@ -4423,7 +4700,9 @@
         "sight": null,
         "sound": null,
         "attenuation": false
-      }
+      },
+      "levels": [],
+      "animation": null
     },
     {
       "c": [
@@ -4446,7 +4725,9 @@
         "sight": null,
         "sound": null,
         "attenuation": false
-      }
+      },
+      "levels": [],
+      "animation": null
     },
     {
       "c": [
@@ -4469,7 +4750,9 @@
         "sight": null,
         "sound": null,
         "attenuation": false
-      }
+      },
+      "levels": [],
+      "animation": null
     },
     {
       "c": [
@@ -4492,7 +4775,9 @@
         "sight": null,
         "sound": null,
         "attenuation": false
-      }
+      },
+      "levels": [],
+      "animation": null
     },
     {
       "c": [
@@ -4515,7 +4800,9 @@
         "sight": null,
         "sound": null,
         "attenuation": false
-      }
+      },
+      "levels": [],
+      "animation": null
     },
     {
       "c": [
@@ -4538,7 +4825,9 @@
         "sight": null,
         "sound": null,
         "attenuation": false
-      }
+      },
+      "levels": [],
+      "animation": null
     },
     {
       "c": [
@@ -4561,7 +4850,9 @@
         "sight": null,
         "sound": null,
         "attenuation": false
-      }
+      },
+      "levels": [],
+      "animation": null
     },
     {
       "c": [
@@ -4584,7 +4875,9 @@
         "sight": null,
         "sound": null,
         "attenuation": false
-      }
+      },
+      "levels": [],
+      "animation": null
     },
     {
       "c": [
@@ -4607,7 +4900,9 @@
         "sight": null,
         "sound": null,
         "attenuation": false
-      }
+      },
+      "levels": [],
+      "animation": null
     },
     {
       "c": [
@@ -4630,7 +4925,9 @@
         "sight": null,
         "sound": null,
         "attenuation": false
-      }
+      },
+      "levels": [],
+      "animation": null
     },
     {
       "c": [
@@ -4653,7 +4950,9 @@
         "sight": null,
         "sound": null,
         "attenuation": false
-      }
+      },
+      "levels": [],
+      "animation": null
     },
     {
       "c": [
@@ -4676,7 +4975,9 @@
         "sight": null,
         "sound": null,
         "attenuation": false
-      }
+      },
+      "levels": [],
+      "animation": null
     },
     {
       "c": [
@@ -4699,7 +5000,9 @@
         "sight": null,
         "sound": null,
         "attenuation": false
-      }
+      },
+      "levels": [],
+      "animation": null
     },
     {
       "c": [
@@ -4722,7 +5025,9 @@
         "sight": null,
         "sound": null,
         "attenuation": false
-      }
+      },
+      "levels": [],
+      "animation": null
     },
     {
       "c": [
@@ -4745,7 +5050,9 @@
         "sight": null,
         "sound": null,
         "attenuation": false
-      }
+      },
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -4768,7 +5075,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -4791,7 +5100,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -4814,7 +5125,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -4837,7 +5150,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -4860,7 +5175,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -4883,7 +5200,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -4906,7 +5225,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -4929,7 +5250,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -4952,7 +5275,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -4975,7 +5300,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -4998,7 +5325,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -5021,7 +5350,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -5044,7 +5375,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -5067,7 +5400,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -5090,7 +5425,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -5113,7 +5450,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -5136,7 +5475,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -5159,7 +5500,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -5182,7 +5525,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -5205,7 +5550,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -5228,7 +5575,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -5251,7 +5600,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -5274,7 +5625,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -5297,7 +5650,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -5320,7 +5675,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -5343,7 +5700,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -5366,7 +5725,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -5389,7 +5750,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -5412,7 +5775,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -5435,7 +5800,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -5458,7 +5825,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -5481,7 +5850,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -5504,7 +5875,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -5527,7 +5900,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -5550,7 +5925,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -5573,7 +5950,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -5596,7 +5975,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -5619,7 +6000,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -5642,7 +6025,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -5665,7 +6050,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -5688,7 +6075,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -5711,7 +6100,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -5734,7 +6125,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -5757,7 +6150,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -5780,7 +6175,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -5803,7 +6200,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -5826,7 +6225,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -5849,7 +6250,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -5872,7 +6275,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -5895,7 +6300,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -5918,7 +6325,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -5941,7 +6350,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -5964,7 +6375,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -5987,7 +6400,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -6010,7 +6425,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -6033,7 +6450,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -6056,7 +6475,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -6079,7 +6500,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -6102,7 +6525,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -6125,7 +6550,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -6148,7 +6575,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -6171,7 +6600,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -6194,7 +6625,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -6217,7 +6650,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -6240,7 +6675,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -6263,7 +6700,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -6286,7 +6725,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -6309,7 +6750,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -6332,7 +6775,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -6355,7 +6800,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -6378,7 +6825,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -6401,7 +6850,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -6424,7 +6875,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -6447,7 +6900,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -6470,7 +6925,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -6493,7 +6950,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -6516,7 +6975,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -6539,7 +7000,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -6562,7 +7025,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -6585,7 +7050,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -6608,7 +7075,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -6631,7 +7100,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -6654,7 +7125,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -6677,7 +7150,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -6700,7 +7175,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -6723,7 +7200,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -6746,7 +7225,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -6769,7 +7250,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -6792,7 +7275,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -6815,7 +7300,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -6838,7 +7325,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -6861,7 +7350,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -6884,7 +7375,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -6907,7 +7400,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -6930,7 +7425,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -6953,7 +7450,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -6976,7 +7475,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -6999,7 +7500,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -7022,7 +7525,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -7045,7 +7550,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -7068,7 +7575,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -7091,7 +7600,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -7114,7 +7625,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -7137,7 +7650,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -7160,7 +7675,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -7183,7 +7700,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -7206,7 +7725,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -7229,7 +7750,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -7252,7 +7775,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -7275,7 +7800,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -7298,7 +7825,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -7321,7 +7850,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -7344,7 +7875,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -7367,7 +7900,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -7390,7 +7925,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -7413,7 +7950,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -7436,7 +7975,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -7459,7 +8000,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -7482,7 +8025,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -7505,7 +8050,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -7528,7 +8075,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -7551,7 +8100,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -7574,7 +8125,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -7597,7 +8150,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -7620,7 +8175,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -7643,7 +8200,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -7666,7 +8225,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -7689,7 +8250,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -7712,7 +8275,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -7735,7 +8300,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -7758,7 +8325,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -7781,7 +8350,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -7804,7 +8375,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -7827,7 +8400,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -7850,7 +8425,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -7873,7 +8450,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -7896,7 +8475,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -7919,7 +8500,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -7942,7 +8525,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -7965,7 +8550,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -7988,7 +8575,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -8011,7 +8600,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -8034,7 +8625,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -8057,7 +8650,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -8080,7 +8675,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -8103,7 +8700,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -8126,7 +8725,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -8149,7 +8750,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -8172,7 +8775,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -8195,7 +8800,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -8218,7 +8825,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -8241,7 +8850,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -8264,7 +8875,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -8287,7 +8900,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -8310,7 +8925,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -8333,7 +8950,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -8356,7 +8975,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -8379,7 +9000,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -8402,7 +9025,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -8425,34 +9050,135 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     }
   ],
   "playlist": null,
   "playlistSound": null,
   "journal": null,
   "journalEntryPage": null,
-  "folder": null,
+  "folder": "qLQ7czZvDFN7n81z",
   "flags": {
-    "exportSource": {
-      "world": "scoured-stars-2",
-      "system": "sfrpg",
-      "coreVersion": "11.315",
-      "systemVersion": "0.25.3"
+    "helyx-maker-3": {
+      "config": {
+        "idname": "sfs1e09_scene-a",
+        "version": "7.87",
+        "source": "sfs1e09-live-exploration-extreme"
+      }
     }
   },
   "_stats": {
     "systemId": "sfrpg",
-    "systemVersion": "0.25.3",
-    "coreVersion": "11.315",
-    "createdTime": 1715683316403,
-    "modifiedTime": 1715944784991,
-    "lastModifiedBy": "asU9bpxPUhRe7Byf"
+    "systemVersion": "14.0.1",
+    "coreVersion": "14.360",
+    "createdTime": 1782647406530,
+    "modifiedTime": 1782647565907,
+    "lastModifiedBy": "mdOMEP819emXBqHU",
+    "exportSource": {
+      "worldId": "sf1-dev",
+      "uuid": "Scene.xun4wOKQw1Y6hpgy",
+      "coreVersion": "14.360",
+      "systemId": "sfrpg",
+      "systemVersion": "14.0.1"
+    },
+    "compendiumSource": null,
+    "duplicateSource": null
   },
-  "foreground": null,
-  "thumb": "worlds/scoured-stars-2/assets/scenes/IlJ3d5kvL0WokbSX-thumb.webp",
-  "fogOverlay": null,
-  "fogExploredColor": null,
-  "fogUnexploredColor": null,
-  "weather": ""
+  "thumb": "worlds/sf1-dev/assets/scenes/thumb-hbcVnZo73HU8cIr5os63Sw.webp",
+  "weather": "",
+  "shiftX": 25,
+  "shiftY": 26,
+  "initialLevel": "defaultLevel0000",
+  "fog": {
+    "mode": 1,
+    "colors": {
+      "explored": null,
+      "unexplored": null
+    }
+  },
+  "environment": {
+    "darknessLevel": 0,
+    "darknessLock": false,
+    "globalLight": {
+      "enabled": true,
+      "alpha": 0.5,
+      "bright": false,
+      "color": null,
+      "coloration": 1,
+      "luminosity": 0,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "darkness": {
+        "min": 0,
+        "max": 0.75
+      }
+    },
+    "cycle": true,
+    "base": {
+      "hue": 0,
+      "intensity": 0,
+      "luminosity": 0,
+      "saturation": 0,
+      "shadows": 0
+    },
+    "dark": {
+      "hue": 0.7138888888888889,
+      "intensity": 0,
+      "luminosity": -0.25,
+      "saturation": 0,
+      "shadows": 0
+    }
+  },
+  "transition": {
+    "type": null,
+    "duration": 1500,
+    "activeOnly": false
+  },
+  "levels": [
+    {
+      "_id": "defaultLevel0000",
+      "name": "Level",
+      "elevation": {
+        "bottom": 0,
+        "top": 20
+      },
+      "background": {
+        "color": "#999999",
+        "src": "helyx/sfs1e09-live-exploration-extreme/scenes/scene-a.webp",
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "foreground": {
+        "src": null,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "fog": {
+        "src": null,
+        "tint": "#ffffff"
+      },
+      "textures": {
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "offsetX": 0,
+        "offsetY": 0,
+        "fit": "fill",
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "visibility": {
+        "levels": []
+      },
+      "sort": 0,
+      "flags": {}
+    }
+  ],
+  "regions": [],
+  "ownership": {
+    "default": 0
+  }
 }

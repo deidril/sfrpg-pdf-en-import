@@ -1,21 +1,20 @@
 {
-  "name": "Chapter 4 - Scene A",
-  "tokens": [],
+  "name": "Town",
   "navigation": false,
   "navName": "",
-  "width": 1750,
-  "height": 2710,
-  "padding": 0.25,
+  "width": 3480,
+  "height": 4062,
+  "padding": 0,
   "initial": {
-    "x": 1400,
-    "y": 2050,
-    "scale": 0.271
+    "x": 1952,
+    "y": 2115,
+    "scale": 0.25
   },
   "grid": {
-    "type": 4,
-    "size": 100,
-    "color": "#ffffff",
-    "alpha": 1,
+    "type": 0,
+    "size": 300,
+    "color": "#000000",
+    "alpha": 0.2,
     "distance": 5,
     "units": "ft",
     "style": "solidLines",
@@ -23,8 +22,9 @@
   },
   "tokenVision": true,
   "drawings": [],
+  "tokens": [],
   "lights": [],
-  "notes": [],
+  "notes": [ ],
   "sounds": [],
   "tiles": [],
   "walls": [],
@@ -32,13 +32,13 @@
   "playlistSound": null,
   "journal": null,
   "journalEntryPage": null,
-  "folder": "9ylJsfzyWgEyPita",
+  "folder": "j07kcUZfomNKAFNd",
   "flags": {
     "helyx-maker-3": {
       "config": {
-        "idname": "scst_scene-04a",
+        "idname": "juke_scene-town",
         "version": "7.87",
-        "source": "scoured-stars"
+        "source": "junker-s-delight"
       }
     }
   },
@@ -46,12 +46,12 @@
     "systemId": "sfrpg",
     "systemVersion": "14.0.2",
     "coreVersion": "14.365",
-    "createdTime": 1784384586487,
-    "modifiedTime": 1784388435634,
+    "createdTime": 1784379820847,
+    "modifiedTime": 1784383342894,
     "lastModifiedBy": "meZusYDnfb1dd8Nd",
     "exportSource": {
       "worldId": "sf1-dev",
-      "uuid": "Scene.9JbMtMdiG4saqeuS",
+      "uuid": "Scene.WvRfPedCVSn81fO2",
       "coreVersion": "14.365",
       "systemId": "sfrpg",
       "systemVersion": "14.0.2"
@@ -59,10 +59,10 @@
     "compendiumSource": null,
     "duplicateSource": null
   },
-  "thumb": "worlds/sf1-dev/assets/scenes/thumb-VNVefDZoYFlZh5Dm-VBTMg.webp",
+  "thumb": "worlds/sf1-dev/assets/scenes/thumb-xc4N0xLA0hRu2yve5A_mTQ.webp",
   "weather": "",
-  "shiftX": 50,
-  "shiftY": 12,
+  "shiftX": 0,
+  "shiftY": 0,
   "initialLevel": "defaultLevel0000",
   "fog": {
     "mode": 1,
@@ -120,7 +120,7 @@
       },
       "background": {
         "color": "#999999",
-        "src": "helyx/scoured-stars/scenes/scene-04a.webp",
+        "src": "helyx/junker-s-delight/scenes/khefak-depot.webp",
         "tint": "#ffffff",
         "alphaThreshold": 0.75
       },

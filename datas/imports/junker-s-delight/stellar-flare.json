@@ -1,17 +1,8 @@
 {
   "name": "Ship",
-  "navigation": true,
-  "navOrder": 0,
+  "tokens": [ ],
+  "navigation": false,
   "navName": "",
-  "background": {
-    "src": "helyx/junker-s-delight/scenes/stellar-flare.webp",
-    "scaleX": 1,
-    "scaleY": 1,
-    "offsetX": 14,
-    "offsetY": -25,
-    "rotation": 0
-  },
-  "foregroundElevation": 20,
   "width": 3986,
   "height": 5190,
   "padding": 0.25,
@@ -20,278 +11,21 @@
     "y": null,
     "scale": null
   },
-  "backgroundColor": "#999999",
   "grid": {
     "type": 1,
     "size": 100,
     "color": "#000000",
     "alpha": 1,
     "distance": 5,
-    "units": "ft"
+    "units": "ft",
+    "style": "solidLines",
+    "thickness": 1
   },
   "tokenVision": true,
-  "fogExploration": true,
-  "fogReset": 1691611965825,
-  "globalLight": true,
-  "globalLightThreshold": 0.75,
-  "darkness": 0,
   "drawings": [],
-  "tokens": [ ],
   "lights": [],
-  "notes": [
-    {
-      "entryId": "DwDYOExrFd41e0yL",
-      "pageId": "58bgknHYtZPNP3BA",
-
-      "text": "H1",
-      "x": 2791,
-      "y": 5803,
-      "global": false,
-      "iconSize": 40,
-      "texture": {
-        "tint": null,
-        "src": "icons/svg/book.svg",
-        "scaleX": 1,
-        "scaleY": 1,
-        "offsetX": 0,
-        "offsetY": 0,
-        "rotation": 0
-      },
-      "fontFamily": "Arial",
-      "fontSize": 32,
-      "textColor": "#FFFFFF",
-      "textAnchor": 1,
-      "_id": "i9NVcr9E13wVRz7Z",
-      "flags": {      "helyx" : { "idname": "juke_h01" } }
-    },
-    {
-      "entryId": "DwDYOExrFd41e0yL",
-      "pageId": "yE4zysFlANLpaSy3",
-
-      "text": "H2",
-      "x": 2792,
-      "y": 5214,
-      "global": false,
-      "iconSize": 40,
-      "texture": {
-        "tint": null,
-        "src": "icons/svg/book.svg",
-        "scaleX": 1,
-        "scaleY": 1,
-        "offsetX": 0,
-        "offsetY": 0,
-        "rotation": 0
-      },
-      "fontFamily": "Arial",
-      "fontSize": 32,
-      "textColor": "#FFFFFF",
-      "textAnchor": 1,
-      "_id": "jumu8s5T17kdQIQQ",
-      "flags": {       "helyx" : { "idname": "juke_h02" } }
-    },
-    {
-      "entryId": "DwDYOExrFd41e0yL",
-      "pageId": "c98pJNZMi2dKoprl",
-
-      "text": "H3",
-      "x": 2797,
-      "y": 4888,
-      "global": false,
-      "iconSize": 40,
-      "texture": {
-        "tint": null,
-        "src": "icons/svg/book.svg",
-        "scaleX": 1,
-        "scaleY": 1,
-        "offsetX": 0,
-        "offsetY": 0,
-        "rotation": 0
-      },
-      "fontFamily": "Arial",
-      "fontSize": 32,
-      "textColor": "#FFFFFF",
-      "textAnchor": 1,
-      "_id": "cuDPBFs5queRWzEn",
-      "flags": {       "helyx" : { "idname": "juke_h03" } }
-    },
-    {
-      "entryId": "DwDYOExrFd41e0yL",
-      "pageId": "PmPtStYvzHB9mTEe",
-
-      "text": "H4",
-      "x": 2180,
-      "y": 4819,
-      "global": false,
-      "iconSize": 40,
-      "texture": {
-        "tint": null,
-        "src": "icons/svg/book.svg",
-        "scaleX": 1,
-        "scaleY": 1,
-        "offsetX": 0,
-        "offsetY": 0,
-        "rotation": 0
-      },
-      "fontFamily": "Arial",
-      "fontSize": 32,
-      "textColor": "#FFFFFF",
-      "textAnchor": 1,
-      "_id": "UK5B7YkZWmOek9YJ",
-      "flags": {       "helyx" : { "idname": "juke_h04" } }
-    },
-    {
-      "entryId": "DwDYOExrFd41e0yL",
-      "pageId": "MDEEbPCKsBtemQBL",
-
-      "text": "H5",
-      "x": 1700,
-      "y": 4200,
-      "global": false,
-      "iconSize": 40,
-      "texture": {
-        "tint": null,
-        "src": "icons/svg/book.svg",
-        "scaleX": 1,
-        "scaleY": 1,
-        "offsetX": 0,
-        "offsetY": 0,
-        "rotation": 0
-      },
-      "fontFamily": "Arial",
-      "fontSize": 32,
-      "textColor": "#FFFFFF",
-      "textAnchor": 1,
-      "_id": "7fOGhVDV3wG0vG6h",
-      "flags": {       "helyx" : { "idname": "juke_h05" } }
-    },
-    {
-      "entryId": "DwDYOExrFd41e0yL",
-      "pageId": "Pfwol4zUu032GR83",
-
-      "text": "H8",
-      "x": 3482,
-      "y": 3740,
-      "global": false,
-      "iconSize": 40,
-      "texture": {
-        "tint": null,
-        "src": "icons/svg/book.svg",
-        "scaleX": 1,
-        "scaleY": 1,
-        "offsetX": 0,
-        "offsetY": 0,
-        "rotation": 0
-      },
-      "fontFamily": "Arial",
-      "fontSize": 32,
-      "textColor": "#FFFFFF",
-      "textAnchor": 1,
-      "_id": "In4hAl7fK9wCTiNc",
-      "flags": {       "helyx" : { "idname": "juke_h08" } }
-    },
-    {
-      "entryId": "DwDYOExrFd41e0yL",
-      "pageId": "1lt9mH1OjzzfEmSi",
-
-      "text": "H7",
-      "x": 2383,
-      "y": 3740,
-      "global": false,
-      "iconSize": 40,
-      "texture": {
-        "tint": null,
-        "src": "icons/svg/book.svg",
-        "scaleX": 1,
-        "scaleY": 1,
-        "offsetX": 0,
-        "offsetY": 0,
-        "rotation": 0
-      },
-      "fontFamily": "Arial",
-      "fontSize": 32,
-      "textColor": "#FFFFFF",
-      "textAnchor": 1,
-      "_id": "LlBnyHOf9YpDMRKv",
-      "flags": {       "helyx" : { "idname": "juke_h07" } }
-    },
-    {
-      "entryId": "DwDYOExrFd41e0yL",
-      "pageId": "h4zl2vD0H4O4iCUT",
-
-      "text": "H9",
-      "x": 2794,
-      "y": 3098,
-      "global": false,
-      "iconSize": 40,
-      "texture": {
-        "tint": null,
-        "src": "icons/svg/book.svg",
-        "scaleX": 1,
-        "scaleY": 1,
-        "offsetX": 0,
-        "offsetY": 0,
-        "rotation": 0
-      },
-      "fontFamily": "Arial",
-      "fontSize": 32,
-      "textColor": "#FFFFFF",
-      "textAnchor": 1,
-      "_id": "qA7tF0RB1EyhCqzL",
-      "flags": {       "helyx" : { "idname": "juke_h09" } }
-    },
-    {
-      "entryId": "DwDYOExrFd41e0yL",
-      "pageId": "WDxOTUzwAp0RRJnG",
-
-      "text": "H6",
-      "x": 3787,
-      "y": 4862,
-      "global": false,
-      "iconSize": 40,
-      "texture": {
-        "tint": null,
-        "src": "icons/svg/book.svg",
-        "scaleX": 1,
-        "scaleY": 1,
-        "offsetX": 0,
-        "offsetY": 0,
-        "rotation": 0
-      },
-      "fontFamily": "Arial",
-      "fontSize": 32,
-      "textColor": "#FFFFFF",
-      "textAnchor": 1,
-      "_id": "Bcah8skQqAhmU8Ph",
-      "flags": {      "helyx" : { "idname": "juke_h06"  } }
-    },
-    {
-      "entryId": "DwDYOExrFd41e0yL",
-      "pageId": "h4zl2vD0H4O4iCUT",
-
-      "text": "H10",
-      "x": 2779,
-      "y": 2501,
-      "global": false,
-      "iconSize": 40,
-      "texture": {
-        "tint": null,
-        "src": "icons/svg/book.svg",
-        "scaleX": 1,
-        "scaleY": 1,
-        "offsetX": 0,
-        "offsetY": 0,
-        "rotation": 0
-      },
-      "fontFamily": "Arial",
-      "fontSize": 32,
-      "textColor": "#FFFFFF",
-      "textAnchor": 1,
-      "_id": "kT6osAnKDKT2D3HQ",
-      "flags": {       "helyx" : { "idname": "juke_h10" } }
-    }
-  ],
+  "notes": [ ],
   "sounds": [],
-  "templates": [],
   "tiles": [],
   "walls": [
     {
@@ -315,7 +49,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -338,7 +74,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -361,7 +99,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -384,7 +124,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -407,7 +149,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -430,7 +174,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -453,7 +199,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -476,7 +224,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -499,7 +249,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -522,7 +274,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -545,7 +299,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -568,7 +324,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -591,7 +349,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -614,7 +374,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -637,7 +399,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -660,7 +424,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -683,7 +449,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -706,7 +474,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -729,7 +499,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -752,7 +524,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -775,7 +549,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -798,7 +574,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -821,7 +599,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -844,7 +624,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -867,7 +649,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -890,7 +674,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -913,7 +699,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -936,7 +724,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -959,7 +749,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -982,7 +774,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -1005,7 +799,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -1028,7 +824,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -1051,7 +849,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -1074,7 +874,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -1097,7 +899,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -1120,7 +924,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -1143,7 +949,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -1166,7 +974,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -1189,7 +999,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -1212,7 +1024,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -1235,7 +1049,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -1258,7 +1074,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -1281,7 +1099,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 10,
@@ -1304,7 +1124,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 10,
@@ -1327,7 +1149,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 10,
@@ -1350,7 +1174,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 10,
@@ -1373,7 +1199,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 10,
@@ -1396,7 +1224,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 10,
@@ -1419,7 +1249,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 10,
@@ -1442,7 +1274,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 10,
@@ -1465,7 +1299,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 10,
@@ -1488,7 +1324,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 10,
@@ -1511,7 +1349,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 10,
@@ -1534,7 +1374,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 10,
@@ -1557,7 +1399,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -1580,7 +1424,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -1603,7 +1449,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -1626,7 +1474,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -1649,7 +1499,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -1672,7 +1524,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -1695,7 +1549,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -1718,7 +1574,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -1741,7 +1599,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -1764,7 +1624,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -1787,7 +1649,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -1810,7 +1674,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -1833,7 +1699,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -1856,7 +1724,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -1879,7 +1749,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -1902,7 +1774,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -1925,7 +1799,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -1948,7 +1824,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -1971,7 +1849,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -1994,7 +1874,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -2017,7 +1899,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -2040,7 +1924,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -2063,7 +1949,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -2086,7 +1974,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -2109,7 +1999,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -2132,7 +2024,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 10,
@@ -2155,7 +2049,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 10,
@@ -2178,7 +2074,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 10,
@@ -2201,7 +2099,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -2224,7 +2124,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -2247,7 +2149,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -2270,7 +2174,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -2293,7 +2199,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -2316,7 +2224,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -2339,7 +2249,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -2362,7 +2274,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -2385,7 +2299,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -2408,7 +2324,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -2431,7 +2349,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 10,
@@ -2454,7 +2374,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 10,
@@ -2477,7 +2399,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -2500,7 +2424,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -2523,7 +2449,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -2546,7 +2474,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -2569,7 +2499,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -2592,7 +2524,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -2615,7 +2549,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -2638,7 +2574,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -2661,7 +2599,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -2684,7 +2624,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -2707,7 +2649,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -2730,7 +2674,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -2753,7 +2699,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -2776,7 +2724,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -2799,7 +2749,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -2822,7 +2774,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -2845,7 +2799,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -2868,7 +2824,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -2891,7 +2849,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -2914,7 +2874,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -2937,7 +2899,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 10,
@@ -2960,7 +2924,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 10,
@@ -2983,7 +2949,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 10,
@@ -3006,7 +2974,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 10,
@@ -3029,7 +2999,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 10,
@@ -3052,7 +3024,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 10,
@@ -3075,7 +3049,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 10,
@@ -3098,7 +3074,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 10,
@@ -3121,7 +3099,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 10,
@@ -3144,7 +3124,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -3167,7 +3149,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -3190,7 +3174,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -3213,7 +3199,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -3236,7 +3224,9 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     },
     {
       "light": 20,
@@ -3259,34 +3249,134 @@
         "sound": null,
         "attenuation": false
       },
-      "flags": {}
+      "flags": {},
+      "levels": [],
+      "animation": null
     }
   ],
   "playlist": null,
   "playlistSound": null,
   "journal": null,
   "journalEntryPage": null,
-  "folder": null,
+  "folder": "j07kcUZfomNKAFNd",
   "flags": {
-    "exportSource": {
-      "world": "sf244",
-      "system": "sfrpg",
-      "coreVersion": "11.307",
-      "systemVersion": "0.24.2"
+    "helyx-maker-3": {
+      "config": {
+        "idname": "juke_scene-stellar-flare",
+        "version": "7.87",
+        "source": "junker-s-delight"
+      }
     }
   },
   "_stats": {
     "systemId": "sfrpg",
-    "systemVersion": "0.24.2",
-    "coreVersion": "11.307",
-    "createdTime": 1691611965829,
-    "modifiedTime": 1691612719976,
-    "lastModifiedBy": "G087rHiWssGNHJOT"
+    "systemVersion": "14.0.2",
+    "coreVersion": "14.365",
+    "createdTime": 1784379820547,
+    "modifiedTime": 1784383470956,
+    "lastModifiedBy": "meZusYDnfb1dd8Nd",
+    "exportSource": {
+      "worldId": "sf1-dev",
+      "uuid": "Scene.alnocVXPe3ntja7Y",
+      "coreVersion": "14.365",
+      "systemId": "sfrpg",
+      "systemVersion": "14.0.2"
+    },
+    "compendiumSource": null,
+    "duplicateSource": null
   },
-  "foreground": null,
-  "thumb": "worlds/sf244/assets/scenes/c8I8mi1iASJLo3k4-thumb.webp",
-  "fogOverlay": null,
-  "fogExploredColor": null,
-  "fogUnexploredColor": null,
-  "weather": ""
+  "thumb": "worlds/sf1-dev/assets/scenes/thumb-NOOBGMBWuy4EmMXauy9dzw.webp",
+  "weather": "",
+  "shiftX": 14,
+  "shiftY": -25,
+  "initialLevel": "defaultLevel0000",
+  "fog": {
+    "mode": 1,
+    "colors": {
+      "explored": null,
+      "unexplored": null
+    }
+  },
+  "environment": {
+    "darknessLevel": 0,
+    "darknessLock": false,
+    "globalLight": {
+      "enabled": true,
+      "alpha": 0.5,
+      "bright": false,
+      "color": null,
+      "coloration": 1,
+      "luminosity": 0,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "darkness": {
+        "min": 0,
+        "max": 0.75
+      }
+    },
+    "cycle": true,
+    "base": {
+      "hue": 0,
+      "intensity": 0,
+      "luminosity": 0,
+      "saturation": 0,
+      "shadows": 0
+    },
+    "dark": {
+      "hue": 0.7138888888888889,
+      "intensity": 0,
+      "luminosity": -0.25,
+      "saturation": 0,
+      "shadows": 0
+    }
+  },
+  "transition": {
+    "type": null,
+    "duration": 1500,
+    "activeOnly": false
+  },
+  "levels": [
+    {
+      "_id": "defaultLevel0000",
+      "name": "Level",
+      "elevation": {
+        "bottom": 0,
+        "top": 20
+      },
+      "background": {
+        "color": "#999999",
+        "src": "helyx/junker-s-delight/scenes/stellar-flare.webp",
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "foreground": {
+        "src": null,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "fog": {
+        "src": null
+      },
+      "textures": {
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "offsetX": 0,
+        "offsetY": 0,
+        "fit": "fill",
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "visibility": {
+        "levels": []
+      },
+      "sort": 0,
+      "flags": {}
+    }
+  ],
+  "regions": [],
+  "ownership": {
+    "default": 0
+  }
 }
