@@ -20340,6 +20340,9 @@ export class HelyxEntity
     /// @brief      Redefinition of the name
     #name           = null;
 
+    /// @brief     External model name if artwork/token is not defined
+    #model          = null;
+
     /// @brief      Redefinition of the artwork image
     #img            = null;
 
@@ -20372,6 +20375,7 @@ export class HelyxEntity
     get name  ()     { return this.#name; }
     get img()        { return this.#img; }
     get token()      { return this.#token; }
+    get model()      { return this.#model; }
     get description() { return this.#description; }
     get rarity()     { return this.#rarity; }
 
@@ -20382,6 +20386,7 @@ export class HelyxEntity
             case 'helyx': this.#helyx = Deid.build(HelyxHeader, value_ ); break;
             case 'img' :  this.#img = Deid.build(HelyxImageReference, value_ ); break;
             case 'token' : this.#token = Deid.build(HelyxImageReference, value_ ); break;
+            case 'model' : this.#model = value_; break;
             case 'name'  : this.#name   = HelyxContent.build(value_); break;
             case 'description' : this.#description = HelyxContent.build(value_); break;
             case 'rarity' : this.#rarity = value_; break;
@@ -20403,6 +20408,7 @@ export class HelyxEntity
         output_.any('description',this.#description);
         output_.field('img', this.#img);
         output_.field('token', this.#token);
+        output_.field('model', this.#model);
         return output_.inlined_attributes(this,  ['rarity']);
     }      
 }
@@ -24996,12 +25002,12 @@ export class HelyxBlockRoomSection extends HelyxPart
 
             case 'skill-arcana' : return "icons/magic/symbols/runes-triangle-blue.webp";
             case 'skill-athletism' : return "icons/skills/melee/unarmed-punch-fist-yellow-red.webp";
-            case 'skill-computer' : return Deid.compile("{{{imgsrc 'shared' 'icons/computer.webp'}}}");
+            case 'skill-computer' : return "icons/tools/tech/mouse-computer.webp";
             case 'skill-crafting' : return "icons/skills/trades/smithing-anvil-silver-red.webp";
             case 'skill-culture' : return "icons/sundries/books/book-stack.webp";
             case 'skill-diplomacy' : return "icons/skills/social/diplomacy-handshake-yellow.webp";
             case "skill-intimidation" : return "icons/skills/social/intimidation-impressing.webp";
-            case "skill-life-science" : return Deid.compile("{{{imgsrc 'shared' 'icons/life-science.webp'}}}");
+            case "skill-life-science" : return "icons/tools/medical/mouse-medication-pills-bottle.webp"
             case "skill-nature": return "icons/environment/wilderness/tree-ash.webp";
             case "skill-perception": return "icons/magic/perception/eye-ringed-green.webp"
             case "skill-performance" : return "icons/tools/instruments/harp-yellow-teal.webp";
@@ -25034,8 +25040,8 @@ export class HelyxBlockRoomSection extends HelyxPart
             case 'healing' : return "icons/magic/life/ankh-gold-blue.webp";
             case 'darkness': return "icons/magic/unholy/silhouette-evil-horned-giant.webp";
 
-            case 'streamed' : return Deid.compile("{{{imgsrc 'shared' 'icons/online-avatar.webp'}}}");
-            case 'starship' : return Deid.compile("{{{imgsrc 'shared' 'icons/starship.webp'}}}");
+            case 'streamed' : return"icons/tools/tech/camera.webp";
+            case 'starship' : return "icons/commodities/tech/engine-thrust-jet.webp";
 
 
             default: 
@@ -27008,6 +27014,7 @@ export class HelyxContext
     import_images = true;
     import_mode = "normal";        // Values are normal or raw
     extract_all_images = false;
+    model = null;
     
     pdf = {};
     helyx = {};
@@ -27305,6 +27312,19 @@ export class HelyxContext
         if(!datas.title) { datas.title = {}; }
 
         return datas;
+    }
+
+    resolve_model(model_, type_)
+    {
+        
+        if(this.model)
+        {
+            let m = game.helyx_externals?.tokens?.[this.model];
+            if(m)
+            if(m[model_])    
+            { return m.directory + "/" + m[model_][type_]; }
+        }
+        return null;
     }
 
     resolve_image(img_)
@@ -29331,8 +29351,6 @@ async #import_from_compendium(item_, source_, entity_type_)
             let other_names = [ _item.helyx.sourceName ];
             if(_item.img_name)
             { other_names.push(_item.img_name); }
-
-            //await this.setPDF2FoundryToken(model, other_names); 
         }
         
 
@@ -29352,6 +29370,16 @@ async #import_from_compendium(item_, source_, entity_type_)
             {
                 _model.prototypeToken.height = _item.height;
             }
+        }
+
+        // Model
+        if(_item.model != null) 
+        {             
+            let img = this.context.resolve_model(_item.model, "img"); 
+            if(img != null) { _model.img = img; }
+        
+            let texture = this.context.resolve_model(_item.model, "token"); 
+            { _model.prototypeToken.texture.src = texture; }
         }
 
         let folderEntry = this.adventure.folder(_item.helyx.target);
@@ -30042,6 +30070,23 @@ export class StateAdventureSummary extends HelyxState
         this.context.accept_tokens_on_maps = $('#helyx-accept-tokens-on-maps').is(':checked');
         Deid.Log.report( 'Tokens on maps used : ' + this.context.accept_tokens_on_maps);
 
+        const adventure_flags = this.context.adventure.flags ?? {};
+        if(adventure_flags.external_mapping)
+        {
+            const model = $('#helyx-external-art-mapping').find(":selected").val();
+            if(game.helyx_externals)
+            if(game.helyx_externals.tokens)
+            if(game.helyx_externals.tokens[model])
+            {
+                this.context.model = model;
+                Deid.Log.report( 'Art Mapping used : ' + game.helyx_externals.tokens[model].name);
+            }
+            else 
+            { this.context.model = null; }
+        }
+        else
+        { this.context.model = null; }
+
         this.#dialog.close();
         this.#dialog = null;
 
@@ -30097,10 +30142,24 @@ export class StateAdventureSummary extends HelyxState
         summary.options = 
         { 
             midjourney_content : adventure_flags.midjourney_content ? "normal" : "none" ,
+            use_external_art_mappings : adventure_flags.external_mapping ? "normal" : "none" ,
             midjourney_content_description : adventure_flags.midjourney_content_description ?? "",
             deidril_maps : adventure_flags.deidril_maps ? "normal" : "none" ,
             tokens_on_maps : adventure_flags.tokens_on_maps ? "normal" : "none"
         };
+
+        if(adventure_flags.external_mapping)
+        if(game.helyx_externals)
+        if(game.helyx_externals.tokens)
+        {
+            summary.options.external_art_mappings = [];
+            for(const name in game.helyx_externals.tokens)
+            {
+                 const collection = game.helyx_externals.tokens[name];
+                 summary.options.external_art_mappings.push( { name: collection.name, idname : name} );
+            }
+        }
+
     }
 
     #dialog_missing_dependencies()
@@ -30531,7 +30590,7 @@ export class HelyxJunkersDelight
 
     static flags = 
     { 
-        midjourney_content: true, 
+        external_mapping: true,
         tokens_on_maps: true,
         skip_pages_without_images: true,
         art_map: false
@@ -30976,14 +31035,7 @@ export class HelyxJunkersDelight
 			}
 		}
 	},
-	"img": {
-		"src": "{{{imgsrc 'shared' 'images/traps/plasma_torpedo.actor.webp'}}}",
-		"origin": "MJ"
-	},
-	"token": {
-		"src": "{{{imgsrc 'shared' '/images/traps/plasma_torpedo.token.webp'}}}",
-		"origin": "MJ"
-	}
+	"model": "Plasma Torpedo"
 }]
 ,[ "sfrpg_juke_auto-turret" ,{
 	"helyx": {
@@ -37925,7 +37977,7 @@ export class HelyxAlienArchive1
 
     static flags = 
     { 
-        midjourney_content: false, 
+        external_mapping: false,
         tokens_on_maps: false,
         skip_pages_without_images: true,
         art_map: true
@@ -38190,7 +38242,7 @@ export class HelyxAlienArchive2
 
     static flags = 
     { 
-        midjourney_content: false, 
+        external_mapping: false,
         tokens_on_maps: false,
         skip_pages_without_images: true,
         art_map: true
@@ -38491,7 +38543,7 @@ export class HelyxAlienArchive3
 
     static flags = 
     { 
-        midjourney_content: false, 
+        external_mapping: false,
         tokens_on_maps: false,
         skip_pages_without_images: true,
         art_map: true
@@ -38791,7 +38843,7 @@ export class HelyxAlienArchive4
 
     static flags = 
     { 
-        midjourney_content: false, 
+        external_mapping: false,
         tokens_on_maps: false,
         skip_pages_without_images: true,
         art_map: true
@@ -39093,7 +39145,7 @@ export class HelyxSystemTakedown
 
     static flags = 
     { 
-        midjourney_content: true, 
+        external_mapping: true,
         tokens_on_maps: true,
         skip_pages_without_images: true,
         art_map: false
@@ -39197,14 +39249,7 @@ export class HelyxSystemTakedown
 			}
 		}
 	},
-	"img": {
-		"src": "{{{imgsrc 'shared' 'images/vesks/vesk-outpost-guard_001.actor.webp'}}}",
-		"origin": "MJ"
-	},
-	"token": {
-		"src": "{{{imgsrc 'shared' '/images/vesks/vesk-outpost-guard_001.token.webp'}}}",
-		"origin": "MJ"
-	}
+	"model": "Vesk Outpost Guard"
 }]
 ,[ "sytd_robot-incapacitor" ,{
 	"helyx": {
@@ -39254,14 +39299,7 @@ export class HelyxSystemTakedown
 		}
 	},
 	"name": "{{{xylf 9 72 219 1 'an'}}}",
-	"img": {
-		"src": "{{{imgsrc 'shared' 'images/dogs/shadow-mastiff_000.actor.webp'}}}",
-		"origin": "MJ"
-	},
-	"token": {
-		"src": "{{{imgsrc 'shared' '/images/dogs/shadow-mastiff_000.token.webp'}}}",
-		"origin": "MJ"
-	}
+	"model": "Shadow Mastiff"
 }]
 ,[ "sytd_robot-observer" ,{
 	"helyx": {
@@ -41266,7 +41304,7 @@ export class HelyxScouredStars
 
     static flags = 
     { 
-        midjourney_content: true, 
+        external_mapping: true,
         tokens_on_maps: true,
         skip_pages_without_images: false,
         art_map: false
@@ -41588,29 +41626,7 @@ export class HelyxScouredStars
 ];
     static fonts_files = [ "fonts" ];
 
-    static images = [{"position":{"filename":"{{{imgsrc 'shared' 'images/scoured_stars/npcs/ceren_000.actor.webp'}}}"},"idname":"ceren.actor","target":"actors","tokens":[{"x":11,"y":17,"w":710,"h":710,"idname":"ceren.token","target":"actors","model":"green_sfrpg"}]}
-,{"position":{"filename":"{{{imgsrc 'shared' 'images/scoured_stars/npcs/jubair_000.actor.webp'}}}"},"idname":"jubair.actor","target":"actors","tokens":[{"x":75,"y":0,"w":672,"h":672,"idname":"jubair.token","target":"actors","model":"green_sfrpg"}]}
-,{"position":{"filename":"{{{imgsrc 'shared' 'images/scoured_stars/npcs/triloteya_000.actor.webp'}}}"},"idname":"triloteya.actor","target":"actors","tokens":[{"x":212,"y":0,"w":530,"h":530,"idname":"triloteya.token","target":"actors","model":"red_sfrpg"}]}
-,{"position":{"filename":"{{{imgsrc 'shared' 'images/scoured_stars/npcs/farvenzi_000.actor.webp'}}}"},"idname":"farvenzi.actor","target":"actors","tokens":[{"x":454,"y":268,"w":628,"h":628,"idname":"farvenzi.token","target":"actors","model":"red_sfrpg"}]}
-,{"position":{"filename":"{{{imgsrc 'shared' 'images/scoured_stars/npcs/spinjack_000.actor.webp'}}}"},"idname":"spinjack.actor","target":"actors","tokens":[{"x":515,"y":307,"w":608,"h":608,"idname":"spinjack.token","target":"actors","model":"red_sfrpg"}]}
-,{"position":{"filename":"{{{imgsrc 'shared' 'images/aberrations/huskborn-drone_001.actor.webp'}}}"},"idname":"huskborn-drone.actor","target":"actors","tokens":[{"x":223,"y":42,"w":455,"h":455,"idname":"huskborn-drone.token","target":"actors","model":"red_sfrpg"}]}
-,{"position":{"filename":"{{{imgsrc 'shared' 'images/animals/megzoloth_000.actor.webp'}}}"},"idname":"megzoloth.actor","target":"actors","tokens":[{"x":245,"y":13,"w":407,"h":407,"idname":"megzoloth.token","target":"actors","model":"red_sfrpg"}]}
-,{"position":{"filename":"{{{imgsrc 'shared' 'images/animals/maxillasaur_001.actor.webp'}}}"},"idname":"maxillasaur.actor","target":"actors","tokens":[{"x":0,"y":0,"w":562,"h":562,"idname":"maxillasaur.token","target":"actors","model":"red_sfrpg"}]}
-,{"position":{"filename":"{{{imgsrc 'shared' 'images/elementals/earth-elemental_001.actor.webp'}}}"},"idname":"huge-earth-elemental.actor","target":"actors","tokens":[{"x":572,"y":356,"w":650,"h":650,"idname":"huge-earth-elemental.token","target":"actors","model":"red_sfrpg"}]}
-,{"position":{"filename":"{{{imgsrc 'shared' 'images/elementals/fire-elemental_001.actor.webp'}}}"},"idname":"large-fire-elemental.actor","target":"actors","tokens":[{"x":390,"y":45,"w":590,"h":590,"idname":"large-fire-elemental.token","target":"actors","model":"red_sfrpg"}]}
-,{"position":{"filename":"{{{imgsrc 'shared' 'images/humans/mechanic_001.actor.webp'}}}"},"idname":"kieu-kein.actor","target":"actors","tokens":[{"x":178,"y":15,"w":400,"h":400,"idname":"kieu-kein.token","target":"actors","model":"green_sfrpg"}]}
-,{"position":{"filename":"{{{imgsrc 'shared' 'images/humans/mechanic_003.actor.webp'}}}"},"idname":"kieu-lan.actor","target":"actors","tokens":[{"x":278,"y":53,"w":350,"h":350,"idname":"kieu-lan.token","target":"actors","model":"green_sfrpg"}]}
-,{"position":{"filename":"{{{imgsrc 'shared' 'images/humans/mechanic_002.actor.webp'}}}"},"idname":"kieu-si.actor","target":"actors","tokens":[{"x":268,"y":0,"w":340,"h":340,"idname":"kieu-si.token","target":"actors","model":"green_sfrpg"}]}
-,{"position":{"filename":"{{{imgsrc 'shared' 'images/humans/crazy-scout_001.actor.webp'}}}"},"idname":"crazy-starfinder-operative.actor","target":"actors","tokens":[{"x":130,"y":16,"w":426,"h":426,"idname":"crazy-starfinder-operative.token","target":"actors","model":"red_sfrpg"}]}
-,{"position":{"filename":"{{{imgsrc 'shared' 'images/humans/crazy-guard_001.actor.webp'}}}"},"idname":"crazy-starfinder-guard.actor","target":"actors","tokens":[{"x":272,"y":10,"w":370,"h":370,"idname":"crazy-starfinder-guard.token","target":"actors","model":"red_sfrpg"}]}
-,{"position":{"filename":"{{{imgsrc 'shared' 'images/humans/crazy-citizen_001.actor.webp'}}}"},"idname":"crazy-starfinder-scholar.actor","target":"actors","tokens":[{"x":156,"y":0,"w":410,"h":410,"idname":"crazy-starfinder-scholar.token","target":"actors","model":"red_sfrpg"}]}
-,{"position":{"filename":"{{{imgsrc 'shared' 'images/humanoids/winterborn-ryphorian-soldier_001.actor.webp'}}}"},"idname":"winterborn-ryphorian-security-guard.actor","target":"actors","tokens":[{"x":260,"y":192,"w":304,"h":304,"idname":"winterborn-ryphorian-security-guard.token","target":"actors","model":"red_sfrpg"}]}
-,{"position":{"filename":"{{{imgsrc 'shared' 'images/robots/lore-warden_000.actor.webp'}}}"},"idname":"lore-warden.actor","target":"actors","tokens":[{"x":156,"y":14,"w":356,"h":356,"idname":"lore-warden.token","target":"actors","model":"red_sfrpg"}]}
-,{"position":{"filename":"{{{imgsrc 'shared' 'images/robots/hunter-killer-bot_001.actor.webp'}}}"},"idname":"hunter-killer-bot.actor","target":"actors","tokens":[{"x":0,"y":163,"w":432,"h":432,"idname":"hunter-killer-bot.token","target":"actors","model":"red_sfrpg"}]}
-,{"position":{"filename":"{{{imgsrc 'shared' 'images/starships/starship_001.actor.webp'}}}"},"idname":"starfinder-starship.actor","target":"actors","tokens":[{"x":0,"y":0,"w":1024,"h":1024,"idname":"starfinder-starship.token","target":"actors","model":"starship_hexa_frame"}]}
-,{"position":{"filename":"{{{imgsrc 'shared' 'images/starships/starship_002.actor.webp'}}}"},"idname":"empyrean-eye.actor","target":"actors","tokens":[{"x":0,"y":0,"w":1024,"h":1024,"idname":"empyrean-eye.token","target":"actors","model":"starship_hexa_frame"}]}
-,{"position":{"filename":"{{{imgsrc 'shared' 'images/traps/asteroid.actor.webp'}}}"},"idname":"molten-stone-asteroid.actor","target":"actors","tokens":[{"x":0,"y":0,"w":1024,"h":1024,"idname":"molten-stone-asteroid.token","target":"actors","background":"black","model":"starship_hexa_frame"}]}
-,{"position":{"page":1,"index":49,"x":685,"y":-1,"w":4001,"h":5030,"size":80500120},"idname":"cover","target":"assets"}
+    static images = [{"position":{"page":1,"index":49,"x":685,"y":-1,"w":4001,"h":5030,"size":80500120},"idname":"cover","target":"assets"}
 ,{"position":{"page":1,"index":62,"x":-1,"y":448,"w":2667,"h":1478,"size":15767304},"idname":"backcover","target":"assets"}
 ,{"position":{"page":5,"index":50,"x":1,"y":-1,"w":2668,"h":3472,"size":37053184},"idname":"stellar-map","target":"scenes"}
 ,{"position":{"page":6,"index":35,"x":60,"y":20,"w":2260,"h":3013,"size":20428140},"idname":"p6","target":"assets"}
@@ -41749,7 +41765,7 @@ export class HelyxScouredStars
 ,{"position":{"page":253,"index":1084,"x":206,"y":288,"w":600,"h":1142,"size":2740800},"idname":"tera-relic","target":"items"}
 ,{"position":{"page":259,"index":295,"x":-66,"y":297,"w":3042,"h":1969,"size":17969094},"idname":"mechageddon","target":"assets"}
 ];
-    static images_files = [  "images/externals" , "images/pdf" ];
+    static images_files = [  "images/pdf" ];
 
     static scenes_elements = [];
     static scenes_elements_files = [];
@@ -42011,14 +42027,7 @@ export class HelyxScouredStars
 			}
 		}
 	},
-	"img": {
-		"src": "{{{imgsrc 'shared' 'images/humans/corporate_hired_agent_000.actor.webp'}}}",
-		"origin": "MJ"
-	},
-	"token": {
-		"src": "{{{imgsrc 'shared' 'images/humans/corporate_hired_agent_000.token.webp'}}}",
-		"origin": "MJ"
-	}
+	"model": "Human Corporate Agent"
 }]
 ,[ "scst_feather-stalker" ,{
 	"helyx": {
@@ -42033,14 +42042,7 @@ export class HelyxScouredStars
 			}
 		}
 	},
-	"img": {
-		"src": "{{{imgsrc 'shared' 'images/aberrations/feather_stalker_000.actor.webp'}}}",
-		"origin": "MJ"
-	},
-	"token": {
-		"src": "{{{imgsrc 'shared' 'images/aberrations/feather_stalker_000.token.webp'}}}",
-		"origin": "MJ"
-	}
+	"model": "Feather Stalker"
 }]
 ,[ "scst_molten-stone-asteroid" ,{
 	"helyx": {
@@ -42055,14 +42057,7 @@ export class HelyxScouredStars
 			}
 		}
 	},
-	"img": {
-		"src": "{{{imgpath 'molten-stone-asteroid.actor'}}}",
-		"origin": "MJ"
-	},
-	"token": {
-		"src": "{{{tokenpath 'molten-stone-asteroid.token'}}}",
-		"origin": "MJ"
-	}
+	"model": "Molten Stone Asteroid"
 }]
 ,[ "scst_fire-extinguisher-trap" ,{
 	"helyx": {
@@ -42077,14 +42072,7 @@ export class HelyxScouredStars
 			}
 		}
 	},
-	"img": {
-		"src": "{{{imgsrc 'shared' 'images/traps/fire_extinguisher_000.actor.webp'}}}",
-		"origin": "MJ"
-	},
-	"token": {
-		"src": "{{{imgsrc 'shared' 'images/traps/fire_extinguisher_000.token.webp'}}}",
-		"origin": "MJ"
-	}
+	"model": "Fire Extinguisher"
 }]
 ,[ "scst_ceren" ,{
 	"helyx": {
@@ -42099,14 +42087,7 @@ export class HelyxScouredStars
 			}
 		}
 	},
-	"img": {
-		"src": "{{{imgpath 'ceren.actor'}}}",
-		"origin": "MJ"
-	},
-	"token": {
-		"src": "{{{tokenpath 'ceren.token'}}}",
-		"origin": "MJ"
-	}
+	"model": "Ceren"
 }]
 ,[ "scst_jubair" ,{
 	"helyx": {
@@ -42121,14 +42102,7 @@ export class HelyxScouredStars
 			}
 		}
 	},
-	"img": {
-		"src": "{{{imgpath 'jubair.actor'}}}",
-		"origin": "MJ"
-	},
-	"token": {
-		"src": "{{{tokenpath 'jubair.token'}}}",
-		"origin": "MJ"
-	}
+	"model": "Jubair"
 }]
 ,[ "scst_kieu-kein" ,{
 	"helyx": {
@@ -42143,14 +42117,7 @@ export class HelyxScouredStars
 			}
 		}
 	},
-	"img": {
-		"src": "{{{imgpath 'kieu-kein.actor'}}}",
-		"origin": "MJ"
-	},
-	"token": {
-		"src": "{{{tokenpath 'kieu-kein.token'}}}",
-		"origin": "MJ"
-	}
+	"model": "Kieu Kein"
 }]
 ,[ "scst_kieu-lan" ,{
 	"helyx": {
@@ -42165,14 +42132,7 @@ export class HelyxScouredStars
 			}
 		}
 	},
-	"img": {
-		"src": "{{{imgpath 'kieu-lan.actor'}}}",
-		"origin": "MJ"
-	},
-	"token": {
-		"src": "{{{tokenpath 'kieu-lan.token'}}}",
-		"origin": "MJ"
-	}
+	"model": "Kieu Lan"
 }]
 ,[ "scst_kieu-si" ,{
 	"helyx": {
@@ -42187,14 +42147,7 @@ export class HelyxScouredStars
 			}
 		}
 	},
-	"img": {
-		"src": "{{{imgpath 'kieu-si.actor'}}}",
-		"origin": "MJ"
-	},
-	"token": {
-		"src": "{{{tokenpath 'kieu-si.token'}}}",
-		"origin": "MJ"
-	}
+	"model": "Kieu Si"
 }]
 ,[ "scst_honorbound" ,{
 	"helyx": {
@@ -42277,14 +42230,7 @@ export class HelyxScouredStars
 			}
 		}
 	},
-	"img": {
-		"src": "{{{imgpath 'triloteya.actor'}}}",
-		"origin": "MJ"
-	},
-	"token": {
-		"src": "{{{tokenpath 'triloteya.token'}}}",
-		"origin": "MJ"
-	}
+	"model": "Triloteya"
 }]
 ,[ "scst_lore-warden" ,{
 	"helyx": {
@@ -42299,12 +42245,7 @@ export class HelyxScouredStars
 			}
 		}
 	},
-	"img": {
-		"src": "{{{imgpath 'lore-warden.actor'}}}"
-	},
-	"token": {
-		"src": "{{{tokenpath 'lore-warden.token'}}}"
-	}
+	"model": "Android Lore Warden"
 }]
 ,[ "scst_vindurth" ,{
 	"helyx": {
@@ -42408,14 +42349,7 @@ export class HelyxScouredStars
 			}
 		}
 	},
-	"img": {
-		"src": "{{{imgpath 'megzoloth.actor'}}}",
-		"origin": "MJ"
-	},
-	"token": {
-		"src": "{{{tokenpath 'megzoloth.token'}}}",
-		"origin": "MJ"
-	}
+	"model": "Megzoloth"
 }]
 ,[ "scst_security-guard" ,{
 	"helyx": {
@@ -42430,14 +42364,7 @@ export class HelyxScouredStars
 			}
 		}
 	},
-	"img": {
-		"src": "{{{imgpath 'winterborn-ryphorian-security-guard.actor'}}}",
-		"origin": "MJ"
-	},
-	"token": {
-		"src": "{{{tokenpath 'winterborn-ryphorian-security-guard.token'}}}",
-		"origin": "MJ"
-	}
+	"model": "Winterborn Ryphorian Security Guard"
 }]
 ,[ "scst_farvenzi" ,{
 	"helyx": {
@@ -42452,14 +42379,7 @@ export class HelyxScouredStars
 			}
 		}
 	},
-	"img": {
-		"src": "{{{imgpath 'farvenzi.actor'}}}",
-		"origin": "MJ"
-	},
-	"token": {
-		"src": "{{{tokenpath 'farvenzi.token'}}}",
-		"origin": "MJ"
-	}
+	"model": "Farvenzi"
 }]
 ,[ "scst_spinjack" ,{
 	"helyx": {
@@ -42474,14 +42394,7 @@ export class HelyxScouredStars
 			}
 		}
 	},
-	"img": {
-		"src": "{{{imgpath 'spinjack.actor'}}}",
-		"origin": "MJ"
-	},
-	"token": {
-		"src": "{{{tokenpath 'spinjack.token'}}}",
-		"origin": "MJ"
-	}
+	"model": "Spinjack"
 }]
 ,[ "scst_monsylkis" ,{
 	"helyx": {
@@ -42497,12 +42410,10 @@ export class HelyxScouredStars
 		}
 	},
 	"img": {
-		"src": "{{{imgpath 'monsylkis.actor'}}}",
-		"origin": "MJ"
+		"src": "{{{imgpath 'monsylkis.actor'}}}"
 	},
 	"token": {
-		"src": "{{{tokenpath 'monsylkis.token'}}}",
-		"origin": "MJ"
+		"src": "{{{tokenpath 'monsylkis.token'}}}"
 	}
 }]
 ,[ "scst_unknown-starship" ,{
@@ -42654,12 +42565,7 @@ export class HelyxScouredStars
 			}
 		}
 	},
-	"img": {
-		"src": "{{{imgpath 'maxillasaur.actor'}}}"
-	},
-	"token": {
-		"src": "{{{tokenpath 'maxillasaur.token'}}}"
-	}
+	"model": "Maxillasaur"
 }]
 ,[ "scst_starfinder-guard" ,{
 	"helyx": {
@@ -42675,12 +42581,7 @@ export class HelyxScouredStars
 		}
 	},
 	"name": "{{{xylf 101 80 279 1 'aenyz'}}}",
-	"img": {
-		"src": "{{{imgpath 'crazy-starfinder-guard.actor'}}}"
-	},
-	"token": {
-		"src": "{{{tokenpath 'crazy-starfinder-guard.token'}}}"
-	}
+	"model": "Human Crazy Guard"
 }]
 ,[ "scst_starfinder-operative" ,{
 	"helyx": {
@@ -42696,12 +42597,7 @@ export class HelyxScouredStars
 		}
 	},
 	"name": "{{{xylf 101 80 231 1 'aenyz'}}}",
-	"img": {
-		"src": "{{{imgpath 'crazy-starfinder-operative.actor'}}}"
-	},
-	"token": {
-		"src": "{{{tokenpath 'crazy-starfinder-operative.token'}}}"
-	}
+	"model": "Human Crazy Operative"
 }]
 ,[ "scst_starfinder-scholar" ,{
 	"helyx": {
@@ -42717,12 +42613,7 @@ export class HelyxScouredStars
 		}
 	},
 	"name": "{{{xylf 101 80 159 1 'aenyz'}}}",
-	"img": {
-		"src": "{{{imgpath 'crazy-starfinder-scholar.actor'}}}"
-	},
-	"token": {
-		"src": "{{{tokenpath 'crazy-starfinder-scholar.token'}}}"
-	}
+	"model": "Human Crazy Scholar"
 }]
 ,[ "scst_huskborn-drone" ,{
 	"helyx": {
@@ -42737,12 +42628,7 @@ export class HelyxScouredStars
 			}
 		}
 	},
-	"img": {
-		"src": "{{{imgpath 'huskborn-drone.actor'}}}"
-	},
-	"token": {
-		"src": "{{{tokenpath 'huskborn-drone.token'}}}"
-	}
+	"model": "Huskborn Drone"
 }]
 ,[ "scst_hunter-killer-bot" ,{
 	"helyx": {
@@ -42757,14 +42643,7 @@ export class HelyxScouredStars
 			}
 		}
 	},
-	"img": {
-		"src": "{{{imgpath 'hunter-killer-bot.actor'}}}",
-		"origin": "MJ"
-	},
-	"token": {
-		"src": "{{{tokenpath 'hunter-killer-bot.token'}}}",
-		"origin": "MJ"
-	}
+	"model": "Hunter Killer Bot"
 }]
 ,[ "scst_jinsul-champion" ,{
 	"helyx": {
@@ -42855,14 +42734,7 @@ export class HelyxScouredStars
 			}
 		}
 	},
-	"img": {
-		"src": "{{{imgpath 'huge-earth-elemental.actor'}}}",
-		"origin": "MJ"
-	},
-	"token": {
-		"src": "{{{tokenpath 'huge-earth-elemental.token'}}}",
-		"origin": "MJ"
-	}
+	"model": "Huge Earth Elemental"
 }]
 ,[ "scst_large-fire-elemental" ,{
 	"helyx": {
@@ -42877,14 +42749,7 @@ export class HelyxScouredStars
 			}
 		}
 	},
-	"img": {
-		"src": "{{{imgpath 'large-fire-elemental.actor'}}}",
-		"origin": "MJ"
-	},
-	"token": {
-		"src": "{{{tokenpath 'large-fire-elemental.token'}}}",
-		"origin": "MJ"
-	}
+	"model": "Large Fire Elemental"
 }]
 ,[ "scst_sand-slitherer" ,{
 	"helyx": {
@@ -42997,14 +42862,7 @@ export class HelyxScouredStars
 			}
 		}
 	},
-	"img": {
-		"src": "{{{imgpath 'empyrean-eye.actor'}}}",
-		"origin": "MJ"
-	},
-	"token": {
-		"src": "{{{tokenpath 'empyrean-eye.token'}}}",
-		"origin": "MJ"
-	}
+	"model": "Starship 002"
 }]
 ,[ "scst_jinsul-iconoclast" ,{
 	"helyx": {
@@ -43018,6 +42876,12 @@ export class HelyxScouredStars
 				"compendium": "~.deid-sfrpg-actors"
 			}
 		}
+	},
+	"img": {
+		"src": "{{{imgpath 'jinsul-iconoclast.actor'}}}"
+	},
+	"token": {
+		"src": "{{{tokenpath 'jinsul-iconoclast.token'}}}"
 	}
 }]
 ,[ "scst_starfinder-ship" ,{
@@ -43033,14 +42897,7 @@ export class HelyxScouredStars
 			}
 		}
 	},
-	"img": {
-		"src": "{{{imgpath 'starfinder-starship.actor'}}}",
-		"origin": "MJ"
-	},
-	"token": {
-		"src": "{{{tokenpath 'starfinder-starship.token'}}}",
-		"origin": "MJ"
-	}
+	"model": "Starship 001"
 }]
 ,[ "scst_a-1" ,{
 	"helyx": {
@@ -57581,7 +57438,7 @@ export class HelyxSFS1E02
 
     static flags = 
     { 
-        midjourney_content: true, 
+        external_mapping: true,
         tokens_on_maps: false,
         skip_pages_without_images: false,
         art_map: false
@@ -57687,14 +57544,7 @@ export class HelyxSFS1E02
 			}
 		}
 	},
-	"img": {
-		"src": "{{{imgsrc 'shared' 'images/vesks/vesk-bodyguard_000.actor.webp'}}}",
-		"origin": "MJ"
-	},
-	"token": {
-		"src": "{{{imgsrc 'shared' '/images/vesks/vesk-bodyguard_000.token.webp'}}}",
-		"origin": "MJ"
-	}
+	"model": "Vesk Bodyguard"
 }]
 ,[ "sfs1e02_vesk-bodyguard-lvl3-4" ,{
 	"helyx": {
@@ -57709,14 +57559,7 @@ export class HelyxSFS1E02
 			}
 		}
 	},
-	"img": {
-		"src": "{{{imgsrc 'shared' 'images/vesks/vesk-bodyguard_000.actor.webp'}}}",
-		"origin": "MJ"
-	},
-	"token": {
-		"src": "{{{imgsrc 'shared' '/images/vesks/vesk-bodyguard_000.token.webp'}}}",
-		"origin": "MJ"
-	}
+	"model": "Vesk Bodyguard"
 }]
 ,[ "sfs1e02_ysoki-ambusher-lvl1-2" ,{
 	"helyx": {
@@ -57731,14 +57574,7 @@ export class HelyxSFS1E02
 			}
 		}
 	},
-	"img": {
-		"src": "{{{imgsrc 'shared' 'images/ysokis/ysoki-ambusher_000.actor.webp'}}}",
-		"origin": "MJ"
-	},
-	"token": {
-		"src": "{{{imgsrc 'shared' '/images/ysokis/ysoki-ambusher_000.token.webp'}}}",
-		"origin": "MJ"
-	}
+	"model": "Ysoki Ambusher"
 }]
 ,[ "sfs1e02_ysoki-ambusher-lvl3-4" ,{
 	"helyx": {
@@ -57753,14 +57589,7 @@ export class HelyxSFS1E02
 			}
 		}
 	},
-	"img": {
-		"src": "{{{imgsrc 'shared' 'images/ysokis/ysoki-ambusher_000.actor.webp'}}}",
-		"origin": "MJ"
-	},
-	"token": {
-		"src": "{{{imgsrc 'shared' '/images/ysokis/ysoki-ambusher_000.token.webp'}}}",
-		"origin": "MJ"
-	}
+	"model": "Ysoki Ambusher"
 }]
 ,[ "sfs1e02_miner-lvl1-2" ,{
 	"helyx": {
@@ -57775,14 +57604,7 @@ export class HelyxSFS1E02
 			}
 		}
 	},
-	"img": {
-		"src": "{{{imgsrc 'shared' 'images/humans/human-miner_000.actor.webp'}}}",
-		"origin": "MJ"
-	},
-	"token": {
-		"src": "{{{imgsrc 'shared' '/images/humans/human-miner_000.token.webp'}}}",
-		"origin": "MJ"
-	}
+	"model": "Human Miner"
 }]
 ,[ "sfs1e02_miner-lvl3-4" ,{
 	"helyx": {
@@ -57797,14 +57619,7 @@ export class HelyxSFS1E02
 			}
 		}
 	},
-	"img": {
-		"src": "{{{imgsrc 'shared' 'images/humans/human-miner_000.actor.webp'}}}",
-		"origin": "MJ"
-	},
-	"token": {
-		"src": "{{{imgsrc 'shared' '/images/humans/human-miner_000.token.webp'}}}",
-		"origin": "MJ"
-	}
+	"model": "Human Miner"
 }]
 ,[ "sfs1e02_philt-lvl1-2" ,{
 	"helyx": {
@@ -57968,12 +57783,10 @@ export class HelyxSFS1E02
 		}
 	},
 	"img": {
-		"src": "{{{imgpath 'vc-arvin.actor'}}}",
-		"origin": "MJ"
+		"src": "{{{imgpath 'vc-arvin.actor'}}}"
 	},
 	"token": {
-		"src": "{{{tokenpath 'vc-arvin.token'}}}",
-		"origin": "MJ"
+		"src": "{{{tokenpath 'vc-arvin.token'}}}"
 	}
 }]
 ,[ "sfs1e02_cover" ,{
@@ -60125,7 +59938,7 @@ export class HelyxSFS1E03
 
     static flags = 
     { 
-        midjourney_content: true, 
+        external_mapping: true,
         tokens_on_maps: false,
         skip_pages_without_images: false,
         art_map: false
@@ -60193,10 +60006,6 @@ export class HelyxSFS1E03
 ,{"position":{"page":8,"index":1380,"x":82,"y":734},"idname":"scene-b","target":"scenes","transformation":{"rotation":90}}
 ,{"position":{"page":13,"index":1361,"x":604,"y":25},"idname":"gibrani-membrane.actor","target":"actors","transformation":{"flip":"H"},"tokens":[{"x":85,"y":100,"w":406,"h":406,"idname":"gibrani-membrane.token","target":"actors","model":"green_sfrpg"}]}
 ,{"position":{"page":16,"index":1380,"x":35,"y":374},"idname":"scene-c","target":"scenes"}
-,{"position":{"filename":"{{{imgsrc 'shared' 'images/starships/orbital-drone_000.actor.webp'}}}"},"idname":"orbital-drone.actor","target":"actors","tokens":[{"x":0,"y":0,"w":1024,"h":1024,"idname":"orbital-drone.token","target":"actors","model":"starship_hexa_frame"}]}
-,{"position":{"filename":"{{{imgsrc 'shared' 'images/starships/orbital-drone-platform_000.actor.webp'}}}"},"idname":"orbital-drone-platform.actor","target":"actors","tokens":[{"x":0,"y":0,"w":1024,"h":1024,"idname":"orbital-drone-platform.token","target":"actors","model":"starship_hexa_frame"}]}
-,{"position":{"filename":"{{{imgsrc 'shared' 'images/animals/sand-brute_000.actor.webp'}}}"},"idname":"sand-brute.actor","target":"actors","tokens":[{"x":945,"y":175,"w":400,"h":400,"idname":"sand-brute.token","target":"actors","model":"red_sfrpg"}]}
-,{"position":{"filename":"{{{imgsrc 'shared' 'images/robots/ghibrani-guardbot_000.actor.webp'}}}"},"idname":"ghibrani-guardbot.actor","target":"actors","tokens":[{"x":460,"y":111,"w":724,"h":724,"idname":"ghibrani-guardbot.token","target":"actors","model":"red_sfrpg"}]}
 ];
     static images_files = [ "images" ];
 
@@ -60220,14 +60029,7 @@ export class HelyxSFS1E03
 			}
 		}
 	},
-	"img": {
-		"src": "{{{imgpath 'sand-brute.actor'}}}",
-		"origin": "MJ"
-	},
-	"token": {
-		"src": "{{{tokenpath 'sand-brute.token'}}}",
-		"origin": "MJ"
-	}
+	"model": "Sand Brute"
 }]
 ,[ "sf1e03_sand-brute-alpha" ,{
 	"helyx": {
@@ -60242,14 +60044,7 @@ export class HelyxSFS1E03
 			}
 		}
 	},
-	"img": {
-		"src": "{{{imgpath 'sand-brute.actor'}}}",
-		"origin": "MJ"
-	},
-	"token": {
-		"src": "{{{tokenpath 'sand-brute.token'}}}",
-		"origin": "MJ"
-	}
+	"model": "Sand Brute"
 }]
 ,[ "sf1e03_ghibrani-guard-bot" ,{
 	"helyx": {
@@ -60264,14 +60059,7 @@ export class HelyxSFS1E03
 			}
 		}
 	},
-	"img": {
-		"src": "{{{imgpath 'ghibrani-guardbot.actor'}}}",
-		"origin": "MJ"
-	},
-	"token": {
-		"src": "{{{tokenpath 'ghibrani-guardbot.token'}}}",
-		"origin": "MJ"
-	}
+	"model": "Guard Drone"
 }]
 ,[ "sf1e03_advanced-ghibrani-guard-bot" ,{
 	"helyx": {
@@ -60286,14 +60074,7 @@ export class HelyxSFS1E03
 			}
 		}
 	},
-	"img": {
-		"src": "{{{imgpath 'ghibrani-guardbot.actor'}}}",
-		"origin": "MJ"
-	},
-	"token": {
-		"src": "{{{tokenpath 'ghibrani-guardbot.token'}}}",
-		"origin": "MJ"
-	}
+	"model": "Guard Drone"
 }]
 ,[ "sf1e03_trapped-door-lvl1-2" ,{
 	"helyx": {
@@ -60336,14 +60117,7 @@ export class HelyxSFS1E03
 			}
 		}
 	},
-	"img": {
-		"src": "{{{imgpath 'orbital-drone-platform.actor'}}}",
-		"origin": "MJ"
-	},
-	"token": {
-		"src": "{{{tokenpath 'orbital-drone-platform.token'}}}",
-		"origin": "MJ"
-	}
+	"model": "Orbital Drone Platform"
 }]
 ,[ "sf1e03_advanced-orbital-drone-platform" ,{
 	"helyx": {
@@ -60358,14 +60132,7 @@ export class HelyxSFS1E03
 			}
 		}
 	},
-	"img": {
-		"src": "{{{imgpath 'orbital-drone-platform.actor'}}}",
-		"origin": "MJ"
-	},
-	"token": {
-		"src": "{{{tokenpath 'orbital-drone-platform.token'}}}",
-		"origin": "MJ"
-	}
+	"model": "Orbital Drone Platform"
 }]
 ,[ "sf1e03_orbital-drone-lvl1-2" ,{
 	"helyx": {
@@ -60380,14 +60147,7 @@ export class HelyxSFS1E03
 			}
 		}
 	},
-	"img": {
-		"src": "{{{imgpath 'orbital-drone.actor'}}}",
-		"origin": "MJ"
-	},
-	"token": {
-		"src": "{{{tokenpath 'orbital-drone.token'}}}",
-		"origin": "MJ"
-	}
+	"model": "Small Ship 000"
 }]
 ,[ "sf1e03_orbital-drone-lvl3-4" ,{
 	"helyx": {
@@ -60402,14 +60162,7 @@ export class HelyxSFS1E03
 			}
 		}
 	},
-	"img": {
-		"src": "{{{imgpath 'orbital-drone.actor'}}}",
-		"origin": "MJ"
-	},
-	"token": {
-		"src": "{{{tokenpath 'orbital-drone.token'}}}",
-		"origin": "MJ"
-	}
+	"model": "Small Ship 000"
 }]
 ,[ "sfs1e03_arvin" ,{
 	"helyx": {
@@ -60425,12 +60178,10 @@ export class HelyxSFS1E03
 		}
 	},
 	"img": {
-		"src": "{{{imgpath 'vc-arvin.actor'}}}",
-		"origin": "MJ"
+		"src": "{{{imgpath 'vc-arvin.actor'}}}"
 	},
 	"token": {
-		"src": "{{{tokenpath 'vc-arvin.token'}}}",
-		"origin": "MJ"
+		"src": "{{{tokenpath 'vc-arvin.token'}}}"
 	}
 }]
 ,[ "sfs1e03_cover" ,{
@@ -62354,7 +62105,7 @@ export class HelyxSFS1E09
 
     static flags = 
     { 
-        midjourney_content: true, 
+        external_mapping: true,
         tokens_on_maps: true,
         skip_pages_without_images: false,
         art_map: false
@@ -62441,27 +62192,7 @@ export class HelyxSFS1E09
 ];
     static fonts_files = [ "fonts" ];
 
-    static images = [{"position":{"filename":"{{{imgsrc 'shared' 'images/undeads/ghoul-assistant_001.actor.webp'}}}"},"idname":"ghoul-assistant-01.actor","target":"actors","tokens":[{"x":277,"y":7,"w":330,"h":330,"idname":"ghoul-assistant-01.token","target":"actors","model":"green_sfrpg"}]}
-,{"position":{"filename":"{{{imgsrc 'shared' 'images/undeads/ghoul-commoner_001.actor.webp'}}}"},"idname":"ghoul-commoner-01.actor","target":"actors","tokens":[{"x":292,"y":0,"w":330,"h":330,"idname":"ghoul-commoner-01.token","target":"actors","model":"green_sfrpg"}]}
-,{"position":{"filename":"{{{imgsrc 'shared' 'images/undeads/ghoul-commoner_002.actor.webp'}}}"},"idname":"ghoul-commoner-02.actor","target":"actors","tokens":[{"x":274,"y":0,"w":320,"h":320,"idname":"ghoul-commoner-02.token","target":"actors","model":"green_sfrpg"}]}
-,{"position":{"filename":"{{{imgsrc 'shared' 'images/undeads/ghoul-commoner_003.actor.webp'}}}"},"idname":"ghoul-commoner-03.actor","target":"actors","tokens":[{"x":270,"y":7,"w":320,"h":320,"idname":"ghoul-commoner-03.token","target":"actors","model":"green_sfrpg"}]}
-,{"position":{"filename":"{{{imgsrc 'shared' 'images/undeads/ghoul-commoner_004.actor.webp'}}}"},"idname":"ghoul-commoner-04.actor","target":"actors","tokens":[{"x":326,"y":0,"w":280,"h":280,"idname":"ghoul-commoner-04.token","target":"actors","model":"green_sfrpg"}]}
-,{"position":{"filename":"{{{imgsrc 'shared' 'images/undeads/ghoul-commoner_005.actor.webp'}}}"},"idname":"ghoul-commoner-05.actor","target":"actors","tokens":[{"x":317,"y":0,"w":285,"h":285,"idname":"ghoul-commoner-05.token","target":"actors","model":"green_sfrpg"}]}
-,{"position":{"filename":"{{{imgsrc 'shared' 'images/undeads/ghoul-commoner_006.actor.webp'}}}"},"idname":"ghoul-commoner-06.actor","target":"actors","tokens":[{"x":286,"y":0,"w":330,"h":330,"idname":"ghoul-commoner-06.token","target":"actors","model":"green_sfrpg"}]}
-,{"position":{"filename":"{{{imgsrc 'shared' 'images/undeads/ghoul-commoner_007.actor.webp'}}}"},"idname":"ghoul-commoner-07.actor","target":"actors","tokens":[{"x":311,"y":22,"w":335,"h":335,"idname":"ghoul-commoner-07.token","target":"actors","model":"green_sfrpg"}]}
-,{"position":{"filename":"{{{imgsrc 'shared' 'images/undeads/ghoul-commoner_008.actor.webp'}}}"},"idname":"ghoul-commoner-08.actor","target":"actors","tokens":[{"x":304,"y":67,"w":345,"h":345,"idname":"ghoul-commoner-08.token","target":"actors","model":"green_sfrpg"}]}
-,{"position":{"filename":"{{{imgsrc 'shared' 'images/undeads/ghoul-commoner_009.actor.webp'}}}"},"idname":"ghoul-commoner-09.actor","target":"actors","tokens":[{"x":300,"y":14,"w":270,"h":270,"idname":"ghoul-commoner-09.token","target":"actors","model":"green_sfrpg"}]}
-,{"position":{"filename":"{{{imgsrc 'shared' 'images/undeads/ghoul-commoner_010.actor.webp'}}}"},"idname":"ghoul-commoner-10.actor","target":"actors","tokens":[{"x":300,"y":0,"w":280,"h":280,"idname":"ghoul-commoner-10.token","target":"actors","model":"green_sfrpg"}]}
-,{"position":{"filename":"{{{imgsrc 'shared' 'images/undeads/ghoul-commoner_011.actor.webp'}}}"},"idname":"ghoul-commoner-11.actor","target":"actors","tokens":[{"x":280,"y":0,"w":310,"h":310,"idname":"ghoul-commoner-11.token","target":"actors","model":"green_sfrpg"}]}
-,{"position":{"filename":"{{{imgsrc 'shared' 'images/undeads/ghoul-commoner_012.actor.webp'}}}"},"idname":"ghoul-commoner-12.actor","target":"actors","tokens":[{"x":240,"y":0,"w":295,"h":295,"idname":"ghoul-commoner-12.token","target":"actors","model":"green_sfrpg"}]}
-,{"position":{"filename":"{{{imgsrc 'shared' 'images/undeads/ghoul-commoner_013.actor.webp'}}}"},"idname":"ghoul-commoner-13.actor","target":"actors","tokens":[{"x":275,"y":0,"w":270,"h":270,"idname":"ghoul-commoner-13.token","target":"actors","model":"green_sfrpg"}]}
-,{"position":{"filename":"{{{imgsrc 'shared' 'images/beast/spicodranth_001.actor.webp'}}}"},"idname":"spicodranth.actor","target":"actors","tokens":[{"x":6,"y":340,"w":680,"h":680,"idname":"spicodranth.token","target":"actors","model":"red_sfrpg"}]}
-,{"position":{"filename":"{{{imgsrc 'shared' 'images/androids/android-assistant_001.actor.webp'}}}"},"idname":"android-assistant_01.actor","target":"actors","tokens":[{"x":340,"y":0,"w":285,"h":285,"idname":"android-assistant_01.token","target":"actors","model":"green_sfrpg"}]}
-,{"position":{"filename":"{{{imgsrc 'shared' 'images/androids/android-assistant_002.actor.webp'}}}"},"idname":"android-assistant_02.actor","target":"actors","tokens":[{"x":298,"y":0,"w":270,"h":270,"idname":"android-assistant_02.token","target":"actors","model":"green_sfrpg"}]}
-,{"position":{"filename":"{{{imgsrc 'shared' 'images/robots/hexapodal-carrier-robot_001.actor.webp'}}}"},"idname":"hexapodal-carrier.actor","target":"actors","tokens":[{"x":113,"y":29,"w":658,"h":658,"idname":"hexapodal-carrier.token","target":"actors","model":"green_sfrpg"}]}
-,{"position":{"filename":"{{{imgsrc 'shared' 'images/oozes/synthefluid-acid_001.actor.webp'}}}"},"idname":"synthefluid.actor","target":"actors","tokens":[{"x":416,"y":105,"w":600,"h":600,"idname":"synthefluid.token","target":"actors","model":"red_sfrpg"}]}
-,{"position":{"filename":"{{{imgsrc 'shared' 'images/dwarves/ancient-dwarf-miner_001.actor.webp'}}}"},"idname":"sky-seeker.actor","target":"actors","tokens":[{"x":284,"y":93,"w":308,"h":308,"idname":"sky-seeker.token","target":"actors","model":"green_sfrpg"}]}
-,{"position":{"page":1,"index":533,"x":215,"y":17},"idname":"cover","target":"assets"}
+    static images = [{"position":{"page":1,"index":533,"x":215,"y":17},"idname":"cover","target":"assets"}
 ,{"position":{"page":4,"index":2054,"x":419,"y":61},"idname":"zo.actor","target":"actors","tokens":[{"x":72,"y":0,"w":185,"h":185,"idname":"zo.token","target":"actors","model":"green_sfrpg"}]}
 ,{"position":{"page":5,"index":2069,"x":459,"y":55},"idname":"luwazi-elsebo.actor","target":"actors","tokens":[{"x":258,"y":0,"w":280,"h":280,"idname":"luwazi-elsebo.token","target":"actors","model":"green_sfrpg"}]}
 ,{"position":{"page":6,"index":2310,"x":194,"y":41},"idname":"wazasha-kevir.actor","target":"actors","tokens":[{"x":150,"y":35,"w":186,"h":186,"idname":"wazasha-kevir.token","target":"actors","model":"green_sfrpg"}]}
@@ -62474,7 +62205,7 @@ export class HelyxSFS1E09
 ,{"position":{"page":19,"index":1780,"x":182,"y":31},"idname":"big-genius-polbak.actor","target":"actors","tokens":[{"x":333,"y":148,"w":386,"h":386,"idname":"big-genius-polbak.token","target":"actors","model":"red_sfrpg"}]}
 ,{"position":{"page":23,"index":1742,"x":55,"y":73},"idname":"frame","target":"assets"}
 ];
-    static images_files = [ "images/externals", "images/pdf" ];
+    static images_files = [  "images/pdf" ];
 
     static scenes_elements = [];
     static scenes_elements_files = [];
@@ -62510,14 +62241,7 @@ export class HelyxSFS1E09
 			}
 		}
 	},
-	"img": {
-		"src": "{{{imgpath 'synthefluid.actor'}}}",
-		"origin": "MJ"
-	},
-	"token": {
-		"src": "{{{tokenpath 'synthefluid.token'}}}",
-		"origin": "MJ"
-	}
+	"model": "Synthefluid"
 }]
 ,[ "sfs1e09_autonomous-synth-torrent" ,{
 	"helyx": {
@@ -62532,14 +62256,7 @@ export class HelyxSFS1E09
 			}
 		}
 	},
-	"img": {
-		"src": "{{{imgpath 'synthefluid.actor'}}}",
-		"origin": "MJ"
-	},
-	"token": {
-		"src": "{{{tokenpath 'synthefluid.token'}}}",
-		"origin": "MJ"
-	}
+	"model": "Synthefluid"
 }]
 ,[ "sfs1e09_banded-spicodranth" ,{
 	"helyx": {
@@ -62554,14 +62271,7 @@ export class HelyxSFS1E09
 			}
 		}
 	},
-	"img": {
-		"src": "{{{imgpath 'spicodranth.actor'}}}",
-		"origin": "MJ"
-	},
-	"token": {
-		"src": "{{{tokenpath 'spicodranth.token'}}}",
-		"origin": "MJ"
-	}
+	"model": "Spicodranth"
 }]
 ,[ "sfs1e09_young-spicodranth" ,{
 	"helyx": {
@@ -62576,14 +62286,7 @@ export class HelyxSFS1E09
 			}
 		}
 	},
-	"img": {
-		"src": "{{{imgpath 'spicodranth.actor'}}}",
-		"origin": "MJ"
-	},
-	"token": {
-		"src": "{{{tokenpath 'spicodranth.token'}}}",
-		"origin": "MJ"
-	}
+	"model": "Spicodranth"
 }]
 ,[ "sfs1e09_dwarf-explorer" ,{
 	"helyx": {
@@ -62598,14 +62301,7 @@ export class HelyxSFS1E09
 			}
 		}
 	},
-	"img": {
-		"src": "{{{imgpath 'sky-seeker.actor'}}}",
-		"origin": "MJ"
-	},
-	"token": {
-		"src": "{{{tokenpath 'sky-seeker.token'}}}",
-		"origin": "MJ"
-	}
+	"model": "Dwarf Explorer"
 }]
 ,[ "sfs1e09_sky-seeker" ,{
 	"helyx": {
@@ -62620,14 +62316,7 @@ export class HelyxSFS1E09
 			}
 		}
 	},
-	"img": {
-		"src": "{{{imgpath 'sky-seeker.actor'}}}",
-		"origin": "MJ"
-	},
-	"token": {
-		"src": "{{{tokenpath 'sky-seeker.token'}}}",
-		"origin": "MJ"
-	}
+	"model": "Dwarf Explorer"
 }]
 ,[ "sfs1e09_space-goblin-scrapshooter" ,{
 	"helyx": {
@@ -62759,12 +62448,7 @@ export class HelyxSFS1E09
 		}
 	},
 	"name": "Android assistant #1",
-	"img": {
-		"src": "{{{imgpath 'android-assistant_01.actor'}}}"
-	},
-	"token": {
-		"src": "{{{tokenpath 'android-assistant_01.token'}}}"
-	}
+	"model": "Android Assistant 001"
 }]
 ,[ "sfs1e09_android-assistant-2" ,{
 	"helyx": {
@@ -62780,12 +62464,7 @@ export class HelyxSFS1E09
 		}
 	},
 	"name": "Android assistant #2",
-	"img": {
-		"src": "{{{imgpath 'android-assistant_02.actor'}}}"
-	},
-	"token": {
-		"src": "{{{tokenpath 'android-assistant_02.token'}}}"
-	}
+	"model": "Android Assistant 002"
 }]
 ,[ "sfs1e09_hexapodal-robot" ,{
 	"helyx": {
@@ -62800,12 +62479,7 @@ export class HelyxSFS1E09
 			}
 		}
 	},
-	"img": {
-		"src": "{{{imgpath 'hexapodal-carrier.actor'}}}"
-	},
-	"token": {
-		"src": "{{{tokenpath 'hexapodal-carrier.token'}}}"
-	}
+	"model": "Hexapodal Carrier"
 }]
 ,[ "sfs1e09_assistant-1" ,{
 	"helyx": {
@@ -62821,12 +62495,7 @@ export class HelyxSFS1E09
 		}
 	},
 	"name": "Ghoul assistant #1",
-	"img": {
-		"src": "{{{imgpath 'ghoul-assistant-01.actor'}}}"
-	},
-	"token": {
-		"src": "{{{tokenpath 'ghoul-assistant-01.token'}}}"
-	}
+	"model": "Ghoul Assistant 001"
 }]
 ,[ "sfs1e09_assistant-2" ,{
 	"helyx": {
@@ -62842,12 +62511,7 @@ export class HelyxSFS1E09
 		}
 	},
 	"name": "Ghoul assistant #2",
-	"img": {
-		"src": "{{{imgpath 'ghoul-commoner-06.actor'}}}"
-	},
-	"token": {
-		"src": "{{{tokenpath 'ghoul-commoner-06.token'}}}"
-	}
+	"model": "Ghoul Commoner 013"
 }]
 ,[ "sfs1e09_cam-1" ,{
 	"helyx": {
@@ -62863,12 +62527,7 @@ export class HelyxSFS1E09
 		}
 	},
 	"name": "Ghoul #1",
-	"img": {
-		"src": "{{{imgpath 'ghoul-commoner-01.actor'}}}"
-	},
-	"token": {
-		"src": "{{{tokenpath 'ghoul-commoner-01.token'}}}"
-	}
+	"model": "Ghoul Commoner 001"
 }]
 ,[ "sfs1e09_cam-2" ,{
 	"helyx": {
@@ -62884,12 +62543,7 @@ export class HelyxSFS1E09
 		}
 	},
 	"name": "Ghoul #2",
-	"img": {
-		"src": "{{{imgpath 'ghoul-commoner-02.actor'}}}"
-	},
-	"token": {
-		"src": "{{{tokenpath 'ghoul-commoner-02.token'}}}"
-	}
+	"model": "Ghoul Commoner 002"
 }]
 ,[ "sfs1e09_cam-3" ,{
 	"helyx": {
@@ -62905,12 +62559,7 @@ export class HelyxSFS1E09
 		}
 	},
 	"name": "Ghoul #3",
-	"img": {
-		"src": "{{{imgpath 'ghoul-commoner-03.actor'}}}"
-	},
-	"token": {
-		"src": "{{{tokenpath 'ghoul-commoner-03.token'}}}"
-	}
+	"model": "Ghoul Commoner 003"
 }]
 ,[ "sfs1e09_cam-4" ,{
 	"helyx": {
@@ -62926,12 +62575,7 @@ export class HelyxSFS1E09
 		}
 	},
 	"name": "Ghoul #4",
-	"img": {
-		"src": "{{{imgpath 'ghoul-commoner-04.actor'}}}"
-	},
-	"token": {
-		"src": "{{{tokenpath 'ghoul-commoner-04.token'}}}"
-	}
+	"model": "Ghoul Commoner 004"
 }]
 ,[ "sfs1e09_cam-5" ,{
 	"helyx": {
@@ -62947,12 +62591,7 @@ export class HelyxSFS1E09
 		}
 	},
 	"name": "Ghoul #5",
-	"img": {
-		"src": "{{{imgpath 'ghoul-commoner-05.actor'}}}"
-	},
-	"token": {
-		"src": "{{{tokenpath 'ghoul-commoner-05.token'}}}"
-	}
+	"model": "Ghoul Commoner 005"
 }]
 ,[ "sfs1e09_cam-6" ,{
 	"helyx": {
@@ -62968,12 +62607,7 @@ export class HelyxSFS1E09
 		}
 	},
 	"name": "Ghoul #6",
-	"img": {
-		"src": "{{{imgpath 'ghoul-commoner-12.actor'}}}"
-	},
-	"token": {
-		"src": "{{{tokenpath 'ghoul-commoner-12.token'}}}"
-	}
+	"model": "Ghoul Commoner 006"
 }]
 ,[ "sfs1e09_cam-7" ,{
 	"helyx": {
@@ -62989,12 +62623,7 @@ export class HelyxSFS1E09
 		}
 	},
 	"name": "Ghoul #7",
-	"img": {
-		"src": "{{{imgpath 'ghoul-commoner-07.actor'}}}"
-	},
-	"token": {
-		"src": "{{{tokenpath 'ghoul-commoner-07.token'}}}"
-	}
+	"model": "Ghoul Commoner 007"
 }]
 ,[ "sfs1e09_cam-8" ,{
 	"helyx": {
@@ -63010,12 +62639,7 @@ export class HelyxSFS1E09
 		}
 	},
 	"name": "Ghoul #8",
-	"img": {
-		"src": "{{{imgpath 'ghoul-commoner-08.actor'}}}"
-	},
-	"token": {
-		"src": "{{{tokenpath 'ghoul-commoner-08.token'}}}"
-	}
+	"model": "Ghoul Commoner 008"
 }]
 ,[ "sfs1e09_cam-9" ,{
 	"helyx": {
@@ -63031,12 +62655,7 @@ export class HelyxSFS1E09
 		}
 	},
 	"name": "Ghoul #9",
-	"img": {
-		"src": "{{{imgpath 'ghoul-commoner-09.actor'}}}"
-	},
-	"token": {
-		"src": "{{{tokenpath 'ghoul-commoner-09.token'}}}"
-	}
+	"model": "Ghoul Commoner 009"
 }]
 ,[ "sfs1e09_cam-10" ,{
 	"helyx": {
@@ -63052,12 +62671,7 @@ export class HelyxSFS1E09
 		}
 	},
 	"name": "Ghoul #10",
-	"img": {
-		"src": "{{{imgpath 'ghoul-commoner-10.actor'}}}"
-	},
-	"token": {
-		"src": "{{{tokenpath 'ghoul-commoner-10.token'}}}"
-	}
+	"model": "Ghoul Commoner 010"
 }]
 ,[ "sfs1e09_cover" ,{
 	"helyx": {
@@ -65007,7 +64621,7 @@ export class HelyxSFS1E14
 
     static flags = 
     { 
-        midjourney_content: true, 
+        external_mapping: false,
         tokens_on_maps: true,
         skip_pages_without_images: false,
         art_map: false
@@ -65140,7 +64754,7 @@ export class HelyxSFS2E01
 
     static flags = 
     { 
-        midjourney_content: true, 
+        external_mapping: false,
         tokens_on_maps: false,
         skip_pages_without_images: false,
         art_map: false
@@ -66047,7 +65661,7 @@ export class HelyxSFBounty06
 
     static flags = 
     { 
-        midjourney_content: false, 
+        external_mapping: true,
         tokens_on_maps: true,
         skip_pages_without_images: false,
         art_map: false
@@ -66154,12 +65768,10 @@ export class HelyxSFBounty06
 		}
 	},
 	"img": {
-		"src": "{{{imgpath 'anacite-wingbot.actor'}}}",
-		"origin": "MJ"
+		"src": "{{{imgpath 'anacite-wingbot.actor'}}}"
 	},
 	"token": {
-		"src": "{{{tokenpath 'anacite-wingbot.token'}}}",
-		"origin": "MJ"
+		"src": "{{{tokenpath 'anacite-wingbot.token'}}}"
 	}
 }]
 ,[ "sfb06_sharaphine" ,{
@@ -66176,12 +65788,10 @@ export class HelyxSFBounty06
 		}
 	},
 	"img": {
-		"src": "{{{imgpath 'sharaphine.actor'}}}",
-		"origin": "MJ"
+		"src": "{{{imgpath 'sharaphine.actor'}}}"
 	},
 	"token": {
-		"src": "{{{tokenpath 'sharaphine.token'}}}",
-		"origin": "MJ"
+		"src": "{{{tokenpath 'sharaphine.token'}}}"
 	}
 }]
 ,[ "sfb06_electrical-malfunction" ,{
@@ -67286,7 +66896,7 @@ export class HelyxSkitterShot
 
     static flags = 
     { 
-        midjourney_content: false, 
+        external_mapping: false,
         tokens_on_maps: true,
         skip_pages_without_images: true,
         art_map: false

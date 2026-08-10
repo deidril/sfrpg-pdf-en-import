@@ -31,6 +31,18 @@
             </div>
         </div>  
 
+        <div class="form-group" style="display: {{options.use_external_art_mappings}};">
+            <label for="helyx-external-art-mapping">External Art Mapping</label>
+            <div class="form-fields" style="display:block;">
+                <select name="helyx-external-art-mapping" id="helyx-external-art-mapping">
+                    <option value="">--None--</option>
+                    {{#each options.external_art_mappings}}
+                        <option value="{{this.idname}}">{{this.name}}</option>
+                    {{/each}}
+                </select>
+            </div>
+        </div>          
+
         <div class="form-group" style="display: {{options.deidril_maps}}">
             <label for="helyx-accept-deidril-maps">Use Deidril's Maps</label>
             <div class="form-fields" style="display:block;">
